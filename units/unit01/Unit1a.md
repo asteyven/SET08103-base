@@ -2,7 +2,7 @@
 
 ## Creating a Cooperative Learning Community Environment for the Module
 
-Before starting the module, I want to create a suitable learning environment for everyone in the module.  I will do this from four resources:
+Before starting the module, I want to create a suitable learning environment for everyone in the module.  I will do this from four resources: 
 
 1. Toyota Improvement Kata.
 2. Ideas from the book *A Mind for Numbers*.

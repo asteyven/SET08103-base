@@ -1,6 +1,6 @@
 # Unit 01 (b): Scrum and Team Forming
 
-This module will focus on Scrum and how Scrum can be used in your group coursework project.
+This unitwill focus on Scrum and how Scrum can be used in your group coursework project.
 
 ## Behavioural Objectives
 
