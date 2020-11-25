@@ -1,8 +1,8 @@
 # SET08103 Software Engineering Methods
 
-| Week | Lectures | Lab | Assessment |
+| Unit | Title | Lab | Assessment |
 |------|----------|-----|------------|
-| 1 | [Lecture 01: Introduction to the Module](lectures/lecture01) <br> [Lecture 02: Scrum and Team Forming](lectures/lecture02) | [Lab 01: Setup](labs/lab01) | Coursework Released |
+| 1 | [Introduction](units/unit01/unit1a.md) <br> [Scrum and Team Forming](units/unit01/unit1b.md) | [Lab 01: Setup](labs/lab01) | Coursework Released |
 | 2 | [Lecture 03: Version Control and Git](lectures/lecture03) <br> [Lecture 04: Lean Software Development](lectures/lecture04) | [Lab 02: Continuous Integration Setup](labs/lab02) | |
 | 3 | [Lecture 05: Modern Software Development](lectures/lecture05) <br> [Lecture 06: Three Ways of DevOps](lectures/lecture06) | [Lab 03: Requirements and Issues](labs/lab03) | Code Review 1 |
 | 4 | [Lecture 07: The First Way of DevOps - Flow](lectures/lecture07) <br> [Lecture 08: Kanban](lectures/lecture08) | [Lab 04: Task Management and Kanban](labs/lab04) | |
