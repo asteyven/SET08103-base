@@ -3,7 +3,7 @@
 | Unit | Title | Lab | Assessment |
 |------|----------|-----|------------|
 | 1 | [Introduction](units/unit01/unit1a.md) <br> [Scrum and Team Forming](units/unit01/unit1b.md) | [Lab 01: Setup](labs/lab01) | Coursework Released |
-| 2 | [Lecture 03: Version Control and Git](lectures/lecture03) <br> [Lecture 04: Lean Software Development](lectures/lecture04) | [Lab 02: Continuous Integration Setup](labs/lab02) | |
+| 2 | [Unit 02 (a): Version Control and Git](units/unit02/unit2a.md) <br> [Unit 02 (b): Lean Software Development](units/unit02/unit2b.md) | [Lab 02: Continuous Integration Setup](labs/lab02) | |
 | 3 | [Lecture 05: Modern Software Development](lectures/lecture05) <br> [Lecture 06: Three Ways of DevOps](lectures/lecture06) | [Lab 03: Requirements and Issues](labs/lab03) | Code Review 1 |
 | 4 | [Lecture 07: The First Way of DevOps - Flow](lectures/lecture07) <br> [Lecture 08: Kanban](lectures/lecture08) | [Lab 04: Task Management and Kanban](labs/lab04) | |
 | 5 | [Lecture 09: Requirements Gathering](lectures/lecture09) <br> [Lecture 10: User Stories and Use Cases](lectures/lecture10) | [Lab 05: Use Cases and Use Case Diagrams](labs/lab05) | |

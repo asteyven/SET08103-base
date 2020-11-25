@@ -1,4 +1,4 @@
-# Lecture 01: Introduction to the Module
+# Unit 01 (a): Introduction to the Module
 
 ## Creating a Cooperative Learning Community Environment for the Module
 
