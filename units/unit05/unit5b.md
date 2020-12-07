@@ -1,4 +1,4 @@
-# Lecture 12: UML Workflow
+# Unit 5b: UML Workflow
 
 This lecture follows on from [Lecture 11](../lecture11) and shows one technique to practically use UML in analysis and design.  Remember that UML is a diagramming language, and so allows us to think visually about the system.  This can be useful when you get stuck on a particular problem.  Although informal diagramming can work here, having a standard is useful.
 
@@ -26,7 +26,6 @@ You can add or remove steps as required, or change the order.  The point is to b
 In our tutorial case study we are going to model a coffee machine:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Consumer_Reports_-_Zojirushi_coffeemaker_alt.tif#/media/File:Consumer_Reports_-_Zojirushi_coffeemaker_alt.tif"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Consumer_Reports_-_Zojirushi_coffeemaker_alt.tif" alt="Consumer Reports - Zojirushi coffeemaker alt.tif" height="480" width="430"></a><br>By <a rel="nofollow" class="external text" href="http://consumerreports.org">Consumer Reports</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=48862825">Link</a></p>
-
 This is an intentionally simple example to illustrate the basic use of UML in analysis and design.  Our advice is to always use UML in this simplified manner rather than going through a large analysis and design with UML.
 
 Our coffee machine is going to be restricted just to make the design easier.  The following constraints are in place:

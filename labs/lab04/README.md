@@ -1,242 +1,352 @@
-# Lab 05: Use Cases and Use Case Diagrams
+# Lab 04: Task Management and Kanban
 
-In this lab we will extend our initial user stories into fuller use cases, trying to capture the detail of the work we require to complete the new HR System.  We will also look at **Use Case Diagrams** to visually define our use cases and their relationship.
+Our next step is to extend our task management system beyond simple GitHub issues.  We will use a task board approach that comes from [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)).  [Lecture 8](../../lectures/lecture08) goes into more detail about Kanban.
 
 ## Behavioural Objectives
 
-- [ ] **Define use cases** using *Cockburn's Use Case Template*.
-- [ ] **Define use case diagrams** using *PlantUML*.
+- [ ] **Create** a *Kanban Board on Zube.*
+- [ ] **Create** a *Sprint Board on Zube.*
+- [ ] **Run** a *Sprint*.
 
-## Our Current User Stories
+## Setting up Zube.io
 
-In [Lab 03](../lab03) we defined our eight user stories from our vision statement:
+GitHub does support task boards - see the **Projects** tab in your repository for details.  We are going to use a different system provided by [Zube](https://zube.io/).  This is because Zube:
 
-1. As an *HR advisor* I want *to produce a report on the salary of all employees* so that *I can support financial reporting of the organisation.*
-2. As an *HR advisor* I want *to produce a report on the salary of employees in a department* so that *I can support financial reporting of the organisation.*
-3. As an *department manager* I want *to produce a report on the salary of employees in my department* so that *I can support financial reporting for my department.*
-4. As an *HR advisor* I want *to produce a report on the salary of employees of a given role* so that *I can support financial reporting of the organisation.*
-5. As an *HR advisor* I want *to add a new employee's details* so that *I can ensure the new employee is paid.*
-6. As an *HR advisor* I want *to view and employee's details* so that *the employee's promotion request can be supported.*
-7. As an *HR advisor* I want *to update an employee's details* so that *employee's details are kept up-to-date.*
-8. As an *HR advisor* I want *to delete an employee's details* so that *the company is compliant with data retention legislation.*
+- Integrates with GitHub tasks.
+- Provides more functionality, such as story points.
 
-So far, we have implemented user story 1 and 6.  As an exercise, you are expected to complete **all** the use cases defined above.  This lab will only provide one example: user story 4.  However, you should be able to complete the use case for 1 and 6 from our previous work, and we will be reviewing the other use cases through the rest of the lab series.
+Connecting your GitHub repository is simple.  Just go to https://zube.io/ and click the **Signup with GitHub** button.
 
-## What is a Use Case?
+![Zube Main Screen](img/zube-main.png)
 
-From [Wikipedia](https://en.wikipedia.org/wiki/Use_case):
+Follow the instructions to connect your account.  Once you get to the main screen you are ready to start setting up your project.
 
-> In software and systems engineering, a use case is a **list of actions or event steps** typically **defining the interactions between a role (known in the Unified Modeling Language (UML) as an actor) and a system to achieve a goal**. 
+### Creating an Organisation
 
-To simplify, a use case is:
+Next we need to create a new organisation in Zube.  An organisation is a way of managing projects.  You should see a button with **Create a new organization**.  Click this button to open the new organisation window.
 
-1. a list of actions/events;
-2. by an actor;
-3. interacting with a system;
-4. to achieve a goal.
+![Zube New Organisation](img/zube-organisation.png)
 
-Our user stories are a form of use case, sometimes referred to as a *casual* use case.  The user stories we have defined two elements directly and one indirectly of a use case.  For example, let us consider use case 4:
+Use **Napier** as the organisation name, and **ensure you link to your GitHub account name as an organisation** and click **Create Organization**.  This will open the new project window.
 
-1. no list of actions defined.
-2. HR advisor (actor).
-3. interacts with HR system.
-4. to produce a report on the salary of employees of a given role (goal).
+### Creating a Project
 
-Our user stories are lacking in the following two areas:
+Next we need to create a project:
 
-- there is no list of actions.
-- the system interaction is opaque.
+![Zube New Project](img/zube-project.png)
 
-A fuller use case will allow us to address these two issues.  The list of actions we are normally defining as we build a feature.  Let us put some thought into the actions beforehand, but remember that **details can change!**  We are planning but not putting our plan in stone until we have finished a feature.
+**Ensure you link the repository you are using for the labs.**  Use the same details as above and click **Create Project**.
 
-## Defining Use Cases for Our System
+## Organising Your Task Board
 
-[Lecture 10](../../lectures/lecture10) goes into more detail about use cases.  Here, we are going to cover the application of these ideas.  We are going to use a version of [Cockburn's Use Case Template](https://cis.bentley.edu/lwaguespack/CS360_Site/Downloads_files/Use%20Case%20Template%20%28Cockburn%29.pdf).  You can see a sample of [Use Case 4](use-case-4.md) using this template style.
+You should now see your project task board:
 
-Cockburn's template contains the following sections of note:
+![Zube Kanban Board](img/zube-kanban-board.png)
 
-- **Goal in Context** - we will use our user story.
-- **Scope** - is discussed more in the lecture.  Scoping is an important consideration in any work you do.
-- **Level** - what level is the use case targeted at.  This is discussed further in the lecture.
-- **Preconditions** - what do we **expect** is true before the use case is executed.
-- **Success Condition** - what will happen on completion of the goal.
-- **Failed Condition** - what will happen on failure of the goal.
-- **Primary Actor** - the main actor of the use case.
-- **Trigger** - how is the use case started.
-- **Main Success Scenario** - what are the steps leading to success.
-- **Extensions** - what might happen at a given step to stop the use case.
-- **Sub-variations** - any other branches that a step can take?
-- **Schedule** - when does the use case need to be delivered.
+We are now going to go through two processes:
 
-### Exercise: Define the Other Use Cases
+1. Assigning story points to our current tasks.
+2. Prioritising tasks.
 
-First, create a new folder in your project called `use-cases`.  Copy the `use-case-4.md` file provided into this folder.
+### Assigning Story Points
 
-Your exercise is to complete the other seven use cases for the HR system.  Write these in Markdown (`.md` files).  IntelliJ comes with a default plugin to support Markdown.  If you are unfamiliar with Markdown, then there [are](https://www.markdowntutorial.com/) [several](https://guides.github.com/features/mastering-markdown/) [tutorials](https://www.markdownguide.org/getting-started/) [available](https://learnxinyminutes.com/docs/markdown/).  This is a good opportunity to work with your team.
+In the notes for [Lecture 2](../../lectures/lecture02) we looked at how we assign points to tasks.  It is all about estimating the size of a task against other tasks.  Zube lets us assign story points to tasks.  To do so, **Click** on a **task card** on the Kanban board.  This will open the task details window:
 
-## What is a Use Case Diagram?
+![Zube Task Details](img/zube-points.png)
 
-Use cases can also be visually represented using a **Use Case Diagram**.  Typically seen as part of the **Unified Modelling Language** (UML) (see [Lab 6](../lab06) and [Lecture 11](../../lectures/lecture11)), use case diagrams allow us to see how use cases interact simply.  However, they do lack the detail required to fully implement and understand features, and therefore should be seen as a support tool for software development.  In particular, they can communicate with stakeholders quickly about how the engineers see the system working.
+As you can see, there is a drop-down menu where you can set the points for a task.  To close the details of a task **click** the **cross** at the top-right of the details window.
 
-### Use Case Diagram Symbols
+#### Exercise
 
-Use case diagrams are quite simple, requiring only stick men, arrows, and ellipsoids at the most basic level.  We will cover the common use case symbols from UML below.
+Assign points to our current tasks.  It is up-to-you to decide the scores based on your own estimate.
 
-#### Use Case
+### Prioritising Tasks
 
-To illustrate a use case we use an ellipsoid with text as below:
+Next we will prioritise tasks.  This is done by moving task cards up and down in the task board.  It is that simple.  Ordering tasks is the job of the **Product Owner**.  At present, the order of tasks needs to be:
 
-![Use Case](img/plantuml-usecase.png)
+- #1 Produce a report of all salaries.
+- #4 Produce a report of salaries by role.
+- #2 Produce a report of salaries by department (HR advisor).
+- #3 Produce a report of salaries by department (department manager).
+- #5 Add new employee.
+- #7 Update employee details.
+- #8 Delete employee details.
 
-#### Actor
+This is the current order tasks will be completed for the project, but it is subject to change.  Remember, we have planned, but we will keep planning.
 
-Actors are represented by stick figures:
+## Setting up a Sprint Board
 
-![Actor](img/plantuml-actor.png)
+Now it is time to set up a *Sprint*.  Remember from [Lecture 02](../../lectures/lecture02) that a Sprint is a fixed-time where we attempt to do work.  A Sprint can have different durations, but for the labs we are going to work in a single week (as that is the amount of time to do a lab).  We define the work we are going to do and then we work on it - **not adding any new work to the sprint.**
 
-#### Use Case Relationships
+Zube features **Sprint Boards**.  To use these, first we need to set-up a Sprint.  To do this, click on the **Sprints** menu option on the left.  This will open up the following view:
 
-Use cases can also relate to each other, typically in **include** and **extend** cases.  Below is the diagram:
+![Zube Sprints Window](img/zube-sprints.png)
 
-![Include Use Case](img/plantuml-include.png)
+Now we need to create a new Sprint.  **Click the New Sprint button** on the top-right to open the New Sprint view:
 
-![Extend Use Case](img/plantuml-extend.png)
+![Zube New Sprint](img/zube-new-sprint.png)
 
-An *include* relationship is one where a use case includes (i.e. *uses*) another use case to perform its functionality. An *extend* relationship is one where a use case extends (e.g. supports an edge-case) from another use case.  It provides a special version.  These should have been identified in the **Extensions** section of the use case.
+Enter the details as shown in the image above:
 
-#### System
+- Title: Lab 04
+- Description: Work on Lab 04 for SE Methods.
+- Dates: As appropriate for the week you are doing this.  In 2019, that was Feb 04 (Monday) until Feb 10 (Sunday).
 
-A use case typically exists within a system, or communicates with another system.  For example, see below:
+**Click Save** and the Sprint will be created.  Now click on **Sprint Board** on the left-hand menu to open the Sprint Board view:
 
-![System](img/plantuml-system.png)
+![Zube Sprint Board](img/zube-sprint-board.png)
 
-*Use Case 1* and *Use Case 2* both exist within the *System*.  *Use Case 2* also communicates with an external system - *Database*.
+Notice that the columns to the right (Ready, In Progress, In Review, and Done) are now in the Sprint section of the Sprint Board.  This is to indicate that these columns are related to the Sprint we are going to do.  We will use these columns to manage our work during this Sprint.
 
-## Using PlantUML in IntelliJ
+## Next Feature: Salary Report
 
-There are quite a few UML diagramming tools out there.  However, we want to store our diagrams in our GitHub repository.  As Git repositories don't like binary files, we will use a textual representation via [PlantUML](http://plantuml.com/).  This is a common textual standard to describe UML diagrams and can be used to generate images.  We will do this via an IntelliJ plugin.
+Now we are ready to start our next feature: the *Salary Report*.  To do this, we first need to create a new **Feature Branch** in our Git repository, called `feature/salary-report`.  **Do this now.**  Remember to switch to the new branch in IntelliJ.
 
-### Install GraphViz
+### Starting a Sprint
 
-To use the PlantUML plugin in IntelliJ you will first need to install GraphViz on your machine.  GraphViz is a [graph drawing tool](https://en.wikipedia.org/wiki/Graph_drawing) that several tools use to layout diagrams.  Download instructions for GraphViz are available from [here](https://www.graphviz.org/download/).  For Windows users, install the **stable release**.
+Next we need to setup our Sprint Board.  The task we are going to work on (1. As an *HR advisor* I want *to produce a report on the salary of all employees* so that *I can support financial reporting of the organisation.*) must be placed in the **Ready** column of the Sprint Board.  All other tasks should be put into the **Backlog**.  Below is how your Sprint Board should look:
 
-### Install PlantUML Plugin
+![Zube Sprint Start](img/zube-start-sprint.png)
 
-Next we need to install the PlantUML plugin for IntelliJ.  Go to **File**, **Settings** then **Plugins** to open the **Plugins Window**.  Search for **PlantUML**.  The plugin you want is **PlantUML integration** as shown below:
+### Adding New Tasks
 
-![IntelliJ PlantUML Plugin](img/intellij-plugin.png)
+As in [Lab 03](../lab03) our user story has a few tasks:
 
-Click **Install**, then **Accept** and finally **Restart IDE**.  Once IntelliJ has restarted, PlantUML should be available.
+1. Get all current salaries from the database.
+2. Print list of salaries.
 
-### Creating a Use Case Diagram
+We can add these tasks as new **Cards** on Zube.  This is to avoid them appearing as issues on GitHub.  To do this, **click the New Card Button** at the top-right of the Sprint Board.  This will open the **New Card Dialogue Window**:
 
-To see the PlantUML is set up correctly we need to create a diagram.  **Right click** on the **use-cases folder**, select **New**, and the **UML Use Case**.  Give it the name **HR System** and click **OK**.  This should provide you with the following window:
+![Adding Zube Card](img/zube-new-card.png)
 
-![IntelliJ PlantUML Diagram](img/intellij-use-case.png)
+We now need to add the details for each of the tasks above.  Enter the details for task 1 as shown:
 
-**If you don't see screen as above a couple of things to check**:
+- Only on Zube.
+- 1 story point.
+- Assign to yourself.
+- Title: Get all current salaries from the database.
+- Sprint: Lab 04.
 
-- did you install GraphViz?
-- if so, open the settings for PlantUML (click the small spanner above where the diagram should be), and browse for the **dot** executable which will be where you installed GraphViz.
+The details for task 2 are the same but with a different title.  After both cards are added, reorder your **Ready Column** on the Sprint Board to look as follows:
 
-### PlantUML Syntax
+![Zube Ready Tasks](img/zube-ready-tasks.png)
 
-A more comprehensive guide is available [here](http://plantuml.com/PlantUML_Language_Reference_Guide.pdf).  We will examine the basics.
+We are now ready to get to work.
 
-A PlantUML file starts and ends with the following:
+### Getting Salary Information
 
-```
-@startuml
+Our first task is to get all the current salaries.  First, move this card into the **In Progress Column** on Zube:
 
-@enduml
-```
+![Zube In Progress Card](img/zube-in-progress.png)
 
-We define a use case as follows:
+First we need to work out our SQL statement.  Examine the [database schema](https://dev.mysql.com/doc/employee/en/sakila-structure.html)
 
-```
-usecase "Use Case"
+![Employees Database Schema](https://dev.mysql.com/doc/employee/en/images/employees-schema.png)
+
+We have to *join* the `employees` and `salaries` tables.  We do this by selecting both of them with the `FROM` clause and using `WHERE` to define how we will join the tables:
+
+```sql
+SELECT ???
+FROM employees, salaries
+WHERE employees.emp_no = salaries.emp_no
 ```
 
-We can also provide a name for the use case.  This makes it easier to connect them later:
+We must also select only current salaries.  Remember that the database uses `9999-01-01` as an undefined date, so any current salary will have `salaries.to_date` equal to `9999-01-01`:
 
-```
-usecase UC1 as "Use Case 1"
-usecase UC2 as "Use Case 2"
-```
-
-Actors are defined as follows:
-
-```
-actor "Actor"
+```sql
+SELECT ???
+FROM employees, salaries
+WHERE employees.emp_no = salaries.emp_no AND salaries.to_date = '9999-01-01'
 ```
 
-And they can likewise be named:
+We need the following information at least:
 
+- `emp_no`
+- `first_name`
+- `last_name`
+- `salary`
+
+We add that to our `SELECT` statement:
+
+```sql
+SELECT employees.emp_no, employees.first_name, employees.last_name, salaries.salary
+FROM employees, salaries
+WHERE employees.emp_no = salaries.emp_no AND salaries.to_date = '9999-01-01'
 ```
-actor A1 as "Actor 1"
-actor A2 as "Actor 2"
+
+Finally, just to make life easier, we will sort on `emp_no`.  We can do this in SQL as follows:
+
+```sql
+SELECT employees.emp_no, employees.first_name, employees.last_name, salaries.salary
+FROM employees, salaries
+WHERE employees.emp_no = salaries.emp_no AND salaries.to_date = '9999-01-01'
+ORDER BY employees.emp_no ASC
 ```
 
-There are numerous methods to lay out arrows - [see the tutorial](http://plantuml.com/PlantUML_Language_Reference_Guide.pdf).  For example:
+With our SQL statement ready, we can write the Java code to get the employees.  It is very similar to the single get employee method last week but now returns an `ArrayList` of `Employee`.  To use this type, add `java.util.ArrayList` to your `import` statements.
 
-```
-actor A1 as "Actor 1"
-usecase UC1 as "Use Case 1"
-
-A1 --> UC1
-```
-
-Systems can be defined using rectangles:
-
-```
-rectangle Database
-
-rectangle System {
-    usecase UC1 as "Use Case 1"
-    UC1 --> Database
+```java
+/**
+* Gets all the current employees and salaries.
+* @return A list of all employees and salaries, or null if there is an error.
+*/
+public ArrayList<Employee> getAllSalaries()
+{
+    try
+    {
+        // Create an SQL statement
+        Statement stmt = con.createStatement();
+        // Create string for SQL statement
+        String strSelect =
+                "SELECT employees.emp_no, employees.first_name, employees.last_name, salaries.salary "
+                + "FROM employees, salaries "
+                + "WHERE employees.emp_no = salaries.emp_no AND salaries.to_date = '9999-01-01' "
+                + "ORDER BY employees.emp_no ASC";
+        // Execute SQL statement
+        ResultSet rset = stmt.executeQuery(strSelect);
+        // Extract employee information
+        ArrayList<Employee> employees = new ArrayList<Employee>();
+        while (rset.next())
+        {
+            Employee emp = new Employee();
+            emp.emp_no = rset.getInt("employees.emp_no");
+            emp.first_name = rset.getString("employees.first_name");
+            emp.last_name = rset.getString("employees.last_name");
+            emp.salary = rset.getInt("salaries.salary");
+            employees.add(emp);
+        }
+        return employees;
+    }
+    catch (Exception e)
+    {
+        System.out.println(e.getMessage());
+        System.out.println("Failed to get salary details");
+        return null;
+    }
 }
 ```
 
-Anything defined within the rectangle curly braces are part of the `System`.
+We will do a quick update to `main` just to check everything works:
 
-### Diagram for Use Case 4
+```java
+public static void main(String[] args)
+{
+    // Create new Application
+    App a = new App();
 
-Let us look at an example from our system.  Below is use case 4:
+    // Connect to database
+    a.connect();
 
-```
-@startuml
+    // Extract employee salary information
+    ArrayList<Employee> employees = a.getAllSalaries();
 
-actor HR as "HR Advisor"
+    // Test the size of the returned data - should be 240124
+    System.out.println(employees.size());
 
-rectangle Database
-
-rectangle "HR System" {
-    usecase UC4 as "Get salaries
-    by role"
-    
-    usecase UCa as "Print salaries"
-    
-    HR - UC4
-    UC4 ..> UCa : include
-    UC4 - Database
+    // Disconnect from database
+    a.disconnect();
 }
-
-@enduml
 ```
 
-This will produce the following diagram:
+And now we are ready to test.  Remember what we have to do:
 
-![HR System Use Case Diagram](img/hr-system.png)
+1. Ensure **all** previous versions of `sem_app` are deleted - containers and images.
+2. **Compile** the project via Maven.
+3. **Package** the project via Maven.
+4. **Run** the `docker-compose` file.
 
-### Exercise: Complete the Use Case Diagram
+Hopefully, you will eventually receive the following output:
 
-Your task now is to complete the use case diagram for the entire set of use cases defined.  You only need one diagram for all the cases. Again, work with your team, and seek feedback.  We will revisit various parts of the diagram throughout the module so you can adjust as you are going along.
+```shell
+Connecting to database...
+Successfully connected
+240124
+```
 
-## Next Feature: Salary By Role
+And we have completed our first task.  Go back to Zube, and click the card for the task to open it's details:
 
-Now it is time to work on our next feature - user story 4: As an *HR advisor* I want *to produce a report on the salary of employees of a given role* so that *I can support financial reporting of the organisation.*
+![Zube Card](img/zube-card.png)
 
-Remember the steps you took last week for executing a Sprint:
+**Click Move to Done** and the task is finished.  Close the card and you will see it in the **Done** column:
+
+![Zube Card Done](img/zube-done.png)
+
+Notice in the top-right we have a visual indication of how much work we have done during this Sprint.  If the card is also a *GitHub* issue this will close the issue.  You can also **drag the card** to **Done** for the same effect.
+
+**REMEMBER** - commit your code!
+
+### Printing Salary Information
+
+Now to complete the second task.  **Move the card in Zube to the In Progress Column**.  Remember, we are visualising the current work being undertaken.  We must ensure our Sprint Board is kept up-to-date.
+
+Printing the salaries just requires a new bit of Java code:
+
+```java
+/**
+* Prints a list of employees.
+* @param employees The list of employees to print.
+*/
+public void printSalaries(ArrayList<Employee> employees)
+{
+    // Print header
+    System.out.println(String.format("%-10s %-15s %-20s %-8s", "Emp No", "First Name", "Last Name", "Salary"));
+    // Loop over all employees in the list
+    for (Employee emp : employees)
+    {
+        String emp_string =
+                String.format("%-10s %-15s %-20s %-8s",
+                        emp.emp_no, emp.first_name, emp.last_name, emp.salary);
+        System.out.println(emp_string);
+    }
+}
+```
+
+We use `String.format` to put the data into columns based on the information we have from the database schema - mainly around column sizes.  If you are unfamiliar with `String.format` examine the [Java API documentation](https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax).
+
+When run, you will get a list of all the current salaries.  The end of the list is below:
+
+```shell
+...
+499977     Martial         Weisert              77858   
+499979     Prasadram       Waleschkowski        54088   
+499980     Gino            Usery                108364  
+499981     Yunming         Mitina               63193   
+499983     Uri             Juneja               52429   
+499984     Kaijung         Rodham               66202   
+499985     Gila            Lukaszewicz          47543   
+499986     Nathan          Ranta                119906  
+499987     Rimli           Dusink               56336   
+499990     Khaled          Kohling              45512   
+499991     Pohua           Sichman              52867   
+499992     Siamak          Salverda             80389   
+499993     DeForest        Mullainathan         44305  
+```
+
+And now end the task on Zube.  Either **drag the card to Done** or **open the card and Mark as Done**.  Our tasks are now complete - we just need to finalise everything.
+
+### Committing and Cleaning Up
+
+We are now ready to complete everything for the Sprint.  First **commit and push your work to GitHub.**  Next, we need to perform our release steps:
+
+1. Update the version number in Maven and the Dockerfile.  You should be at `v0.1-alpha-4 (v0.1.0.4)` now.
+2. Merge the feature branch into `develop`.
+3. Merge `develop` into `release`.
+4. Create the release - including version tag.
+5. Merged `release` into `master`.
+6. Merged `release` into `develop`.
+7. Clean up Docker containers and images.
+
+We can also finish our user story on Zube - **drag** or **Move to Done** the user story card.  We have now completed our Sprint work.
+
+![Zube Completed Sprint Board](img/zube-completed-sprint.png)
+
+Finally on Zube, select **Sprints** on the left-hand menu, and **click Close on the Lab 04 Sprint*.  This will end the Sprint.
+
+And we are done.  You have successfully completed your first lab Sprint, and used tools to support the process.
+
+## Our Current Process
+
+We have expanded our process at the start and the end to incorporate our Sprint methodology:
 
 1. Decide which user story/stories to work on for the next Sprint.
 2. Create a new Sprint on Zube.
@@ -246,52 +356,15 @@ Remember the steps you took last week for executing a Sprint:
 6. Start a new feature branch for the task(s) or user story.
 7. Select task to work on in Zube.
 8. Work on task.
+9. Repeat 7-8 until feature is complete.
+10. Once feature is finished, create JAR file.
+11. Update and test Docker configuration with Travis.
+12. Update feature branch with `develop` to ensure feature is up-to-date.
+13. Check feature branch still works.
+14. Merge feature branch into `develop`.
+15. Repeat 5-14 until Sprint is complete.
+16. Merge `develop` branch into `release` and create release.
+17. Merge `release` into `master` and `develop`.
+18. Close the Sprint.
 
-We only have one task to do this week: get the salaries by department.  This is very similar to the last feature - get all salaries - but with an additional restriction.  Therefore it is your task to implement this feature on your own.
-
-### Exercise: Implement Salaries by Role Feature
-
-The SQL required for this query is below:
-
-```sql
-SELECT employees.emp_no, employees.first_name, employees.last_name, salaries.salary
-FROM employees, salaries, titles
-WHERE employees.emp_no = salaries.emp_no
-AND employees.emp_no = titles.emp_no
-AND salaries.to_date = '9999-01-01'
-AND titles.to_date = '9999-01-01'
-AND titles.title = '<title>'
-ORDER BY employees.emp_no ASC
-```
-
-`<title>` is replaced by the name of the role (title).  For example, the end of the `Engineer` salary information is:
-
-
-```shell
-...
-499838     Annemarie       Peroz                53972   
-499843     Vitaly          Zucker               66847   
-499855     Constantine     Michaels             49559   
-499856     Yoshinari       Theuretzbacher       50966   
-499857     Leszek          Tempesti             60478   
-499896     Gianluca        Rando                59952   
-499900     Leon            Baba                 51414   
-499904     Kazuhiro        Velasco              47104   
-499913     Masako          Heiserman            73788   
-499918     Hilary          Rodiger              55843   
-499927     Manohar         Heemskerk            83769   
-499935     Ymte            Perelgut             77520   
-499936     Chiranjit       Himler               54253   
-499948     Cordelia        Paludetto            45625   
-499962     Yongqiao        Dalton               57667   
-499973     Lobel           Taubman              61400   
-499979     Prasadram       Waleschkowski        54088   
-499990     Khaled          Kohling              45512   
-499993     DeForest        Mullainathan         44305   
-499995     Dekang          Lichtner             52868   
-499999     Sachin          Tsukuda              77303   
-```
-
-## Cleaning Up and Committing
-
-And now end your Sprint and clean up.  Follow the process as defined at the end of [Lab 4](../lab04).
+This is our main process now, and although we might add a few small additions (e.g. around testing), we are in a good place for the remainder of the module.
