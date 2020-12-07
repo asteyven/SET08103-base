@@ -1,378 +1,290 @@
-# Lecture 04: Lean Software Development
+# Unit 2b: The Three Ways - Underpinning Principles of DevOps
 
-[Lean Software Development on Wikipedia](https://en.wikipedia.org/wiki/Lean_software_development).
+In this lecture we will explore the key principles of DevOps and how these are mapped to the work in the rest of the module.  DevOps, and the culture surrounding it, has become a desirable trend for graduates.  In this module we skate over the principles with a software engineering lens.  The principles you will find are similar to ones already discussed in the module.
 
 ## Behavioural Objectives
 
-At the end of this lecture you will be able to:
+- [ ] **Define** *DevOps*.
+- [ ] **Describe** the *Three Ways of DevOps.*
+- [ ] **Reflect on** how *the lectures map to the Three Ways.*
 
-- [ ] **Define** the *seven key principles of Lean Software Development.*
-- [ ] **Discuss** how *Lean Software Development can be applied.*
-- [ ] **Explain** *some of the tools for Lean Software Development.*
-- [ ] **Identify** *Lean Software Development tools to apply to your software development process.*
+## Overview of DevOps
 
-## Key Principles of Lean Software Development
+DevOps tries to address the boundary between the developers (the creators of software) and operations (the management of software).  DevOps is a set of principles and techniques that enable improved working between these two groups, driven by a number of the ideas we have already presented in this module:
 
-**Lean Software Development** defines the following seven principles:
+- The Lean Movement (we covered [Lean Software Development in Lecture 04](../lecture04)).
+- The Agile Manifesto (we covered [Agile in Lecture 01](../lecture01)).
+- Agile Infrastructure and Velocity Movement ([modern software architectures in Lecture 05](../lecture05) is related to this idea).
+- The Continuous Delivery Movement (we cover [Continuous Delivery in Lecture 16](../lecture16)).
+- The Toyota Kata - which is about continuous improvement.
 
-- Eliminate waste.
-- Amplify learning.
-- Decide as late as possible.
-- Deliver as fast as possible.
-- Empower the team.
-- Build integrity in.
-- See the whole.
+In [Lecture 05](../lecture05) we examined modern software architecture.  The following table summarises how these trends have affected business practices.
 
-22 tools are defined within these principles which we will discuss through this lecture.
+|       | **1970s-1980s** | **1990s** | **2000s-Present** |
+|-------|-----------------|-----------|-------------------|
+| **Era** | Mainframes | Client/server | Cloud |
+| **Technology** | COBOL, DB2 | C++, Oracle | Java, MySQL, etc. |
+| **Cycle time** | 1-5 years | 3-12 months | 2-12 weeks |
+| **Cost** | $1M-$100M | $100k-$10M | $10k-$1M |
+| **At risk** | The whole company | Product line or division | Product feature |
+| **Cost of failure** | Bankruptcy | Revenue miss | Negligible |
 
-## Eliminate Waste
+This is taken from Adrian Cockcroft's talk *Velocity and Volume (or Speed Wins)* which you can watch below.  Adrian was Cloud Architect at Netflix at the time, and is now Vice President for Cloud Architecture Strategy at Amazon Web Services.
 
-Waste is a concept from lean thinking.  In its simplest form:
+[![Velocity and Volume (or Speed Wins)](https://img.youtube.com/vi/wyWI3gLpB8o/0.jpg)](https://www.youtube.com/watch?v=wyWI3gLpB8o)
 
-> Waste is anything that does not create value to the customer.
+These forces has led to two conflicting goals in IT organisations:
 
-For example, consider you as a student.  The value to you in university is getting an education.  Anything not providing an education at university is a waste in lean thinking.  The question a university has to ask is what does a student consider valuable as part of their education?  Anything else that a university does is a waste.
+- Respond to the rapidly changing competitive landscape.
+- Provide stable, reliable, and secure service to the customer.
 
-In lean, elimination of waste is the fundamental principle that everything comes from.  To do this, we need to learn how to see waste, uncover the biggest sources of waste, eliminate these, and repeat.
+### An Example
 
-### Tool 1: See Waste
+Why is this a problem?  Let us consider an abstract scenario in an IT business (adapted from *The DevOps Manual*).
 
-*Lean Software Development* uses the following quote from [Winston Royce](https://en.wikipedia.org/wiki/Winston_W._Royce):
+First, our applications and infrastructure can become fragile over time.  This is due to system complexity, poor documentation, and work arounds being used.  **Technical debt** (where quick and easy solutions lead to long-term problems) means that systems get into a mess.  Operations promise to fix the problems, but the costs is prohibitive.  Any change is also considered dangerous as it may break the system.
 
-> "[While] many additional development steps are required, none contribute as directly to the final product as analysis and coding, and all drive up the development costs."
+Then someone tries to compensate for broken promises of delivery times.  This may manifest itself as a bigger promise for a feature or launch that will solve the problems.  This just adds to the work of the development and IT team with new issues to solve and new work arounds needed.  Release dates are missed, revenue and company value reduce, and technical debt increases.
 
-Royce was a pioneer in systems development, and he wrote a paper which led to the development of the Waterfall model.  *This was **not** Royce's intention.*  He considered Waterfall not to scale to future problems.
+Finally, everything just keeps getting harder and harder.  Every little bit of work takes longer to complete, delivery time increases, and dependencies increase.  The team works slower and slower until failure occurs.
 
-Taking Royce's definition and the definition of waste in the Software Development Lifecycle:
+### What is DevOps?
 
-- *Requirements gathering* **has waste**.
-- *Analysis* is not waste.
-- *Design* **has waste**
-- *Coding* is not waste.
-- *Testing* **has waste.**
-- *Operation* **has waste**.
+DevOps is not a technology or group of technologies.  It is a methodology.  From [Wikipedia](https://en.wikipedia.org/wiki/DevOps) (emphasis mine):
 
-**Just because a step has waste does not mean it should not be done.**  The point is there is potential to automate these processes to allow software engineers to focus on the two important tasks - analysis and coding.
+> DevOps (a clipped compound of "development" and "operations") is a **software development methodology** that combines software development (Dev) with information technology operations (Ops). The **goal of DevOps is to shorten the systems development life cycle** while delivering features, fixes, and updates frequently in close alignment with business objectives.
 
-*Lean Software Development* defines **The Seven Wastes of Software Development**:
+DevOps is a software development methodology that aims to shorten the systems development life cycle.  DevOps builds on previous software development movements but includes IT operations in the process.
 
-1. Partially done work.
-2. Extra processes.
-3. Extra features.
-4. Task switching.
-5. Waiting.
-6. Motion.
-7. Defects.
+DevOps defines *The Three Ways* - principles and practices that support the DevOps method and culture.  The following image (produced by Gene Kim) illustrates these:
 
-#### Partially Done Work
+![The Three Ways of DevOps](img/three-ways.jpg)
 
-Basically, any feature not completed.  It is a waste as the resources dedicated to the task have provided no Return of Investment (RoI).
+The Three Ways of DevOps are:
 
-Consider your work as a student.  If you start an assessment and don't finish and submit it, you have wasted your effort and time (resources).  It is partially done work, and partially done work is not done.
+1. Flow.
+2. Feedback.
+3. Continual Experimentation and Learning.
 
-#### Extra Processes
+These have direct links to Agile and Lean practices that we previously presented.
 
-Extra processes can be anything that does not add value to the customer.  Consider paperwork.  If no one is going to read the paperwork then what is the point.  A good test of value for paperwork is if someone is waiting for it.
+## The First Way of DevOps: The Principles of Flow
 
-An example in a university is assessment submission.  There are two options:
+Flow is about work flowing from left to right: from the Development Team, to the Operations Team, and finally the customer.  The aim is to maximise this flow to provide more value to the customer in a shorter time.
 
-- You write the assessment, print it out, and submit it physically.
-- You write the assessment, and submit it online.
+### Make Work Visible
 
-The second method reduces a step but achieves the same task.  It has thus reduced waste.
+Work in IT is not easily seen.  Consider what is visible when you are working on a new piece of code.  Does anyone actually see what you are working on?  How do they see it?  Compare this to the work undertaken building a car on an assembly line.  It is perfectly visible when work is queuing up at a particular point (say attaching the doors) as the cars are physically there.  We can see where a problem is in the work queue by looking.
 
-#### Extra Features
+To make work visible in a IT organisation we have to use other methods.  Kanban is such a process (see task board below).  We will cover Kanban in [Lecture 08](../lecture08).
 
-Don't add features that are unneeded.  It may be tempting to think you are meeting a future need but it is not true.
+<p><a href="https://commons.wikimedia.org/wiki/File:Sample_Kanban_Board.png#/media/File:Sample_Kanban_Board.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sample_Kanban_Board.png/1200px-Sample_Kanban_Board.png" alt="Sample Kanban Board.png"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Andycarmichaeluk&amp;action=edit&amp;redlink=1" class="new" title="User:Andycarmichaeluk (page does not exist)">Andy Carmichael</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=55448101">Link</a></p>
+### Limit Work in Progress (WiP)
 
-Consider adding parts to an assessment you were not asked for.  You won't get graded for them.  If you think adding the features improved your learning, great.  Otherwise, it is a waste.
+Another feature of Kanban is the idea of *limiting the work in progress*.  Consider what can happen in IT.  Different faults can come in which require urgent attention.  Developments are also ongoing.  All of these require someone to work on them.
 
-#### Task Switching
+**No one can multitask.** It is not possible.  Whatever you are doing, there is a cost to switch task - a **context switch time.**  You may have a short context switch time, which gives you an illusion of multitasking, but the cost is still there.
 
-No-one can multitask.  You lack the physical capability to truly focus on and do multiple tasks at once.  You will either do multiple tasks badly, or you waste time context switching.
+As context switch time is a given, any change of task will have a cost.  For example, consider that you have two tasks to complete, each taking 8 hours.  You work 8 hours per day, and need to complete the tasks as soon as possible.  You have a context switch time of 5 minutes, and you decide to switch between tasks every hour - just so you can get them both complete on time.  What happens?
 
-Complete tasks.  The fastest method to complete two tasks is one-at-a-time.  When you switch between tasks there is a cost.  It could be 5 minutes, 30 minutes, or a few hours.  Either way, you have spent more time by switching tasks than just focusing on one.
+- Work on task 1 (1 hour).
+- Switch task (5 minutes).
+- Work on task 2 (1 hour).
+- Switch task (5 minutes).
+- etc.
 
-#### Waiting
+Instead of taking 16 hours to complete two tasks, you take about 18.5 hours, an increase of approximately 15%.
 
-If you are waiting for something to happen before performing a task that is a waste.  Only work on tasks that are ready.  In the [Scrum lecture](../lecture02) we defined **Definition of Ready**.  Work only on tasks that are ready.
+If everyone works on just one task - if everyone limits their work in progress - tasks will be completed faster.  That adds value to the customer.
 
-#### Motion
+### Reduce Batch Sizes
 
-Handoffs create waste.  If you handoff a product to someone else, waste is possible.  This is due to the receiver not having all the knowledge the sender has.  There is a chance the sender will have to train the receiver.
+To support limiting WiP we need to reduce the size of our work.  If only one task is to be worked on at once, it will block other work until it is completed.  The image below illustrates this idea:
 
-Another form of motion waste is when you have to travel to discuss something.  A team working closely together can communicate quickly.  If you have to walk to discuss a problem, you are creating waste.
+[![Small](https://cdn-images-1.medium.com/max/2000/1*YtshITZLqxYGzfYBHqTZNA.gif)](https://medium.com/@stefanluyten/single-piece-flow-5d2c2bec845b)  Taken from *Single Piece Flow* by Stefan Luyten: https://medium.com/@stefanluyten/single-piece-flow-5d2c2bec845b.
 
-#### Defects
+So two practices to manage your work:
 
-A defect (or bug) has greater impact the longer it is not resolved.  If your program has a bug and you don't resolve it, you make it harder to find as your code base increases in size.  When a defect is discovered, find its source, and find it quickly.
+- Limit the WiP.
+- Reduced the size of the work.
 
-- [ ] Reflect upon these seven causes of waste.  Have you ever experienced any of these?  How do they impact how your team is working?
+Consider what we are doing with our Git commits.  We are doing small pieces of work, committing them, and moving to the next task.  This allows tasks to be completed quickly, progress to be made, and the product iterated towards completion while testing it works.
 
-### Tool 2: Value Stream Mapping
+### Reduce the Number of Handoffs
 
-A [**Value Steam Map**](https://en.wikipedia.org/wiki/Value_stream_mapping) defines the events that occur to deliver a product or service to a customer.  The point of a map is to identify where work actually occurs as opposed to waiting.
+When work is handed off from one team or person to another problems can arise.  The receiver of work does not know everything the sender knows.  This introduces two problems:
 
-An example of a value stream map is doing an assessment.  There are the following events and processes:
+- the receiver loses sight of the point of the task.
+- the communication between sender and receiver introduces a delay as the sender tries to explain the task to the receiver.
 
-1. Assessment specification released (week 1).
-2. Assessment worked on.
-3. Assessment submitted (week 12).
-4. Assessment marked.
-5. Feedback given (week 15).
-6. Marks moderated (week 17).
-7. Marks uploaded to system (week 18).
-8. Marks approved by exam board (week 19).
-9. Final marks released (week 21).
+Reducing handoffs involves either reorganising teams (integrating Development and Operations for example), or automating the process.  Flow increases through the system as a result.
 
-If an assessment only takes two weeks of effort, there are ten weeks of capacity.  If marking only takes one week, there are two weeks of capacity.  And so on.
+### Continually Identify and Elevate Our Constraints
 
-## Amplify Learning
+The [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints) comes from the work of *Eliyahu Goldratt* and was fundamental in transforming manufacturing to lean practices.  In summary, the Theory of Constraints has five focusing steps:
 
-A key concept in lean is the ability to adapt.  To do that, the team must get information from the process.  Feedback is necessary to allow people to improve.  **Trying and failing fast is better than delaying.**
+1. Identify the system's constraint.
+2. Decide how to exploit the system's constraint.
+3. Subordinate everything else to the above decision.
+4. Elevate the system's constraints.
+5. If the previous steps brake the constraint (i.e., it is no longer a problem), return to step 1.  Do not allow inertia to cause system constraints.
 
-Having points to check progress is also important.  Iterative development really helps here.
+To summarise, find out what is slowing down the work.  Once found, fix it until it is not a problem.  Then find the new problem slowing down the work.
 
-### Tool 3: Feedback
+### Eliminate Waste and Hardship in the Value Stream
 
-Any feedback you can get improves the learning process.  That is why students want feedback.  In software development, testing is a good method of getting immediate feedback on your code.
+We covered waste in [Lecture 04](../lecture04) on *Lean Software Development*.  *The DevOps Manual* cites *Implementing Lean Software Development* (also by Poppendieck and Poppendieck) for the following categories:
 
-Points to consider:
+- **Partially done work** - can become obsolete or lose value over time.
+- **Extra processes** - anything that does not add value to the customer.
+- **Extra features** - add complexity and effort for no reason.
+- **Task switching** - context switch time affects everyone.
+- **Waiting** - increase time for delivery and prevent people from doing work.
+- **Motion** - moving people or work takes time.
+- **Defects** - takes effort to fix.
+- **Nonstandard or manual work** - automate as much as possible.
+- **Heroics** - if people have to perform unreasonable tasks (e.g., working late every night, one person fixing everything) then they become less productive over time.
 
-- Run tests as soon as code is written - we will cover **Test-driven Development** in [Lecture 14](../lecture14).
-- Write code to test ideas instead of detailed planning or documentation.
-- Provide users with potential options rather than gathering more requirements.
-- Test the top three potential tools rather than studying them in more detail.
-- Test new ideas with web front ends rather than full system conversion.
+## The Second Way of DevOps: The Principles of Feedback
 
-In other words, **experiment** and **evaluate the outcome.**  And **do it often.**  This will amplify learning.
+Receiving fast and constant feedback from customer to Operations and Development (right to left) improves the service to the customer.  Either we stop problems recurring, or we detect problems faster.  This improves system safety - the system is less likely to fail.
 
-- [ ] Define how you are going to improve feedback in your development team?  Which mechanisms can you automate to provide fast feedback?
+### Working Safely with Complex Systems
 
-### Tool 4: Iterations
+If a system is complex, it means it is too big for any one person to see the whole and understand how the parts work together.  Components are strongly coupled leading to system behaviour not easily explained via component behaviour.
 
-We covered this idea in [Lecture 02](../lecture02) on Scrum.
+A complex system will not always behave the same way under the same conditions.  Therefore, using static means of monitoring a system is not sufficient.  As failure will occur, we need conditions to work safer with complex systems.  These are:
 
-### Tool 5: Synchronisation
+- Manage complex work so that problems are revealed.
+- When a problem arises they are *swarmed and solved*, leading to new learning.
+- New knowledge is exploited throughout the organisation.
+- Leaders create other leaders who grow these capabilities.
 
-Basically, the team needs to synchronise often to ensure that changes are not breaking the build.  Some rules of thumb:
+### See Problems as They Occur
 
-- Work on small features and merge them into the development branch on completion.
-- All developers should synchronise their work every day.
-- Every day, the necessary tests should be run to check the system still builds and works correctly.
+It is one thing to test your software.  It is another to ensure the results of those tests are visible to the team.  The more automated our processes become, the more information we can gather and present to the team to visualise the problem.  This is a feedback loop.  Quick and informative feedback will allow the team to solve problems quickly before they become a bigger issue.
 
-### Tool 6: Set-based Development
+### Swarm and Solve Problems to Build New Knowledge
 
-We can try and solve a problem in two ways: point-based or set-based.  To describe the difference, consider trying to agree a meeting time.
+Essentially, stop waiting to fix a problem: **fix the problem now.**  Waiting to schedule a fix is not beneficial, as the context of the problem degrades over time.  Fix the problem now, and gain the new knowledge from performing that fix.
 
-- Point-based:
-  - Meet at 10:00?
-  - No, how about 2:00?
-  - No, how about 3:00?
-  - No, how about 9:00?
-  - etc.
-- Set-based:
-  - I can meet between 10:00 and 1:00 or 3:00 and 5:00.
-  - OK, let's meet 12:00 to 1:00.
+Swarming is when everyone on the team gets behind fixing the problem.  It is necessary as:
 
-Set-based development works with constraints not choices.  You define the constraints and then decide on a choice as late as possible.
+- It prevents a problem progressing downstream where it becomes more expensive to fix.
+- It prevents the team starting new work which may introduce further errors.
+- If the problem is not fixed, it could become recurrent at the next operation, leading to further errors to fix.
 
-## Decide as Late as Possible
+### Keep Pushing Quality Closer to the Source
 
-Business requirements are constantly changing.  These changes impact software requirements.  The more flexible you can be, the more you can adapt to these changes.
+Surprisingly, in complex systems, more checks and approvals increases the chance of future failure.  This is because these checks and approvals happen further away from the team who undertook the work.  This means the checkers and approvers have less knowledge about what they are looking at.
 
-This principle addresses this problem.  The later you can make a final decision the better.  Deliver features fast, but don't decide which features to implement or how to implement them until you are ready.
+By the production team being responsible for testing and quality (via automation), everyone sees quality as their responsibility.  This will improve overall quality as a team will ensure quality is baked in.  They will not expect someone else to do the checking for them.
 
-### Tool 7: Options Thinking
+### Enable Optimising for Downstream Work Centres
 
-How did Microsoft become a dominant software company?  Simple, by options thinking.  In 1988, Microsoft was accused of having no strategy because:
+This is really about seeing where your work goes next.  Working with customers is very important, but if you forget the next step after development (e.g., operation or QA), then you make work harder for them.  Focus on where the work goes next to optimise for this area.
 
-- It was pushing DOS and an early version of Windows.
-- It was pushing OS/2 for IBM-based machines.
-- It had a version of UNIX.
-- There were new versions of Word and Excel, considered inferior on DOS and Windows than WordPerfect and Lotus.
+## The Third Way of DevOps: The Principles of Continual Learning and Experimentation
 
-But Microsoft succeeded because it had options.  No platform was dominant in 1988, so:
+The Third Way is about building a high-trust culture that supports a scientific approach to experimentation and learning from those experiments.  People test ideas to see what can improve the delivery of value, and this new knowledge is shared across the organisation.
 
-- The hope was Windows would win.
-- DOS and/or OS/2 could be utilised if they won.
-- If UNIX won, Microsoft had an option.
-- If Apple won, Word and Excel were better options than WordPerfect and Lotus on their hardware.
+A culture of fear and low trust emerges where mistakes are punished.  If people who make suggestions or point out problems are seen as troublemakers then improvements will not occur.  How we deal with these issues is important in any cultural environment.
 
-The options were there, and Microsoft won.  The 1990s and 2000s were dominated by Microsoft OS and applications.  Bill Gates became the richest man in the world.
+### Enabling Organisational Learning and a Safety Culture
 
-Keep options open.  It the customer's requirements change you should be adaptive.  Don't produce detailed plans based on speculation.
+We want to create an organisation that learns and trusts the people within it.  
 
-### Tool 8: The Last Responsible Moment
+| Pathological | Bureaucratic | Generative |
+|--------------|--------------|------------|
+| Information is hidden | Information may be ignored | Information is actively sought |
+| Messengers are "shot" | Messengers are tolerated | Messengers are trained |
+| Responsibilities are shirked | Responsibilities are compartmented | Responsibilities are shared |
+| Bridging between teams is discouraged | Bridging between teams is allowed but discouraged | Bridging between teams is rewarded |
+| Failure is covered up | Organisation is just and merciful | Failure causes inquiry |
+| New ideas are crushed | New ideas create problems | New ideas are welcomed |
+Taken from *A Typology of Organisation Cultures* by *R. Westrum*.  http://dx.doi.org/10.1136/qshc.2003.009522
 
-Here are some strategies to delay decisions to the last responsible moment:
+We want to be a *generative organisation*.  This allows information and learning to be shared in a culture of support and safety.
 
-- Share partially complete design information with customers and the team.
-- Organise for direct, worker-to-worker collaboration.  Work as a team.
-- Develop a sense of how to absorb changes.  In other words, hide errors for as long as possible and fix them before they are problems.  Don't aim to get everything right first time.
-- Develop a sense of what is critically important in the domain.
-- Develop a sense of when decisions must be made - don't let delayed commitment turn into no commitment.
-- Develop a quick response capability - in other words implement features quickly.
+- [ ] Reflect on your own experiences working in an organisation.  Can you relate to the different aspects from your previous experience?  What about your experience of the University?
 
-### Tool 9: Making Decisions
+### Institutionalise the Improvement of Daily Work
 
-There are two approaches for problem solving:
+Basically, schedule time to fix defects and improve the code base.  Do not leave this as a task to do later.  Explicitly schedule - routinely - the time to pay off technical debt.  This will make the system safer.
 
-- Breadth-first is a delayed commitment approach.  You weigh options as you solve.
-- Depth-first involves making a commitment and solving using a specific option.
+### Transform Local Discoveries into Global Improvements
 
-People prefer depth-first as it starts solving the problem and reduces complexity.  But if the wrong decision is made then the time spent solving the problem is lost.
+The simple answer is to create mechanisms to share knowledge within the organisation.  This can be done through documenting processes and automating work.  Shared code and repositories really helps here.
 
-In Lean Software Development, decisions are guided by the seven principles:
+### Inject Resilience Patterns into Our Daily Work
 
-1. **Eliminate waste** - spend time only on work that adds value.
-2. **Amplify learning** - increase feedback.
-3. **Decide as late as possible** - keep your options open as long as practical.
-4. **Deliver as fast as possible** - deliver the value to the customer when they ask for it.
-5. **Empower the team** - let the people who add value make decisions on how.
-6. **Build integrity in** - don't add at the end, build it from the start.
-7. **See the whole** - avoid optimising for parts of the system.  Work for the whole.
+Experiment with how work is conducted.  This can be done in several ways, including:
 
-- [ ] Analyse your current work plan for your assessment.  Which features can you delay implementing?  Which parts need definite decisions at the start?  Reorder your work plan accordingly.
+- running scripts that randomly fail some servers to see how the system responds.
+- adding faults into code intentionally to check the response.
+- challenging the team to increase the number of deploys per day to see what happens.
 
-## Deliver as Fast as Possible
+### Leaders Reinforce a Learning Culture
 
-This is not about rushing without thought.  We are talking about being faster than the competition.
+A leader's role should be to create a great team environment to allow the team to do their best work.  This means the leader and team are dependent on each other.  A leader should reinforce the learning and encourage the experimentation that leads to a more successful team overall.
 
-Netflix and Spotify have a business model based on fast delivery.  Movie and music piracy were major problems in the early 2000s.  The belief was price was a problem.  But when Netflix and Spotify offered instant access to large catalogues, people paid for the service.  The *free* piracy route shrank.
+## Mapping the Module
 
-Netflix and Spotify deliver movies and music as fast as possible.  Faster (slightly) than the pirates.  And people are happy to pay for it.
+So far we have covered the following topics in the module:
 
-### Tool 10: Pull Systems
+- Lecture 1: Introduction.
+- Lecture 2: Scrum.
+- Lecture 3: Version Control.
+- Lecture 4: Lean Software Development.
+- Lecture 5: Modern Software Architecture.
+- Lecture 6: Introduction to DevOps.
 
-We will look at Kanban in [Lecture 08](../lecture08).  For the moment, the basic idea is that people know which work needs to be done, and they select that work.  They pull the work, rather than have it pushed upon them.
+The rest of the module is influenced by the three ways:
 
-### Tool 11: Queueing Theory
+- The First Way: Flow.
+  - Lecture 7: The First Way of DevOps: Flow.
+  - Lecture 8: Kanban.
+  - Lecture 9: Requirements Gathering.
+  - Lecture 10: Use Cases and User Stories.
+  - Lecture 11: UML Diagrams.
+  - Lecture 12: UML Workflow.
+- The Second Way: Feedback.
+  - Lecture 13: The Second Way of DevOps: Feedback.
+  - Lecture 14: Unit Testing and Test Driven Development.
+  - Lecture 15: Continuous Integration.
+  - Lecture 16: Continuous Delivery.
+  - Lecture 17: Deploying Software.
+  - Lecture 18: Monitoring Software.
+  - Lecture 19: Bug Tracking.
+- The Third Way: Continual Learning and Experimentation.
+  - Lecture 20: The Third Way of DevOps: Continual Learning and Experimentation.
 
-In [Lecture 01](../lecture01) We discussed lead-time and process-time (or cycle-time).  This can be illustrated as follows:
+We then finish the module with more professional concerns:
 
-![Lead-time and Cycle-time](img/cycle-time.png)
+- Lecture 21: Ethics and Professionalism.
+- Lecture 22: Legal Issues.
+- Lecture 23: Security Concerns.
 
-Our aim is to reduce the difference between lead-time and cycle-time.  In queueing theory, we recognise the effect of small batch size to support this goal.  Small batch size means a task is small and quick to complete.  Small tasks increase flow, large tasks decrease flow or create bottlenecks.  See the following chart:
+The mapping is loose and based on our need to cover methods and develop our application.  However, being aware of the three principles is important as we go through the rest of the module:
 
-![Utilisation vs. Cycle Time](img/utilisation.jpg)
+- Flow.
+- Feedback.
+- Continual Learning and Experimentation.
 
-Large batches (tasks) means cycle-time (time to complete the task) increases as the utilisation increases.  Utilisation is how much work something is doing.
+## Summary
 
-To make this simple, having large tasks means a person slows down as they become busier.  Smaller tasks are always favourable.
+To summarise, we have covered the following:
 
-Having slack allows the team to adapt and change when required.  A road at full capacity is a parking lot.  You want capacity in the road to allow cars to flow.
+- Defined what we mean by DevOps - a software development methodology built on agile and lean, integrating bot development and operation of software.
+- Described the Three Ways of DevOps: flow, feedback, and continual experimentation and learning.
+- Reflected on how the module maps to the Three Ways by listing the lectures in each sub-area.
 
-- [ ] Review the tasks you have defined for your assessment.  Can they be broken down into smaller sizes?  Make tasks small to improve your team efficiency.
+## Further Reading
 
-### Tool 12: Cost of Delay
+The goto book on DevOps if *The DevOps Handbook: How to Create World-class Agility, Reliability & Security in Technology Organisations* by Gene Kim, Jez Humble, Patrick Debois, and John Willis.
 
-The idea here is simple.  To quote *Lean Software Development*:
+![The DevOps Handbook](img/devops-book.jpg)
 
-> Conventional wisdom in product development says that there is a roughly even tradeoff between development cost and the cost of development time.
+If you like reading novels and would like a story introduction to DevOps and the culture, then *The Pheonix Project* by Gene Kim, Kevin Bahr, and George Spafford might be a good starting place.
 
-As Lean Software Development points out, this wisdom is wrong.  Getting the product out first is more valuable than getting it out later.  So, spending money to improve delivery time may be more beneficial.  You need to estimate what this is.
-
-## Empower the Team
-
-*Lean Software Development* provides some examples, but the general idea is the same as Scrum.
-
-**Happy team members with increased job satisfaction are worth more to the organisation as the team are more productive.**
-
-To meet this goal, the team needs to be empowered.  There are a few ideas here, although our discussion on Scrum in [Lecture 02](../lecture02) also provides insight.
-
-### Tool 13: Self-determination
-
-Instead of measuring people's individual performance and trying to optimise, let people work out how to optimise their work.
-
-### Tool 14: Motivation
-
-People need more than just tasks to complete - they need a purpose.  If the team can commit together to achieving a purpose they become highly motivated.  Some points to consider:
-
-- Have a clear purpose that people want to achieve.
-- Make sure the purpose can be achieved.
-- Allow the team to interact with clients.
-- Allow the team to decide what to do and how to do it.
-- Managers get problems out of the way.
-- Keep negative people away from the team.
-
-These are very much the same ideals as Scrum.
-
-Motivation is built from:
-
-- A feeling of belonging.
-- A feeling of safety.
-- A sense of competence.
-- A sense of progress.
-
-### Tool 15: Leadership
-
-We won't go into this here.  Leadership is a big field.  *Lean Software Development* focuses on the idea of masters who understand the product and the necessary techniques to deliver it best.
-
-### Tool 16: Expertise
-
-Expertise is related to leadership.  The idea is to build communities of experts that support and refine their practices and standards.  Becoming part of a community is important here.
-
-- [ ] Compare tools 13-16 against the principles of Scrum defined in [Lecture 02](../lecture02).  How similar are they?  What parts of Scrum are missing?  What parts are missing from Scrum?
-
-## Build Integrity In
-
-Product integrity is an important to building a reputation.  Product integrity can be defined in two dimensions:
-
-- Perceived integrity.
-- Conceptual integrity.
-
-### Tool 17: Perceived Integrity
-
-Perceived integrity is the balance of function, usability, reliability, and economy that engages the customer.  Think about Apple, which could be considered the masters of perceived integrity.  It includes marketing and cost.
-
-Perceived integrity should be reviewed and refreshed regularly.  This is to ensure the technical team aren't missing the point of the product.
-
-Perceived integrity is best supported by working with customers.  This requires communication strategies and a common language.  [Lecture 09](../lecture09) on requirements gathering, [Lecture 10](../lecture10) on user stories, and [Lecture 12](../lecture12) on model-driven design support us here.
-
-### Tool 18: Conceptual Integrity
-
-Conceptual integrity is about the core product functions working together in a smooth, complete manner.  The components work together well.
-
-Conceptual integrity is a requirement for perceived integrity, but it is not enough.
-
-In [Lecture 05](../lecture05) we will look at modern software architecture that will support conceptual integrity.
-
-### Tool 19: Refactoring
-
-We will not look at this in detail, but the general idea is to improve your code base quality.  Making your code better is important.  Improved quality solutions make your life easier.  Letting bad quality build up in a system will impact its integrity.
-
-### Tool 20: Testing
-
-We will cover testing in [Lecture 14](../lecture14).
-
-## See the Whole
-
-A system is better than the sum of its parts.  Also, the best parts do not necessarily make the best system.  Seeing the whole is about optimising for system performance rather than individual component performance.
-
-We won't discuss this area in detail as the module does not focus on these areas.  There are two tools.
-
-### Tool 21: Measurements
-
-Make sure you measure correctly for complete system performance, not local optimisation.
-
-### Tool 22: Contracts
-
-Make sure the contract negotiated is correct.  See *Lean Software Development* for some example contract types.
-
-## Review
-
-In review, we have covered the following areas:
-
-- We defined the seven key principles of Lean Software Development: eliminate waste; amplify learning; decide as late as possible; deliver as fast as possible; empower the team; build integrity in; and see the whole.
-- We discussed how Lean Software Development can be applied via the 22 tools.
-- We explained some of the tools for Lean Software Development.  The recommended reading goes into more detail.
-- We identified Lean Software Development tools to apply to your software development process by examining where the 22 tools can be applied, pointing to explicit lectures in the module.
-
-## Recommended Reading
-
-**Lean Software Development: An Agile Toolkit** by *Poppendieck and Poppendieck*.
-
-![Lean Software Development Book](img/lean-book.jpg)
-
-Another good book to read in general for the case studies and anecdotes.  It contains the toolkit that is the basis for this lecture.  The [Wikipedia Page](https://en.wikipedia.org/wiki/Lean_software_development) provides an overview of the ideas.
+![The Phoenix Project](img/phoenix-project-book.jpg)

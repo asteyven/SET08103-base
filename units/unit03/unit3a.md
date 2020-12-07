@@ -1,4 +1,4 @@
-# Lecture 07: The First Way of DevOps - Flow
+# Unit 3a: The First Way of DevOps - Flow
 
 In this lecture we will cover the technical practices of flow.  Flow is our ability to keep work moving from the left (development) to the right (customer) as quickly as possible.  There are a number of practices that we can adopt to increase flow in our environment; however, we will start by looking at the psychology of flow.
 
@@ -29,7 +29,6 @@ Another three identified components are:
 The following diagram illustrates how flow features when mapped to skill level against challenge level.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Challenge_vs_skill.svg#/media/File:Challenge_vs_skill.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Challenge_vs_skill.svg/400px-Challenge_vs_skill.svg.png" alt="Challenge vs skill.svg"></a><br>By <a href="https://en.wikipedia.org/wiki/User:Oliverbeatson" class="extiw" title="w:User:Oliverbeatson">w:User:Oliverbeatson</a> - <a href="https://en.wikipedia.org/wiki/File:Challenge_vs_skill.jpg" class="extiw" title="w:File:Challenge vs skill.jpg">w:File:Challenge vs skill.jpg</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=9102943">Link</a></p>
-
 As illustrated, flow occurs when the skill required to do a task is high (from the individual's point-of-view), and challenge is equally high (from the individual's point-of-view).
 
 - [ ] Reflect on your own experiences when you might have experienced flow (playing video games is one known area for example).

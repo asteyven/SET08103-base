@@ -1,4 +1,4 @@
-# Lecture 10: User Stories and Use Cases
+# Unit 4b: User Stories and Use Cases
 
 In this lecture we will cover two similar yet different methods of understanding user interaction with our systems: user stories and use cases.  The first half of the lecture will focus on user stories, what they are, and how to work with them.  The second half will focus on use cases and how these are specified.
 

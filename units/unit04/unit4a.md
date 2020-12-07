@@ -1,4 +1,4 @@
-# Lecture 09: Requirements Gathering
+# Unit 4a: Requirements Gathering
 
 In this lecture we will examine requirements.  Requirements are considered one of the most difficult facets of software engineering.  We will examine what a requirement is, how we manage these in an agile approach, and some ideas around gathering and thinking about requirements.
 
@@ -28,7 +28,7 @@ There are a number of different requirement types and definitions, including:
 
 | **Term** | **Definition** |
 |----------|----------------|
-| **Business requirement** | A high-level organisation objective. | 
+| **Business requirement** | A high-level organisation objective. |
 | **Business rule** | A policy, guideline, standard, or regulation that defines or constrains the business. |
 | **Constraint** | A restriction on development choices. |
 | **External interface requirement** | Requirements on how a system interacts with external users, services, and applications. |
@@ -123,7 +123,6 @@ These are aspects we have already covered in many regards.  Problems are the nee
 Another approach is to use a **Business Model Canvas** which can contain important information in a small visible form.  An example is below:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Business_Model_Canvas.png#/media/File:Business_Model_Canvas.png"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Business_Model_Canvas.png" alt="Business Model Canvas.png" height="453" width="640"></a><br>By Business Model Alchemist - <a rel="nofollow" class="external free" href="http://www.businessmodelalchemist.com/tools">http://www.businessmodelalchemist.com/tools</a>, <a href="https://creativecommons.org/licenses/by-sa/1.0" title="Creative Commons Attribution-Share Alike 1.0">CC BY-SA 1.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=11892574">Link</a></p>
-
 ### Stakeholders
 
 A key part of project management is working with the **project stakeholders.**  A system stakeholder is someone who:
@@ -210,7 +209,6 @@ Release planning leads to a **roadmap** which defines how value will be delivere
 *Start With Why* is a popular book from Simon Sinek.  Sinek makes the argument that people do not by what a product does but why it does it.  This is refined into what Sinek calls *The Golden Circle* which puts *why* at the centre.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Golden_circle.png#/media/File:Golden_circle.png"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Golden_circle.png" alt="Golden circle.png" height="480" width="482"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Mosborne01" title="User:Mosborne01">Mosborne01</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=10403628">Link</a></p>
-
 A quote from Sinek is:
 
 > People do not buy what you do, they buy why you do it.
