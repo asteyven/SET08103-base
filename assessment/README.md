@@ -111,36 +111,36 @@ For the population reports, the following information is requested:
 
 The coursework **must** be delivered by a group.  The aim of the module is to assess your ability to work as a team to deliver a product.  Therefore, the majority of your coursework grade will be based on your team's ability to work together using the methods defined in the module.
 
-The submission is monitored during lab stand-up meetings, and formally via the 5 assessment points.  Your final submission is delivered via your GitHub repository which should also be submitted to Moodle.
+The submission is assessed at two assessment points.  Your final submission is delivered via your GitHub repository which should also be submitted to Moodle.
 
 ## Individual Assessment
 
-Individual contributions to the team will be assessed by your peers and the module teaching team based on attendance at the various meetings and individual contributions towards each code review, and via the metrics gathered from tools such as GitHub.  **Individual contributions will lead to a scaling of the overall coursework grade if the module team have evidence that illustrates a lack of contribution to the team deliverable.**
+Individual contributions to the team will be assessed by your peers and the module teaching team based on contributions towards each code review, and via the metrics gathered from tools such as GitHub.  **Individual contributions will lead to a scaling of the overall coursework grade if the module team have evidence that illustrates a lack of contribution to the team deliverable.**
 
-#### Groups must maintain a spreadsheet detailing individual team members contribution at each of the 5 assessment points
+#### Groups must maintain a spreadsheet detailing individual team members contribution at each of the assessment points
 
 We wish to determine the individual contribution to the team project.  To do this, the team have to submit a single spreadsheet to Moodle defining the agreed contribution of each team member to the individual delivery points.  This should be submitted in percentages with the total sum of individual contributions adding up to 100% at each point of assessment.  For example:
 
-| Matriculation Number | Code Review 1 | Code Review 2 | Code Review 3 | Code Review 4 | Final Deliverable |
-| ---- | ------------- | ------------- | ------------- | ------------- | ----------------- |
-| 4000xxxx | 25          | 50          | 0.0           | 0.25          | 0.2               |
-| 4000xxxx | 25          | 50          | 0.5           | 0.25          | 0.4               |
-| 4000xxxx | 25          | 0         | 0.5           | 0.25          | 0.2               |
-| 4000xxxx | 25          | 0           | 0.0           | 0.25          | 0.2               |
-| **Total** | **100**   | **100** | **100**      | **100**   | **100** 				|
+| Matriculation Number | Code Review 1 | Code Review 2 |
+| ---- | ------------- | ------------- |
+| 4000xxxx | 25          | 50          |
+| 4000xxxx | 25          | 50          |
+| 4000xxxx | 25          | 0         |
+| 4000xxxx | 25          | 0           |
+| **Total** | **100**   | **100** |
 The team need to agree these scores.  **If the team cannot agree, or a team member believes the spreadsheet submitted does not represent the actual contributions, then contact a member of the teaching team.**  In these circumstances, the metrics and other information provided on GitHub will be used.
 
 The data supplied in this spreadsheet will be used to weight each team members final mark for each assessment point.
 
-For example, if the group received 18 out of 20 for code review one then all 4 members would get the full 18 marks as all had contributed equally. For code review 2 Members 1 & 2 would get the group mark but Members 3 & 4 would receive zero
+For example, if the group received 35 out of 50 for code review one then all 4 members would get the full 35 marks as all had contributed equally. For code review 2 Members 1 & 2 would get the full group mark but Members 3 & 4 would receive zero
 
 ## Disciplinary Procedures
 
 The coursework **must** be delivered as part of a team.  **If anyone is dismissed from their team this means they cannot deliver the coursework and will fail.**  Dismissal from a team involved the following process:
 
 - An individual is evidenced as breaching the code of conduct as set-out by the student team.
-- Evidence is presented at the next available meeting with a member of the module delivery team.
-- The individual evidenced will have the opportunity to evidence mitigating circumstances either to the student team or privately to a member of the module delivery team.
+- Evidence is presented to a member of the module delivery team.
+- The individual evidenced will have the opportunity to evidence mitigating circumstances either to the group or privately to a member of the module delivery team.
 - The module delivery team retains the right to the final decision of whether the dismissal is warranted.
 
 Any dismissed team member has a week to appeal the decision to the module team with suitable evidence provided.
@@ -150,28 +150,25 @@ Any dismissed team member has a week to appeal the decision to the module team w
 
 Each group will undertake **four** graded code reviews as well as a final submission at the end of Week 13:
 
-1. Week 3 Code Review 1 (20% of CW mark).
-2. Week 6 Code Review 2 (20% of CW mark).
-3. Week 10 Code Review 3 (20% of CW mark).
-4. Week 13 Code Review 4 (20% of CW mark).
-5. Week 13 Final submission (20% of CW Mark)
+1. Week 5 Code Review 1 (50% of CW mark).
+2. Week 10 Code Review 2 (50% of CW mark).
 
-The code reviews will take place during your usual Lab sessions.  Each group will be given **10 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
+The code reviews will take place during the scheduled sessions.  Each group will be given **10 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
 
 - **Being late** for the meeting or **not being ready** when the meeting starts will result in the grade for that review being capped at 40%.
 - **Not attending** the meeting will mean the code review will be marked at 0%.
 
-**All team members** should attend the code review, however commitments and other considerations will be taken into account.  **Individuals attendance at reviews will be monitored** to ensure the team is contributing collectively to the project.
+**All team members** should attend the code review, however time zones, work commitments and other considerations will be taken into account.  **Individuals attendance at reviews will be monitored** to ensure the team is contributing collectively to the project.
 
 **Being ready** means that you are ready to present the points for the code review.  This means that you have a computer with the various tools logged into (e.g., GitHub, Travis CI, etc.) and a building version of the application in IntelliJ.
 
 ### Code Review 1
 
-#### REVIEW MEETING: Lab of Week 3
+#### REVIEW MEETING:  Week 5
 
-The aim of this code review meeting is to check that the project workflow is set-up for the team.  You may choose to meet some of the feature requirements during this review point, but it is not as necessary.
+The aim of this code review meeting is to check that the project workflow is set-up for the team, task management is set-up and that the initial requirements gathering has taken place via user stories and use cases. 
 
-#### Checklist Submission 1 (16% of CW mark)
+#### Checklist Submission 1 (30% of CW mark)
 
 The following must be in place:
 
@@ -183,24 +180,6 @@ The following must be in place:
 - [ ] Correct branches for GitFlow workflow created - includes `master`, `develop`, and `release` branches.
 - [ ] First release created on GitHub.
 - [ ] Code of Conduct defined.
-
-#### Graded Criteria Submission 1 (4% of CW mark)
-
-The following criteria will be assessed for overall quality:
-
-- Metrics from GitHub.  Also used to assess individual contribution.
-- Code quality including comments.
-
-### Code Review 2
-
-#### REVIEW MEETING: Lab of Week 6
-
-The aim of this code review is to check that task management is set-up and that the initial requirements gathering has taken place via user stories and use cases.  You should have completed at least 25% of the work for the project at this point based on your own estimates.
-
-#### Checklist Submission 2 (14% of CW mark)
-
-The following must be in place:
-
 - [ ] Issues being used on GitHub.
 - [ ] Tasks defined as user stories.
 - [ ] Project integrated with Zube.io.
@@ -209,7 +188,7 @@ The following must be in place:
 - [ ] Full use cases defined.
 - [ ] Use case diagram created.
 
-#### Graded Criteria Submission 2 (6% of CW mark)
+#### Graded Criteria Submission 1 (20% of CW mark)
 
 The following criteria will be assessed for overall quality:
 
@@ -218,82 +197,56 @@ The following criteria will be assessed for overall quality:
 - Correct usage of branches.
 - Continuous integration working.
 - Use cases well defined.
-- Project requirements met.
 
-### Code Review 3
+### Code Review 2
 
 #### REVIEW MEETING: Lab of of Week 10 
 
-The aim of this code review is to check that testing has been correctly specified.  At this stage, at least 50% of the work of the project should be completed.
+The aim of this code review is to check that testing and deployment has been correctly specified.  
 
-#### Checklist Submission 3 (12% of CW mark)
+#### Checklist Submission 2 (20% of CW mark)
 
 The following must be in place:
 
-- [ ] Suitable unit tests defined.
+- [ ] Quality and coverage of unit tests.
+
 - [ ] Suitable integration tests defined.
-- [ ] Tests running on Travis CI.
 
-#### Graded Criteria Submission 3 (8% of CW mark)
-
-The following criteria will be assessed for overall quality:
-
-- Metrics from GitHub.  Also used to assess individual contribution.
-- Code quality including comments.
-- Correct usage of branches.
-- Continuous integration working.
-- Kanban/Project Board being used.
-- Quality and coverage of unit tests.
-- Project requirements met.
-
-### Code Review 4
-
-#### REVIEW MEETING: Lab of Week 13
-
-The aim of this code review is to check that the project is deploying correctly.  At this stage, at least 75% of the work of the project should be completed.
-
-#### Checklist Submission 4 (10% of CW mark)
-
-The following must be in place:
+- [ ] Continuous integration working. and tests running on Travis CI.
 
 - [ ] Deployment working.
+
 - [ ] Bug reporting system set-up.
 
-#### Graded Criteria Submission 4 (10% of CW mark)
+- [ ] Badges for 
+
+  - Build status for `master`.
+  - Build status for `develop`.
+  - Code coverage of tests for `master`.
+  - Release name.
+  - License.
+
+#### Project Requirements Met  (16% of CW Mark)
+
+There are 32 requirements in total. See point 3 below for details.
+
+#### Graded Criteria Submission 2 (14% of CW mark)
 
 The following criteria will be assessed for overall quality:
 
-- Metrics from GitHub.  Also used to assess individual contribution.
+- Correct use of GitHub and Kanban board and frequency of commits. 
 - Code quality including comments.
-- Correct usage of branches.
-- Continuous integration working.
-- Kanban/Project Board being used.
-- Quality and coverage of unit tests.
-- Project requirements met.
 
-### Final Submission (20% of CW mark)
 
-#### SUBMISSION DEADLINE: Friday at 15:00 of Week 13
+### Final Delivery Checklist 
 
-The final deliverable will be compared automatically to your GitHub repository.  The final submission will be assessed based on the following criteria:
+**You must follow these steps to receive a coursework grade for the module.**  We require a copy of your submission for moderation, and therefore you will have to submit your work as defined below.  You will also receive your final 20% grade for final delivery based on the completeness and quality of your submission.
 
-- Metrics from GitHub.  Also used to assess individual contribution.
-- Code quality including comments.
-- Correct usage of branches.
-- Continuous integration working.
-- Kanban/Project Board being used.
-- Quality and coverage of unit tests.
-- Project requirements met.
+**Step 1: Ensure You Have Submitted Your GitHub Repository Clone URL to Moodle**
 
-# Final Delivery Checklist
+We will be performing a pull of your repository at the time of submission using an automated script.  **If you have not provided your GitHub link do so now.**  If you miss the cut off date for link submission your repository will not be pulled and it will be counted as a none submission.  This is a one minute task.
 
-This lab defines what you need to do for final submission.  **You must follow these steps to receive a coursework grade for the module.**  We require a copy of your submission for moderation, and therefore you will have to submit your work as defined below.  You will also receive your final 20% grade for final delivery based on the completeness and quality of your submission.
-
-## Step 1: Ensure You Have Submitted Your GitHub Repository Clone URL to Moodle
-
-We will be performing a pull of your repository at the time of submission using an automated script.  **If you have not provided your GitHub link do so now.**  If you miss the cutoff date for link submission your repository will not be pulled and it will be counted as a none submission.  This is a one minute task.
-
-## Step 2: Ensure Your Main Repository Readme Contains Correct Badges
+**Step 2: Ensure Your Main Repository Readme Contains Correct Badges**
 
 We require the following badges on your GitHub repository to determine the status of your submission:
 
@@ -303,11 +256,11 @@ We require the following badges on your GitHub repository to determine the statu
 - Release name.
 - License.
 
-These badges will be clicked to ensure they are correct.  Incorrect badges provided will be penalised appropriately.
+These badges will be examined to ensure they are correct.  Incorrect badges provided will be penalised appropriately.
 
-## Step 3: Your Main Repository Readme Details the Requirements Met
+**Step 3: Your Main Repository Readme Details the Requirements Met**
 
-There are 32 requirements in total.  Your readme should state how many out of 32 have been met, and a percentage.  For example:
+There are 32 requirements in total.  Your readme (markdown file) should state how many out of 32 have been met, and a percentage.  For example:
 
 > 20 requirements of 32 have been implemented, which is 62.5%.
 
@@ -328,11 +281,11 @@ For example:
 
 **Your submission will be checked to ensure this information is correct.  If incorrect information is provided this will be considered an act of academic misconduct by the group and dealt with accordingly.**
 
-## Step 4: Ensure All the Above is on `master`
+**Step 4: Ensure All the Above is on `master`**
 
 We will only assess your `master` branch.  Make sure that branch contains the version of your code you wish to submit.
 
-## Step 5: Submit your final Individual Contribution Spreadsheet 
+**Step 5: Submit your final Individual Contribution Spreadsheet**
 
 | Matriculation Number | Code Review 1 | Code Review 2 |
 | ---- | ------------- | ------------- |
@@ -341,5 +294,6 @@ We will only assess your `master` branch.  Make sure that branch contains the ve
 | 4000xxxx | 25          | 0         |
 | 4000xxxx | 25          | 0           |
 | Total**** | **100** | **100** |
+
 The team need to agree these scores.  **If the team cannot agree, or a team member believes the spreadsheet submitted does not represent the actual contributions, then email the teaching team.**  In these circumstances, the metrics and other information provided on GitHub will be used.
 
