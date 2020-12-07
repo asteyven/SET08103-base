@@ -1,4 +1,4 @@
-# Lecture 23: Computer Security
+# Unit 10: Computer Security
 
 In this lecture we will focus on security concerns.  Computer security is an important topic in computing, and as professional software engineers you have a duty to ensure the safety of users in the systems you build.  Security is a large topic, and this is really just an introduction to the topic.
 

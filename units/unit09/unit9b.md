@@ -1,4 +1,4 @@
-# Lecture 22: Legal Issues
+# Unit 9b: Legal Issues
 
 In this lecture we will examine the legal frameworks important to software engineering.  These are:
 
@@ -212,7 +212,6 @@ As a software engineer you need to be aware of software licensing.  Partly becau
 Wikipedia provides a handy diagram illustrating the levels of software license:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Software-license-classification-mark-webbink.svg#/media/File:Software-license-classification-mark-webbink.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Software-license-classification-mark-webbink.svg" alt="Software-license-classification-mark-webbink.svg" height="152" width="640"></a><br>By shaddim / <a href="//commons.wikimedia.org/w/index.php?title=Mark_Webbink&amp;action=edit&amp;redlink=1" class="new" title="Mark Webbink (page does not exist)">Mark Webbink</a> - <a rel="nofollow" class="external free" href="https://www.redhat.com/f/summitfiles/presentation/May31/Open%20Source%20Dynamics/Troan_OpenSourceProprietyPersp.pdf">https://www.redhat.com/f/summitfiles/presentation/May31/Open%20Source%20Dynamics/Troan_OpenSourceProprietyPersp.pdf</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=45955580">Link</a></p>
-
 The following table defines these different licence levels:
 
 | Rights granted | Public domain | Permissive FOSS license (e.g. BSD license) | Copyleft FOSS license (e.g. GPL) | Freeware/Shareware/Freemium | Proprietary license | Trade secret |

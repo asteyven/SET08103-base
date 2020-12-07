@@ -1,4 +1,4 @@
-# Lecture 15: Continuous Integration
+# Unit 7a: Continuous Integration
 
 In this lecture we will examine Continuous Integration (CI), how it allows us to automate our build processes, and how it can provide feedback.  The aim is to explore why CI is useful, and the process of undertaking CI.  Most of these ideas are built into Travis CI, which makes our life easy.  Here, we explore the best practice methods in more detail.
 
@@ -123,7 +123,6 @@ This is beyond a test for the software being successfully built.  From our CI sy
 Some CI systems are visualised in the real-world.  For example, a *build-light indicator* might exist to provide clear global signalling of the build status:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Series_of_build_lights.jpg#/media/File:Series_of_build_lights.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Series_of_build_lights.jpg" alt="Series of build lights.jpg" height="480" width="358"></a><br>By Dushan Hanuska - <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/hanuska/5931613961/in/photostream/">https://www.flickr.com/photos/hanuska/5931613961/in/photostream/</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" title="Creative Commons Attribution-Share Alike 2.0">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=16205076">Link</a></p>
-
 ## Building a Continuous Integration System
 
 > CI is not just a technical implementation; it is also an organizational and cultural implementation.
@@ -212,7 +211,6 @@ As stated, CI reduces risk by continuously building and integrating our software
 Agile itself reduces risk as we are always delivering value to the customer and receiving feedback.  In traditional approaches, our risk builds over time as we do not know if we are delivering the right product.  Resources have been committed without knowledge if we are delivering what the customer wants.  In Agile, small iterations mean we reduce risk.  The below image illustrates:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Agile-vs-iterative-flow.jpg#/media/File:Agile-vs-iterative-flow.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Agile-vs-iterative-flow.jpg" alt="Agile-vs-iterative-flow.jpg" height="319" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Christopher_Little&amp;action=edit&amp;redlink=1" class="new" title="User:Christopher Little (page does not exist)">Christopher Little</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=11645092">Link</a></p>
-
 There are four key risks addressed by Continuous Integration:
 
 - Lack of deployable software.

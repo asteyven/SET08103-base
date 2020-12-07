@@ -1,4 +1,4 @@
-# Lecture 20: The Third Way of DevOps - Continuous Learning and Experimentation
+# Unit 8a: The Third Way of DevOps - Continuous Learning and Experimentation
 
 ## Behavioural Objectives
 

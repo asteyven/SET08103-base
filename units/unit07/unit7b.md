@@ -1,4 +1,4 @@
-# Lecture 16: Continuous Delivery
+# Unit 7b: Continuous Delivery
 
 In this lecture we will extend our discussion on Continuous Integration from [Lecture 15](../lecture15) to include Continuous Delivery.  We will examine the additions we have to make to our process, as well as examining the risks addresses by Continuous Delivery.
 
@@ -37,7 +37,6 @@ The deployment pipeline aims to:
 Below is an illustration showing how CD produces releases:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Continuous_Delivery_process_diagram.svg#/media/File:Continuous_Delivery_process_diagram.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Continuous_Delivery_process_diagram.svg/1200px-Continuous_Delivery_process_diagram.svg.png" alt="Continuous Delivery process diagram.svg"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Gr%C3%A9goire_D%C3%A9trez&amp;action=edit&amp;redlink=1" class="new" title="User:Grégoire Détrez (page does not exist)">Grégoire Détrez</a>, original by Jez Humble - This file was derived from:&nbsp;<a href="//commons.wikimedia.org/wiki/File:Continuous_Delivery_process_diagram.png" title="File:Continuous Delivery process diagram.png">Continuous Delivery process diagram.png</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=43977816">Link</a></p>
-
 ### Aims of Continuous Delivery
 
 CD attempts to deliver software as quickly as possible.  When we think of a new idea, we want to deliver it fast.  CD does so by allowing us the ability to deliver software whenever we want.
@@ -106,7 +105,6 @@ Generally releases go through the following stages:
 - Gold.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Software_dev2.svg#/media/File:Software_dev2.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Software_dev2.svg/1200px-Software_dev2.svg.png" alt="Software dev2.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Heyinsun" title="User:Heyinsun">Heyinsun</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=6818861">Link</a></p>
-
 CD doesn't use this staged method as every commit can be a release.  Therefore, every change is potentially a version which has added value.  Therefore, every commit is a release candidate.
 
 ### Configuration Management

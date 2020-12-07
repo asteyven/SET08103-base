@@ -1,5 +1,7 @@
 # Introduction to the Module
 
+The Module .....
+
 ## Creating a Cooperative Learning Community Environment for the Module
 
 Before starting the module, I want to create a suitable learning environment for everyone in the module.  I will do this from four resources: 
