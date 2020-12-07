@@ -72,7 +72,7 @@ Fundamentally, you should recognise that **education is not a competition**.  Yo
 
 ## Behavioural Objectives
 
-At the end of this lecture you will be able to:
+At the end of this Unit you will be able to:
 
 - [ ] **Define** what a *software engineering method* is.
 - [ ] **List** the *three Software Development Lifecycle* types.
@@ -199,17 +199,17 @@ Our assessment strategy is:
 | Learning Outcome | Assessment |
 | ---------------- | ---------- |
 | Demonstrate understanding of a modern software development lifecycle | Coursework |
-| Explain the different techniques supporting modern software engineering methods | Exam |
+| Explain the different techniques supporting modern software engineering methods | Unit Tests |
 | Define and analyse systems requirements and needs and specify a system design to deliver these requirements | Coursework |
 | Apply modern software engineering methods and techniques to a software development project | Coursework |
-| Explain the role of a computing professional in relation to social, ethical and legal issues surrounding projects | Exam
-| Consider information security requirements in the development and delivery of software | Exam |
+| Explain the role of a computing professional in relation to social, ethical and legal issues surrounding projects | Unit Tests
+| Consider information security requirements in the development and delivery of software | Unit Tests |
 
 We are going to use a SDLC to deliver a software product.  Our SDLC will be agile in nature - that is our method.  For our software, we will define requirements and specify a system to deliver.  Finally, we will build a software development pipeline to automate our product delivery.  This is the coursework you will deliver.  See the [Assessment Brief](../../assessment/) for details.
 
-The exam will look at the theoretical aspects of what we are doing.  We will look at the different techniques underpinning modern software development, understand the professional aspects of being a software developer, and consider how security requirements integrate into our SDLC.  This will form the exam part of the assessment.
+The Unit Tests will look at the theoretical aspects of what we are doing.  We will look at the different techniques underpinning modern software development, understand the professional aspects of being a software developer, and consider how security requirements integrate into our SDLC.  This will form the Unit Tests part of the assessment.
 
-Both the lectures and labs intertwine to support both the coursework and exam.  The labs provide the step-by-step instructions on how to undergo our development process.  The exam will go into more detail around this process and augment it with areas of working in teams, professionalism, ethics, and security.
+The Unit notes and labs intertwine to support both the coursework and Unit Tests.  The labs provide the step-by-step instructions on how to undergo our development process.  The Unit Tests will go into more detail around this process and augment it with areas of working in teams, professionalism, ethics, and security.
 
 ## History of Software Engineering Approaches
 
@@ -318,7 +318,7 @@ Lead-time and process-time can be visualised as follows:
 
 ## Summary
 
-The aim of this lecture is to cover the basic concepts underpinning the module.  We will examine several of these concepts in more detail as we continue through the module.  In summary, we have:
+The aim of this Unit is to cover the basic concepts underpinning the module.  We will examine several of these concepts in more detail as we continue through the module.  In summary, we have:
 
 - Specified the learning environment for the module.
 - Defined what a software engineering method is.

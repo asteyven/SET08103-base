@@ -40,7 +40,7 @@ When selecting tasks to work on, the team prioritises by what returns the most v
 
 Scrum defines an **Inspect and Adapt** cycle.  We are constantly *inspecting* how we work, and then *adapting* based on that observation.  We want to do work, try something, and check how we do.  We want to fail fast so we can fix our problems quickly - *spot a mistake and fix it straight away*.  Otherwise you you will pay for the mistake in the future when you have forgotten the details of the error or work done.  Failure is one of the best teachers.
 
-Scrum also deals with waste.  Waste is a concept from lean, and we will look at *Lean Software Development* in [Lecture 4](../lecture04).  We will talk more about waste then.
+Scrum also deals with waste.  Waste is a concept from lean, and we will look at *Lean Software Development* in [Unit 2b](../unit02/unit2b).  We will talk more about waste then.
 
 Finally, work is changed by focusing on the team.  The job of management in the organisation is to free the team to increase the *flow of work through the system.*  Management need to remove obstructions from the team to improve their effectiveness.  A standard management approach - adding manpower - has been [shown](https://en.wikipedia.org/wiki/The_Mythical_Man-Month) to increase delivery time on software projects, and likely projects in general.
 
@@ -87,7 +87,7 @@ Tasks flow from the the Backlog to Done as they are completed.  There are many o
 
 ### User Stories
 
-When defining a task it should be part of a *User Story*.  This allows the team to understand **why the task is needed.**  We will look at user stories in [Lecture 10](../lecture10).  As an example, we might write:
+When defining a task it should be part of a *User Story*.  This allows the team to understand **why the task is needed.**  We will look at user stories in [Unit 05b](../unit05/unit05b.md).  As an example, we might write:
 
 - As a student I want to submit a coursework.
 
@@ -341,7 +341,7 @@ To summarise the Scrum Framework see below:
 ## Your Task
 
 1. Pick a **team**.  You need four people for your team.
-2. Define a **Code of Conduct**.  See slides and [Lecture 21](../lecture21) for assistance.
+2. Define a **Code of Conduct**.  See [Lecture 21](../lecture21) for assistance.
 3. Pick a **Product Owner**.
 4. Pick a **Scrum Master**.
 5. Create and prioritize a **Product Backlog.**
