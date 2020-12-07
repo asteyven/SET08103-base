@@ -1,4 +1,4 @@
-# Lecture 13: The Second Way of DevOps - Feedback
+# Unit 6a: The Second Way of DevOps - Feedback
 
 In this lecture we will cover the technical practices of feedback.  Feedback is our ability to gain information from our peers and systems to improve our work.  Feedback, and using feedback effectively, is important in all aspects of your life, and in development we must ensure we are doing the right work effectively.
 
@@ -131,7 +131,6 @@ The whole point of having telemetry is to spot problems and measure success.  Bu
 Calculating the mean (or average) of our data is a useful starting point.  Combining with standard deviation (the amount of variation in the data) allows to filter events so that we only respond to results outside the norm.  Below is a diagram illustrating a normal (or Gaussian) distribution and standard deviations.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Empirical_Rule.PNG#/media/File:Empirical_Rule.PNG"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Empirical_Rule.PNG" alt="Empirical Rule.PNG" height="464" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Mathprofdk&amp;action=edit&amp;redlink=1" class="new" title="User:Mathprofdk (page does not exist)">Dan Kernler</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=36506025">Link</a></p>
-
 We are trying to improve the signal-to-noise ratio by spotting outliers.  We analyse the data set for a metric and alert if it is significantly varied from the mean.  For example, if failed login attempts for a day is three standard greater than the mean.
 
 ### Instrument and Alert on Undesired Outcomes

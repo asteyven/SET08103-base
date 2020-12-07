@@ -1,4 +1,4 @@
-# Lecture 14: Test-Driven Development (TDD)
+# Unit 6b: Test-Driven Development (TDD)
 
 In this lecture we will examine the practice of Test-Driven Development (TDD).  TDD is a practice where testing is given the highest priority.  You will find that TDD can improve the overall quality of your code by ensuring that it is well tested from the outset.
 
@@ -31,7 +31,6 @@ The TDD mantra is: **red-green-refactor**:
 The lifecycle is illustrated below:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:TDD_Global_Lifecycle.png#/media/File:TDD_Global_Lifecycle.png"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/TDD_Global_Lifecycle.png" alt="TDD Global Lifecycle.png" height="376" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Xarawn&amp;action=edit&amp;redlink=1" class="new" title="User:Xarawn (page does not exist)">Xarawn</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=44782343">Link</a></p>
-
 How do we test our software in this manner?  We write a small automated unit test.  And when should the test be written?  Before the code to be tested is written.
 
 ### Why Test First?
