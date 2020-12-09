@@ -139,7 +139,7 @@ Any feedback you can get improves the learning process.  That is why students wa
 
 Points to consider:
 
-- Run tests as soon as code is written - we will cover **Test-driven Development** in [Lecture 14](../lecture14).
+- Run tests as soon as code is written - we will cover **Test-driven Development** in [Unit 7b](../unit07/unit07b.md).
 - Write code to test ideas instead of detailed planning or documentation.
 - Provide users with potential options rather than gathering more requirements.
 - Test the top three potential tools rather than studying them in more detail.
@@ -151,7 +151,7 @@ In other words, **experiment** and **evaluate the outcome.**  And **do it often.
 
 ### Tool 4: Iterations
 
-We covered this idea in [Lecture 02](../lecture02) on Scrum.
+We covered this idea in [Unit 01b](../unit01/unit01b.md) on Scrum.
 
 ### Tool 5: Synchronisation
 
@@ -233,7 +233,7 @@ In Lean Software Development, decisions are guided by the seven principles:
 6. **Build integrity in** - don't add at the end, build it from the start.
 7. **See the whole** - avoid optimising for parts of the system.  Work for the whole.
 
-- [ ] Analyse your current work plan for your assessment.  Which features can you delay implementing?  Which parts need definite decisions at the start?  Reorder your work plan accordingly.
+**Analyse your current work plan for your assessment.  Which features can you delay implementing?  Which parts need definite decisions at the start?  Reorder your work plan accordingly.**
 
 ## Deliver as Fast as Possible
 
@@ -245,11 +245,11 @@ Netflix and Spotify deliver movies and music as fast as possible.  Faster (sligh
 
 ### Tool 10: Pull Systems
 
-We will look at Kanban in [Lecture 08](../lecture08).  For the moment, the basic idea is that people know which work needs to be done, and they select that work.  They pull the work, rather than have it pushed upon them.
+We will look at Kanban in [Unit 04b](../unit04/unit04b.md).  For the moment, the basic idea is that people know which work needs to be done, and they select that work.  They pull the work, rather than have it pushed upon them.
 
 ### Tool 11: Queueing Theory
 
-In [Lecture 01](../lecture01) We discussed lead-time and process-time (or cycle-time).  This can be illustrated as follows:
+In [Unit 01a](../unit01/unit01a.md) We discussed lead-time and process-time (or cycle-time).  This can be illustrated as follows:
 
 ![Lead-time and Cycle-time](img/cycle-time.png)
 
@@ -263,7 +263,7 @@ To make this simple, having large tasks means a person slows down as they become
 
 Having slack allows the team to adapt and change when required.  A road at full capacity is a parking lot.  You want capacity in the road to allow cars to flow.
 
-- [ ] Review the tasks you have defined for your assessment.  Can they be broken down into smaller sizes?  Make tasks small to improve your team efficiency.
+**Review the tasks you have defined for your assessment.  Can they be broken down into smaller sizes?  Make tasks small to improve your team efficiency.**
 
 ### Tool 12: Cost of Delay
 
@@ -279,7 +279,7 @@ As Lean Software Development points out, this wisdom is wrong.  Getting the prod
 
 **Happy team members with increased job satisfaction are worth more to the organisation as the team are more productive.**
 
-To meet this goal, the team needs to be empowered.  There are a few ideas here, although our discussion on Scrum in [Lecture 02](../lecture02) also provides insight.
+To meet this goal, the team needs to be empowered.  There are a few ideas here, although our discussion on Scrum in [Unit 01b](../unit01/unit01b) also provides insight.
 
 ### Tool 13: Self-determination
 
@@ -313,7 +313,7 @@ We won't go into this here.  Leadership is a big field.  *Lean Software Developm
 
 Expertise is related to leadership.  The idea is to build communities of experts that support and refine their practices and standards.  Becoming part of a community is important here.
 
-- [ ] Compare tools 13-16 against the principles of Scrum defined in [Lecture 02](../lecture02).  How similar are they?  What parts of Scrum are missing?  What parts are missing from Scrum?
+- [ ] Compare tools 13-16 against the principles of Scrum defined in  [Unit 01b](../unit01/unit01b)  How similar are they?  What parts of Scrum are missing?  What parts are missing from Scrum?
 
 ## Build Integrity In
 
@@ -328,7 +328,7 @@ Perceived integrity is the balance of function, usability, reliability, and econ
 
 Perceived integrity should be reviewed and refreshed regularly.  This is to ensure the technical team aren't missing the point of the product.
 
-Perceived integrity is best supported by working with customers.  This requires communication strategies and a common language.  [Lecture 09](../lecture09) on requirements gathering, [Lecture 10](../lecture10) on user stories, and [Lecture 12](../lecture12) on model-driven design support us here.
+Perceived integrity is best supported by working with customers.  This requires communication strategies and a common language.  [Unit 05a](../unit05/unit05a) on requirements gathering,  [Unit 05b](../unit05/unit05b) on user stories, and [Unit 06b](../unit06/unit06b) on model-driven design support us here.
 
 ### Tool 18: Conceptual Integrity
 
@@ -336,7 +336,7 @@ Conceptual integrity is about the core product functions working together in a s
 
 Conceptual integrity is a requirement for perceived integrity, but it is not enough.
 
-In [Lecture 05](../lecture05) we will look at modern software architecture that will support conceptual integrity.
+In [Unit 03a](../unit03/unit03a.md) we will look at modern software architecture that will support conceptual integrity.
 
 ### Tool 19: Refactoring
 
@@ -344,7 +344,7 @@ We will not look at this in detail, but the general idea is to improve your code
 
 ### Tool 20: Testing
 
-We will cover testing in [Lecture 14](../lecture14).
+We will cover testing in [Unit 07b](../unit07/unit07b.md).
 
 ## See the Whole
 

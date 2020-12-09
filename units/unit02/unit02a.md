@@ -25,7 +25,7 @@
 
 ## Behavioural Objectives
 
-At the end of this lecture you will be able to:
+At the end of this Unit you will be able to:
 
 - [ ] **Define** what *version control is*.
 - [ ] **Describe** the *key differences* between *client-server* and *distributed VCS*.
@@ -511,7 +511,7 @@ To ignore files, we specify a `.gitignore` file.  This file uses wildcards, fold
 
 ### Summary
 
-The following diagram attempts to summarise some of the concepts we have looked at in this lecture:
+The following diagram attempts to summarise some of the concepts we have looked at in this Unit:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Git_operations.svg#/media/File:Git_operations.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Git_operations.svg/1200px-Git_operations.svg.png" alt="Git operations.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Duesentrieb" title="User:Duesentrieb">Daniel Kinzler</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=25223536">Link</a></p>
 We have covered the following commands:
@@ -560,7 +560,7 @@ This workflow allows a good understanding of the work undertaken, allows easy co
 
 ## Summary
 
-We have covered a lot in this lecture:
+We have covered a lot in this Unit:
 
 - Defined what version control is.
 - Described the key differences between client-server and distributed VCS.

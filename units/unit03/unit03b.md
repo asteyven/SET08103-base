@@ -1,24 +1,24 @@
 # Unit 3b: The Three Ways - Underpinning Principles of DevOps
 
-In this lecture we will explore the key principles of DevOps and how these are mapped to the work in the rest of the module.  DevOps, and the culture surrounding it, has become a desirable trend for graduates.  In this module we skate over the principles with a software engineering lens.  The principles you will find are similar to ones already discussed in the module.
+In this Unit we will explore the key principles of DevOps and how these are mapped to the work in the rest of the module.  DevOps, and the culture surrounding it, has become a desirable trend for graduates.  In this module we skate over the principles with a software engineering lens.  The principles you will find are similar to ones already discussed in the module.
 
 ## Behavioural Objectives
 
 - [ ] **Define** *DevOps*.
 - [ ] **Describe** the *Three Ways of DevOps.*
-- [ ] **Reflect on** how *the lectures map to the Three Ways.*
+- [ ] **Reflect on** how *the Units covered in the module map to the Three Ways.*
 
 ## Overview of DevOps
 
 DevOps tries to address the boundary between the developers (the creators of software) and operations (the management of software).  DevOps is a set of principles and techniques that enable improved working between these two groups, driven by a number of the ideas we have already presented in this module:
 
-- The Lean Movement (we covered [Lean Software Development in Lecture 04](../lecture04)).
-- The Agile Manifesto (we covered [Agile in Lecture 01](../lecture01)).
-- Agile Infrastructure and Velocity Movement ([modern software architectures in Lecture 05](../lecture05) is related to this idea).
-- The Continuous Delivery Movement (we cover [Continuous Delivery in Lecture 16](../lecture16)).
-- The Toyota Kata - which is about continuous improvement.
+- The Lean Movement (we covered Lean Software Development in [Unit 02b](../unit02/unit02b.md)).
+- The Agile Manifesto (we covered Agile in [Unit 01a](../unit01/unit01a.md)).
+- Agile Infrastructure and Velocity Movement (modern software architectures in [Unit 03a](../unit03/unit03a.md) is related to this idea).
+- The Continuous Delivery Movement (we cover Continuous Delivery in [Unit 08a](../unit08/unit08a.md)).
+- The Toyota Kata - which is about continuous improvement (covered in [Unit 01a](../unit01/unit01a.md)).
 
-In [Lecture 05](../lecture05) we examined modern software architecture.  The following table summarises how these trends have affected business practices.
+In [Unit 03a](../unit03/unit03a.md) we examined modern software architecture.  The following table summarises how these trends have affected business practices.
 
 |       | **1970s-1980s** | **1990s** | **2000s-Present** |
 |-------|-----------------|-----------|-------------------|
@@ -76,7 +76,7 @@ Flow is about work flowing from left to right: from the Development Team, to the
 
 Work in IT is not easily seen.  Consider what is visible when you are working on a new piece of code.  Does anyone actually see what you are working on?  How do they see it?  Compare this to the work undertaken building a car on an assembly line.  It is perfectly visible when work is queuing up at a particular point (say attaching the doors) as the cars are physically there.  We can see where a problem is in the work queue by looking.
 
-To make work visible in a IT organisation we have to use other methods.  Kanban is such a process (see task board below).  We will cover Kanban in [Lecture 08](../lecture08).
+To make work visible in a IT organisation we have to use other methods.  Kanban is such a process (see task board below).  We will cover Kanban in [Unit 04b](../unit04/unit04b.md).
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Sample_Kanban_Board.png#/media/File:Sample_Kanban_Board.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sample_Kanban_Board.png/1200px-Sample_Kanban_Board.png" alt="Sample Kanban Board.png"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Andycarmichaeluk&amp;action=edit&amp;redlink=1" class="new" title="User:Andycarmichaeluk (page does not exist)">Andy Carmichael</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=55448101">Link</a></p>
 ### Limit Work in Progress (WiP)
@@ -133,7 +133,7 @@ To summarise, find out what is slowing down the work.  Once found, fix it until 
 
 ### Eliminate Waste and Hardship in the Value Stream
 
-We covered waste in [Lecture 04](../lecture04) on *Lean Software Development*.  *The DevOps Manual* cites *Implementing Lean Software Development* (also by Poppendieck and Poppendieck) for the following categories:
+We covered waste in [Unit 02b](../unit02/unit02b.md) on *Lean Software Development*.  *The DevOps Manual* cites *Implementing Lean Software Development* (also by Poppendieck and Poppendieck) for the following categories:
 
 - **Partially done work** - can become obsolete or lose value over time.
 - **Extra processes** - anything that does not add value to the customer.
@@ -232,38 +232,36 @@ A leader's role should be to create a great team environment to allow the team t
 
 So far we have covered the following topics in the module:
 
-- Lecture 1: Introduction.
-- Lecture 2: Scrum.
-- Lecture 3: Version Control.
-- Lecture 4: Lean Software Development.
-- Lecture 5: Modern Software Architecture.
-- Lecture 6: Introduction to DevOps.
+- Unit 1a: Setting up our Working Environment.
+- Unit 1b: Scrum.
+- Unit 2a: Version Control.
+- Unit 2b: Lean Software Development.
+- Unit 3a: Modern Software Architecture.
+- Unit 3b: Introduction to DevOps.
 
 The rest of the module is influenced by the three ways:
 
 - The First Way: Flow.
-  - Lecture 7: The First Way of DevOps: Flow.
-  - Lecture 8: Kanban.
-  - Lecture 9: Requirements Gathering.
-  - Lecture 10: Use Cases and User Stories.
-  - Lecture 11: UML Diagrams.
-  - Lecture 12: UML Workflow.
+  - Unit 4a: The First Way of DevOps: Flow.
+  - Unit 4b: Kanban.
+  - Unit 5a: Requirements Gathering.
+  - Unit 5b: Use Cases and User Stories.
+  - Unit 6a: UML Diagrams.
+  - Unit 6b: UML Workflow.
 - The Second Way: Feedback.
-  - Lecture 13: The Second Way of DevOps: Feedback.
-  - Lecture 14: Unit Testing and Test Driven Development.
-  - Lecture 15: Continuous Integration.
-  - Lecture 16: Continuous Delivery.
-  - Lecture 17: Deploying Software.
-  - Lecture 18: Monitoring Software.
-  - Lecture 19: Bug Tracking.
+  - Unit 7a: The Second Way of DevOps: Feedback.
+  - Unit 7b: Unit Testing and Test Driven Development.
+  - Unit 8a: Continuous Integration.
+  - Unit 8b: Continuous Delivery.  
+  - Unit 9b: Bug Tracking and Software Monitoring.
 - The Third Way: Continual Learning and Experimentation.
-  - Lecture 20: The Third Way of DevOps: Continual Learning and Experimentation.
+  - Unit 9a: The Third Way of DevOps: Continual Learning and Experimentation.
 
 We then finish the module with more professional concerns:
 
-- Lecture 21: Ethics and Professionalism.
-- Lecture 22: Legal Issues.
-- Lecture 23: Security Concerns.
+- Unit 10a: Ethics and Professionalism.
+- Unit 10b: Legal Issues.
+- Unit 10c: Security Concerns.
 
 The mapping is loose and based on our need to cover methods and develop our application.  However, being aware of the three principles is important as we go through the rest of the module:
 
@@ -277,7 +275,7 @@ To summarise, we have covered the following:
 
 - Defined what we mean by DevOps - a software development methodology built on agile and lean, integrating bot development and operation of software.
 - Described the Three Ways of DevOps: flow, feedback, and continual experimentation and learning.
-- Reflected on how the module maps to the Three Ways by listing the lectures in each sub-area.
+- Reflected on how the module maps to the Three Ways by listing the Units in each sub-area.
 
 ## Further Reading
 

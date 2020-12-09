@@ -1,6 +1,6 @@
 # Unit 3a: Modern Software Architecture
 
-In this lecture we will examine the history of software architecture and delivery, ending with current modern software approaches.  Understanding these concepts are important to working in a modern development environment, and considering the relationship now formed between *developers* and *operations* (DevOps).
+In this unit we will examine the history of software architecture and delivery, ending with current modern software approaches.  Understanding these concepts are important to working in a modern development environment, and considering the relationship now formed between *developers* and *operations* (DevOps).
 
 ## Behavioural Objectives
 
@@ -46,11 +46,9 @@ Below we will cover some broad types of software which have emerged over the dec
 
 ### Desktop Applications
 
-In [Lecture 01](../lecture01) we looked at software engineering over different eras.  Many of these development approaches have impacted desktop software development.  During the 1980s structured programming was key, although the late 1980s and 1990s saw the rise of object-orientation.
+In [Unit 1a](../unit01/unit01a.md) we looked at software engineering over different eras.  Many of these development approaches have impacted desktop software development.  During the 1980s structured programming was key, although the late 1980s and 1990s saw the rise of object-orientation.
 
 The advantage (and disadvantage) of desktop software originally was that once it was sold to the consumer no updates and maintenance was required.  People bought a physical copy of the software and that was it - bugs and all.  This meant software had to be of high-quality on release: no day-one patches!  Software was simpler though.
-
-![Windows 95 Cover](https://upload.wikimedia.org/wikipedia/en/6/66/Windows95BOXSHOT.png)
 
 If the software was developed for a commercial client, then updates and maintenance were required as part of a contract.  Software could still be deployed to a server somewhere, data was often centralised.  We will cover this in the client-server section below.
 
@@ -206,7 +204,7 @@ Google have produced [a small comic](https://cloud.google.com/kubernetes-engine/
 
 ## Summary
 
-In this lecture we have covered:
+In this unit we have covered:
 
 - The *hardware eras for software deployment* - namely mainframe, PC, and mobile.
 - The *software platforms for software deployment* - namely desktop, distributed, and service-orientated.
