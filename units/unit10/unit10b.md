@@ -1,4 +1,4 @@
-# Unit 9b: Legal Issues
+# Unit 10b: Legal Issues
 
 In this lecture we will examine the legal frameworks important to software engineering.  These are:
 

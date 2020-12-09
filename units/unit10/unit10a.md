@@ -1,321 +1,293 @@
-# Unit 10: Computer Security
+# Unit 10a: Ethics and Professionalism
 
-In this lecture we will focus on security concerns.  Computer security is an important topic in computing, and as professional software engineers you have a duty to ensure the safety of users in the systems you build.  Security is a large topic, and this is really just an introduction to the topic.
+## Behavioural Objects
 
-## Behavioural Objectives
+At the end of this lecture you will be able to:
 
-- [ ] **Define** the *roles in computer security.*
-- [ ] **Describe** the *ethics of white hats.*
-- [ ] **Define** the *terms in the McCumber Cube.*
-- [ ] **Describe** *computer security attacks and related terminology.*
-
-## What is Computer Security?
-
-From [Wikipedia](https://en.wikipedia.org/wiki/Computer_security):
-
-> Computer security, cybersecurity or information technology security (IT security) is the protection of computer systems from theft or damage to their hardware, software or electronic data, as well as from disruption or misdirection of the services they provide.
-
-A better definition comes from *Security for Software Engineers* by James Helfrich:
-
-> Computer security can be defined as providing confidentiality, integrity, and availability (C.I.A.) assurances to users or clients of information systems.
-
-We will define confidentiality, integrity, and availability later in the lecture.  Let us first define the actors in the computer security story.
-
-## Roles
-
-There are two roles in computer security: users and hackers.
-
-### Users
-
-Users of IT systems are the victims of computer security attacks.  Therefore, our role is to defend users against such attacks.  Thus, we define computer security in terms of the user's needs, and not in terms of the attacker or technology.
-
-### Hackers
-
-In general, two types of hacker exist, black hats and white hats.
-
-#### Black Hats
-
-Black hats are people who attempt to break system security without permission.  Three generations of black hats exist:
-
-- Curiosity and pride motivate first-generation black hats.
-- Financial gain motivates second-generation black hats.
-- Ethical, moral, or political reasons motivate third-generation black hats.
-
-Financial gain is possible for black hats.  Spam, fraud, ransomware, theft, and phising are such techniques.  Due to the relative safety of electronic crime, the broad target audience, and potential monetary gain, many see black hat crimes as an attractive proposition.
-
-A form of first generation black hat is the grey hat.  These hackers find vulnerabilities and report them to improve system security.
-
-#### White Hats
-
-White hats are the good guys in computer security.  The role of a white hat may be varied, but they share two principles:
-
-- Ethics: which we covered last week and will cover again in this lecture.
-- Defence: white hats defend users.
-
-Therefore, white hats uphold the law by providing a defence to users.  All IT professionals should act as white hats, but there are specific duties for software engineers.
-
-##### Software Engineers
-
-Software engineers must write code resistant to attacks.  Therefore, as a software engineer, we need to familiarise ourselves with security issues and plan how to minimise vulnerabilities.  We never know when our code will be involved in a critical security event, and thus we must practice these ideas at all stages of the software development process.
-
-Given our definition of computer security:
-
-> Computer security can be defined as providing confidentiality, integrity, and availability (C.I.A.) assurances to users or clients of information systems.
-
-A software engineer has to engineer software so confidentiality, integrity, and availability are assured.  Thus, a software engineer must perform the following activities:
-
-- Write code that lacks vulnerabilities.
-- Locate and fix vulnerabilities in an existing codebase.
-- Integrate security features - such as authentication or encryption - into code.
+- [ ] **Define** *ethics in the context of IT professionals*.
+- [ ] **Describe** the *core principles of engineering ethics*.
+- [ ] **Review** the *ACM Code of Ethics*.
+- [ ] **Give examples of** a *Code of Conduct*.
+- [ ] **Review** the *BCS Code of Conduct*.
 
 ## Ethics
 
-We mentioned ethics as underpinning the work of white hats.  We often refer to computer security as cyber warfare, and it is interesting to note ethics in warfare.  Although ethics in war are today well established, this was not always the case.  Some IT professionals argue that to combat security threats might require unethical means.  Our definitions of IT professionals include ethics and codes of conduct, so we should incorporate this thinking into our computer security approach.
-
-White hats generally agree on the ethics published by (ISC)<sup>2</sup>.  To provide a counterpoint, we will also present the Hacker's Manifesto.
-
-### (ISC)<sup>2</sup> Code of Ethics
-
-The International Information System Security Certification Consortium (ISC)<sup>2</sup> provides training and certification in computer security.  They also have a defined code of ethics adopted by white hats.  The (ISC)<sup>2</sup> Code of Ethics is similar to the ACM Code of Ethics and the BCS Code of Conduct, albeit focused on being lawful and protecting others.  The fundamental principles of the (ISC)<sup>2</sup> Code of Ethics are:
-
-- Protect: white hats have a responsibility to:
-  - Protect society from threats.
-  - Protect computer systems from attacks.
-  - Teach people how to protect against attacks.
-- Act honourably: white hats must be honest and inform employers what they are doing.
-- Provide service: white hats should give advice and treat everyone fairly.
-- Advance the profession: white hats should respect the authority given to them and only work in their areas of competence.  Avoiding conflicts of interest is essential.
-
-The full (ISC)<sup>2</sup> Code of Ethics is:
-
-- Protect society, the common good, necessary public trust and confidence, and the infrastructure.
-  - Promote and preserve public trust and confidence in information and systems.
-  - Promote the understanding and acceptance of prudent information security measures.
-  - Preserve and strengthen the integrity of the public infrastructure.
-  - Discourage unsafe practice.
-- Act honorably, honestly, justly, responsibly, and legally.
-  - Tell the truth; make all stakeholders aware of your actions on a timely basis.
-  - Observe all contracts and agreements, express or implied.
-  - Treat all members fairly.  In resolving conflicts, consider public safety and duties to principals, individuals, and the profession in that order.
-  - Give prudent advice; avoid raising unnecessary alarm or giving unwarranted comfort.  Take care to be truthful, objective, cautious, and within your competence.
-  - When resolving differing laws in different jurisdictions, give preference to the laws of the jurisdiction in which you render your service.
-- Provide diligent and competent service to principals.
-  - Preserve the value of their systems, applications, and information.
-  - Respect their trust and privileges that they grant you.
-  - Avoid conflicts of interest or the appearance thereof.
-  - Render only those services for which you are fully competent and qualified.
-- Advance and protect the profession.
-  - Sponsor for professional advancement those best qualified.  All other things equal, prefer those who are certified and who adhere to these canons.  Avoid professional association with those whose practices or reputation might diminish the profession.
-  - Take care not to injure the reputation of other professionals through malice or indifference.
-  - Maintain your competence; keep your skills and knowledge current.  Give generously of your time and knowledge in training others.
-
-### Hacker's Manifesto
-
-To provide the black hats view, consider the Hacker's Manifesto (taken from http://phrack.org/issues/7/3.html#article):
-
-```
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-The following was written shortly after my arrest...
+What does the term ethics mean?  From [Wikipedia](https://en.wikipedia.org/wiki/Ethics) (emphasis mine):
 
-                       \/\The Conscience of a Hacker/\/
+> Ethics or moral philosophy is a branch of philosophy that involves **systematizing, defending, and recommending concepts of right and wrong conduct**.
 
-                                      by
+We will not look at the moral philosophy aspect - this is not a philosophy module.  A more in-depth introduction is available from the [BBC](http://www.bbc.co.uk/ethics/introduction/).  Here you will find ethics broken down into three types:
 
-                               +++The Mentor+++
+> - **Meta-ethics** deals with the *nature of moral judgement*. It looks at the origins and meaning of ethical principles.
+> - **Normative ethics** is concerned with the *content of moral judgements and the criteria for what is right or wrong*.
+> - **Applied ethics** looks at *controversial topics like war, animal rights and capital punishment*.
 
-                          Written on January 8, 1986
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+As software engineers, we are concerned with **applied ethics**.  That is, we are concerned with how our creative work is used in the real world.  There are three types of ethics to consider in this frame.
 
-        Another one got caught today, it's all over the papers.  "Teenager
-Arrested in Computer Crime Scandal", "Hacker Arrested after Bank Tampering"...
-        Damn kids.  They're all alike.
+### Engineering Ethics
 
-        But did you, in your three-piece psychology and 1950's technobrain,
-ever take a look behind the eyes of the hacker?  Did you ever wonder what
-made him tick, what forces shaped him, what may have molded him?
-        I am a hacker, enter my world...
-        Mine is a world that begins with school... I'm smarter than most of
-the other kids, this crap they teach us bores me...
-        Damn underachiever.  They're all alike.
+[Engineering Ethics](https://en.wikipedia.org/wiki/Engineering_ethics) have risen from first from the growth of the profession and second from the various disasters that have occurred due to the output of engineering works.  A well known example in Scotland is the [Tay Bridge Disaster](https://en.wikipedia.org/wiki/Tay_Bridge_disaster) which was deemed the result, amongst other things, of poor design.
 
-        I'm in junior high or high school.  I've listened to teachers explain
-for the fifteenth time how to reduce a fraction.  I understand it.  "No, Ms.
-Smith, I didn't show my work.  I did it in my head..."
-        Damn kid.  Probably copied it.  They're all alike.
+Engineering ethic definitions depend on the body that the engineer is associated with.  For computing and IT this is typically the British Computer Society (BCS), Association of Computer Machinery (ACM), Institute of Electrical and Electronic Engineers (IEEE), and the Institute of Engineering and Technology.  Of these, only the BCS is UK body with a Royal Charter to assess the quality of IT professionals (*Chartered IT Professional* or CITP).  The BCS and IET can also confer *Chartered Engineer* (CEng) status.
 
-        I made a discovery today.  I found a computer.  Wait a second, this is
-cool.  It does what I want it to.  If it makes a mistake, it's because I
-screwed it up.  Not because it doesn't like me...
-                Or feels threatened by me...
-                Or thinks I'm a smart ass...
-                Or doesn't like teaching and shouldn't be here...
-        Damn kid.  All he does is play games.  They're all alike.
+Although different criteria exist depending on domain, there are some core engineering ethical principles:
 
-        And then it happened... a door opened to a world... rushing through
-the phone line like heroin through an addict's veins, an electronic pulse is
-sent out, a refuge from the day-to-day incompetencies is sought... a board is
-found.
-        "This is it... this is where I belong..."
-        I know everyone here... even if I've never met them, never talked to
-them, may never hear from them again... I know you all...
-        Damn kid.  Tying up the phone line again.  They're all alike...
+- **Obligation to Society**.
+- **Reporting Misconduct**.
+- **General Conduct**.
 
-        You bet your ass we're all alike... we've been spoon-fed baby food at
-school when we hungered for steak... the bits of meat that you did let slip
-through were pre-chewed and tasteless.  We've been dominated by sadists, or
-ignored by the apathetic.  The few that had something to teach found us will-
-ing pupils, but those few are like drops of water in the desert.
+An engineer's obligation to society is to ensure the safety of their efforts and to report honestly and quickly any discovered issues.  This is similar to a medic's [**Hippocratic Oath**](https://en.wikipedia.org/wiki/Hippocratic_Oath) - *first, do no harm*.  A key idea in engineering ethics is that an engineer works for the betterment of the majority, not the minority.
 
-        This is our world now... the world of the electron and the switch, the
-beauty of the baud.  We make use of a service already existing without paying
-for what could be dirt-cheap if it wasn't run by profiteering gluttons, and
-you call us criminals.  We explore... and you call us criminals.  We seek
-after knowledge... and you call us criminals.  We exist without skin color,
-without nationality, without religious bias... and you call us criminals.
-You build atomic bombs, you wage wars, you murder, cheat, and lie to us
-and try to make us believe it's for our own good, yet we're the criminals.
+An engineer should also report any misconduct by other engineers or employers immediately.  This follows from the obligation to society.  If an employer, client, other engineer, or another person is known to be causing harm, it is the engineer's moral and ethical duty to report it.  Otherwise, harm will come to others.
 
-        Yes, I am a criminal.  My crime is that of curiosity.  My crime is
-that of judging people by what they say and think, not what they look like.
-My crime is that of outsmarting you, something that you will never forgive me
-for.
+Finally, an engineer must act professionally when conducting their work.  They have an obligation to their employer and their clients to perform their duties with professionalism and respect.  Doing otherwise goes against the general conduct of an engineer.
 
-        I am a hacker, and this is my manifesto.  You may stop this individual,
-but you can't stop us all... after all, we're all alike.
+### Ethics of Technology
 
-                               +++The Mentor+++
-```
+Broadly speaking, the [Ethics of Technology](https://en.wikipedia.org/wiki/Ethics_of_technology) can be summarised as two areas:
 
-## McCumber Cube
+1. The *creation* of new technology and what that technology may be used for.
+2. The use of technology to *exploit* others.
 
-With some background in place, we can define the technical terminology of computer security.  A common model is the McCumber Cube:
+Point one is concerned with questions such as *was it right for scientists to create nuclear weapons?*  The question is not easy to answer as there are different views on what would have happened is nuclear weapons were not developed in the way they were.
 
-![McCumber Cube](img/mccumber.png)
+Point 2 concerns ideas such as digital surveillance and the right to privacy.  A government may argue that it must collect data to protect its citizens.  Privacy advocates would argue that a government should not have data to ensure it does not exploit its citizens.
 
-- CIA stands for Confidentiality, Integrity, and Availability.  We will examine these next.
-- Asset state refers to where information is when an attacker exploits it.  We will also examine asset state soon.
-- Safeguards are how we protect against attacks.
+Both of these areas can cause debate, and as a software engineer you are at the heart of them:
 
-Safeguards are split into three categories:
+1. Would you create the software that controlled a nuclear weapon?
+2. Would you use existing software and data to monitor people?
 
-- Policy and practices: the controls an organisation puts in to ensure people mitigate risks.
-- Human factors: the training provided by an organisation to avoid risks such as viruses and social engineering tactics.
-- Technology: the software and hardware solutions used to protect systems.
+These questions are hard, and have to be individually judged.  Engineering ethics provides a framework to evaluate such questions.  Business ethics is another such framework.
 
-We will not go into safeguards any further as we would require entire lectures to cover some of these ideas.
+### Business Ethics
 
-### Confidentiality, Integrity, and Availability
+[Business Ethics](https://en.wikipedia.org/wiki/Business_ethics) are harder to explicitly define than engineering ethics.  The reason being, the **ethics of a business are defined by its purpose**.  Consider a non-profit organisation with the purpose of saving the whale.  In this case, all judgements in the business will be taken against this purpose.  Most companies, however, fall into a particular area: the maximising of profits to increase the value of the company and the return to shareholders.
 
-Remember, computer security is about maintaining confidentiality, integrity, and availability.  Each of these features ensures we provide a high-quality, safe service to our users.
+For engineers, the challenge when working for an organisation is recognising the different ethical framework you are working within.  Remember - an engineer does not make choices based on company profits but on what is best for society.
 
-Confidentiality is the assurance that our systems keep user's data private.  When a black hat targets confidentiality it is known as a disclosure attack.  This attack occurs when an attacker exposes private data against the owner's wishes.
+### ACM Code of Ethics
 
-Integrity is the assurance that a system preserves data.  Alteration attacks target integrity, changing or destroying data, so it becomes invalid.
+As an example, let us consider the [ACM Code of Ethics and Professional Conduct](https://www.acm.org/code-of-ethics).
 
-Availability is the assurance that users can access resources.  To target availability is to perform a denial attack.  When a user requests a resource and cannot, the attacker has denied them access.
+First, the **General Ethical Principles** state that a *Computing Professional* should:
 
-We will examine the attacks on confidentiality, integrity, and availability in the next section.
+> 1. Contribute to society and to human well-being, acknowledging that all people are stakeholders in computing.
+> 2. Avoid harm.
+> 3. Be honest and trustworthy.
+> 4. Be fair and take action not to discriminate.
+> 5. Respect the work required to produce new ideas, inventions, creative works, and computing artifacts.
+> 6. Respect privacy.
+> 7. Honor confidentiality.
 
-### Asset State
+These principles are within the sphere of engineering ethics.  A particular aspect is *respect privacy* and *honor confidentiality* which the ACM consider especially important to computing professionals.
 
-The second dimension of the McCumber Cube is the state of an information asset.  Most problems focus on one or two states, but it is common for a problem to cover all three.
+- [ ] **Reflect on** and **grade** yourself against these general ethical principles.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Compare your scores with your team.
 
-Storage is Data at Rest.  Data in a hard drive, memory, or an external device (e.g., SD card) is at rest.  Stored data usually is easiest to protect (for example, via encryption) but is usually the most valuable.
+The **Professional Responsibilities** are that a *Computing Professional* should:
 
-Transmission is when a system moves data from one location to another.  Network security targets this state.
+> 1. Strive to achieve high quality in both the processes and products of professional work.
+> 2. Maintain high standards of professional competence, conduct, and ethical practice.
+> 3. Know and respect existing rules pertaining to professional work.
+> 4. Accept and provide appropriate professional review.
+> 5. Give comprehensive and thorough evaluations of computer systems and their impacts, including analysis of possible risks.
+> 6. Perform work only in areas of competence.
+> 7. Foster public awareness and understanding of computing, related technologies, and their consequences.
+> 8. Access computing and communication resources only when authorized or when compelled by the public good.
+> 9. Design and implement systems that are robustly and usably secure.
 
-The processing state occurs when data is in use.  Most vulnerabilities occur in this state as a program is working on the data and is therefore open to modification and access.
+Points 1-5 are very familiar from engineering ethics.  Point 6 is an important one - *perform work only in areas of competence.*  It can be easy to think you know everything and can solve all problems.  You need to control that urge.  Remember one of the mantras of the module - **ego is the enemy**.
 
-## Attacks
+Point 7 implies that it is the responsibility of a computing professional to educate the public in computing.  An example scheme you can sign-up to for this is [**STEM Ambassadors**](https://www.stem.org.uk/stem-ambassadors).
 
-To write secure code requires an understanding of how black hats exploit vulnerabilities.  These exploits are known as attacks.  Let us define some terminology:
+Point 8 basically states not to access systems you are not meant to (e.g., no hacking).  Finally, point 9 states you should design your systems to be secure, not vulnerable.  In modern IT this is a particular point of concern.
 
-- Asset: something of value that a defender wishes to protect, e.g., passwords, bandwidth, CPU use, reputation, or simple credit card information.
-- Threat: a potential event causing an asset to lose value or an attacker taking possession of the data, e.g., transfer of ownership, destruction, disclosure, or corruption.
-- Vulnerability: a weakness in a system allowing a threat to occur.  A white hat's role is to minimise vulnerabilities.
-- Risk: a vulnerability paired with a threat, meaning a comprise exists with insufficient protection leading to a possible attack.
-- Attack: a realised risk when an attacker performs an exploit.
-- Mitigation: the process of reducing risks be either reducing vulnerabilities or devaluing assets.
+- [ ] **Reflect on** and **grade** yourself against these professional responsibilities.  Use the following grading mechanism: 2) I act in this manner in all cases; 1) I do not act in this manner in all cases; 0) I do not agree with this responsibility.  Compare your scores with your team.
 
-### Attack Vector
+The **Professional Leadership Principles** state a *Computing Professional* should:
 
-An attack vector is a path an attacker takes to access an asset.  An attack vector can include multiple vulnerabilities and assets.  The attacker is attempting any method to access the asset and therefore using multiple approaches improves the probability of success.
+> 1. Ensure that the public good is the central concern during all professional computing work.
+> 2. Articulate, encourage acceptance of, and evaluate fulfillment of social responsibilities by members of the organization or group.
+> 3. Manage personnel and resources to enhance the quality of working life.
+> 4. Articulate, apply, and support policies and processes that reflect the principles of the Code.
+> 5. Create opportunities for members of the organization or group to grow as professionals.
+> 6. Use care when modifying or retiring systems.
+> 7. Recognize and take special care of systems that become integrated into the infrastructure of society.
+
+Many of these points are about good team working.  Point 1 again emphasises public good from engineering ethics.  Points 2-5 are about supporting the people you work with.  Good work-life balance, supporting education of the team, etc.
+
+Point 6 refers to turning off systems.  Have all impacts been considered?  All stakeholders informed?  Normal procedures followed? etc.
+
+Point 7 is a consideration when a system becomes part of societal infrastructure.  This is an interesting one to consider.  Obvious cases are train control systems, air traffic control systems, etc.  But what about Facebook?  Or Google?  Are they part of the infrastructure of society, or simply tools that society currently favours?  You're own judgement as an engineer is required here.
+
+- [ ] **Reflect on** and **grade** yourself against these professional leadership principles.  Some of these may not be relevant to you at present.  If so, leave the grade blank.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Compare your scores with your team.
+
+Finally, the ACM require that a *Computing Professional* is in **Compliance with the Code** as they should:
+
+> 1. Uphold, promote, and respect the principles of the Code.
+> 2. Treat violations of the Code as inconsistent with membership in the ACM.
+
+In other words, it is your responsibility to ensure the Code is adhered to by you and other members of the ACM.
+
+## Code of Conduct
+
+A [Code of Conduct](https://en.wikipedia.org/wiki/Code_of_conduct) is defined in Wikipedia as:
+
+> ... a set of **rules** outlining the **social norms**, **religious rules and responsibilities** of, and or **proper practices for**, an *individual*.
+
+Emphasis is mine.
+
+Many organisations have a Code of Conduct, and the ACM Code of Ethics contains points which fall into a Code of Conduct criteria.  Essentially, a Code of Conduct is a set of rules that define how an individual must act when associated with an organisation.  You should have defined one for your team already.  As a student with the University you have agreed to a [Code of Conduct](https://my.napier.ac.uk/Student-Administration/Conduct/Pages/Conduct.aspx) and in particular a [Classroom and Campus Code of Conduct](https://my.napier.ac.uk/Student-Administration/Student-Charter/Documents/CampusAndClassroomConduct-StudentCode.pdf).  Examples of unacceptable behaviour include:
+
+> - Talking in a way that disrupts others’ learning and engagement, for example:
+>   - talking at inappropriate times in classrooms, study spaces and libraries;
+>   - talking over others who are already speaking in class;
+>   - excessively loud talking or shouting at inappropriate times and/or places.
+> - Using language, orally or in writing (including emails, texts and postings on social media websites), which is generally considered as having the potential to be offensive to others. This includes swearing and any offensive language/comments/conversation of a racist, sexist or sexual nature as well any offensive language/comments/conversation regarding any individual(s)’ religion, beliefs and/or right of freedom of speech.
+> - Using mobile devices in class for purposes unrelated to material you are currently being taught.
+> - Disturbing other students during exams/class based assessments or affecting their performance;
+> - Refusing to work in peer groups without good cause;
+> - Bullying and harassment of any form including via social media, text messages, email etc.
+> - Being present on campus whilst under the influence of alcohol or drugs.
+> - Violent, aggressive and/or indecent behaviour which has the potential to cause mental or physical harm to any individual(s) or damage to premises and/or property.
+> - Any behaviour likely to cause injury or impair the health and safety of yourself and/or others.
+> - Misuse or unauthorised use of University premises and/or misuse, unauthorised use and/or theft of items of University property or property of any member of the wider University Community including:-
+>   - Misuse or alteration of fire-fighting or security equipment/appliances
+>   - Misuse, alteration or unauthorised use of any electrical equipment, fittings and/or appliances including computer equipment.
+
+- [ ] **Reflect on** and **grade** yourself against the *Student Code of Conduct*.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Ask your team for feedback to see if they agree with your scoring.
+
+University staff also have [Values and Conduct](https://staff.napier.ac.uk/services/hr/Pages/Va.aspx) defined, and the [Student Charter](https://my.napier.ac.uk/STUDENT-ADMINISTRATION/STUDENT-CHARTER/Pages/Student-Charter.aspx) defines how academics and students interact.
+
+### Linux Code of Conduct
+
+Codes of Conduct are also prominent in IT.  In 2018, there was some controversy around the new [Linux Kernel Developer Code of Conduct](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/code-of-conduct.rst?id=8a104f8b5867c682d994ffa7a74093c54469c11f).  The code as of writing these notes (in late 2018) is:
+
+> **Contributor Covenant Code of Conduct**
+>
+> **Our Pledge**
+>
+> In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+>
+> **Our Standards**
+>
+> Examples of behavior that contributes to creating a positive environment include:
+>
+> - Using welcoming and inclusive language
+> - Being respectful of differing viewpoints and experiences
+> - Gracefully accepting constructive criticism
+> - Focusing on what is best for the community
+> - Showing empathy towards other community members
+>
+> Examples of unacceptable behavior by participants include:
+>
+> - The use of sexualized language or imagery and unwelcome sexual attention or advances
+> - Trolling, insulting/derogatory comments, and personal or political attacks
+> - Public or private harassment
+> - Publishing others’ private information, such as a physical or electronic address, without explicit permission
+> - Other conduct which could reasonably be considered inappropriate in a professional setting
+>
+> **Our Responsibilities**
+>
+> Maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+>
+> Maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+>
+> **Scope**
+>
+> This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
+>
+> **Enforcement**
+>
+> Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the Technical Advisory Board (TAB) at <tab@lists.linux-foundation.org>. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The TAB is obligated to maintain confidentiality with regard to the reporter of an incident.  Further details of specific enforcement policies may be posted separately.
+>
+> Maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project’s leadership.
+>
+> **Attribution**
+>
+> This Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
 
-As a software engineer, we concern ourselves with understanding attack vectors.  Attack vectors help illustrate the vulnerabilities that lead to an attacker compromising an asset.  Let us consider an example, adapted from Security for Software Engineers:
+The Linux Code of Conduct is concerned mainly with stopping harassment and promoting equality - which is fundamental to the ideals of the Linux community.  The [Linux Foundation Code of Conduct](https://www.linuxfoundation.org/code-of-conduct/) has similar themes.
 
-- Scenario: a malicious student wishes to change their grade on the records system.
-- Asset: the grade.
-- Threat: damage the integrity of the grade by altering it.
-- Vulnerability: for example, an administrator could have an unsafe password written on a piece of paper.
-- Risk: the student obtains the password, logs in as the administrator, and changes the grade.
-- Mitigation: a policy that no passwords are written down.
+### BCS Code of Conduct
 
-### Threat Modelling
+The British Computer Society (BCS) is the recognised professional body for IT in the UK.  It defines a [Code of Conduct](https://www.bcs.org/category/6030) that its members must adhere to.  Under **Public Interest**, a member shall:
 
-Threats are our starting point when considering our risks and how to mitigate them.  Threat modelling is the process of analysing a system for vulnerabilities.  It is best to do this during system specification and design rather than retrofitting later.
+> 1. have due regard for public health, privacy, security and wellbeing of others and the environment.
+> 2. have due regard for the legitimate rights of Third Parties.
+> 3. conduct your professional activities without discrimination on the grounds of sex, sexual orientation, marital status, nationality, colour, race, ethnic origin, religion, age or disability, or of any other condition or requirement  
+> 4. promote equal access to the benefits of IT and seek to promote the inclusion of all sectors in society wherever opportunities arise.
 
-As Agile practitioners, we should add user stories, conditions of satisfaction, tests, and other features to our work.  We can also dedicate Sprints to improving our security via producing threat models taken from understanding our attack vectors and building further mitigations.
+As you can see, these are similar to many ideas from engineering ethics, the ACM Code of Ethics, and the Linux Code of Conduct.
 
-### Disclosure, Alteration, and Denial
+- [ ] **Reflect on** and **grade** yourself against the BCS codes for *Public Interest*.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Compare your grade with your team.
 
-Remember that confidentiality, integrity and availability assurances are our goals.  Attacks on CIA are known as DAD: Disclosure, Alteration, and Denial.
+Under **Professional Competence and Integrity** a BCS member shall:
 
-- Disclosure attacks are attacks on confidentiality.  If an asset is viewed contrary to the wish of the owner, then a confidentiality breach or disclosure attach has occurred.
-- Alteration attacks are attacks on integrity.  When an attacker makes unauthorised changes to a user's data, they have compromised system integrity and performed an alteration attack.
-- Denial attacks are attacks on availability.  Denial of service attacks disrupts the user's access to systems, impacting the availability of that system.
+> 1. only undertake to do work or provide a service that is within your professional competence.
+> 2. claim any level of competence that you do not possess.
+> 3. develop your professional knowledge, skills and competence on a continuing basis, maintaining awareness of technological developments, procedures, and standards that are relevant to your field.
+> 4. ensure that you have the knowledge and understanding of Legislation and that you comply with such Legislation, in carrying out your professional responsibilities.  
+> 5. respect and value alternative viewpoints and, seek, accept and offer honest criticisms of work.
+> 6. avoid injuring others, their property, reputation, or employment by false or malicious or negligent action or inaction.
+> 7. reject and will not make any offer of bribery or unethical inducement.
 
-### STRIDE
+These codes contain similar ideas to the ACM about working only in competent areas.  Point 3 requires a BCS member to be continuously updating their skills (continuous improvement).  There are also points of legality and wellbeing of others.
 
-STRIDE is another acronym to remember.  It defines six categories of threats:
+- [ ] **Reflect on** and **grade** yourself against the BCS codes for *Professional Competence and Integrity*.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Compare your grade with your team.
 
-#### Spoofing
+For **Duty to Relevant Authority** a BCS member shall:
 
-Identity spoofing is pretending to be someone else, such as using another person's login details.
+> 1. carry out your professional responsibilities with due care and diligence in accordance with the Relevant Authority’s requirements whilst exercising your professional judgement at all times.
+> 2. seek to avoid any situation that may give rise to a conflict of interest between you and your Relevant Authority.
+> 3. accept professional responsibility for your work and for the work of colleagues who are defined in a given context as working under your supervision.
+> 4. NOT disclose or authorise to be disclosed, or use for personal gain or to benefit a third party, confidential information except with the permission of your Relevant Authority, or as required by Legislation
+> 5. NOT misrepresent or withhold information on the performance of products, systems or services (unless lawfully bound by a duty of confidentiality not to disclose such information), or take advantage of the lack of relevant knowledge or inexperience of others.
 
-#### Tampering
+These points have a strong influence from engineering ethics, but also contain ideas of privacy which are a fundamental concept in IT.
 
-Tampering involves changing data in some manner such as deleting or modifying data.  Examples include:
+- [ ] **Reflect on** and **grade** yourself against the BCS codes for *Duty to Relevant Authority*.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Compare your grade with your team.
 
-- Intercepting a transmission and modifying it before sending to the recipient.
-- Modifying a program so malicious code is executed each time we use the program.
-- Modifying a web page without authorisation.
+For **Duty to the Profession** a BCS member shall:
 
-#### Repudiation
+> 1. accept your personal duty to uphold the reputation of the profession and not take any action which could bring the profession into disrepute.
+> 2. seek to improve professional standards through participation in their development, use and enforcement.
+> 3. uphold the reputation and good standing of BCS, the Chartered Institute for IT.
+> 4. act with integrity and respect in your professional relationships with all members of BCS and with members of other professions with whom you work in a professional capacity.
+> 5. notify BCS if convicted of a criminal offence or upon becoming bankrupt or disqualified as a Company Director and in each case give details of the relevant jurisdiction.
+> 6. encourage and support fellow members in their professional development
 
-Repudiation is disavowing an action or put simply hiding your tracks.  Modifying logs to hide that a system was accessed is one such example.  Repudiation is a particular form of tampering attack.
+These points are similar to those of the ACM Compliance with the Code, although Point 5 states a particular instance which may be considered a problem for a BCS member.
 
-#### Information Disclosure
+- [ ] **Reflect on** and **grade** yourself against the BCS codes for *Duty to the Profession*.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Compare your grade with your team.
 
-Information disclosure is the exposure of a user's confidential data against their wishes.  These attacks are often well documented, such as the release of credit card numbers.
+## Modern Developer Culture
 
-#### Denial of Service
-
-Denial of Service (DoS) attacks target service availability.  Again, these attacks are often well publicised.  Examples include:
-
-- Holding a public protest at a university so classes cannot occur.
-- Setting off a fire alarm to stop an exam.
-- Interrupting a power supply to stop a device being used.
-- Flooding a web server with requests to consume CPU usage and deny other users access.
-- Changing a user's password so they cannot access a system.
-
-#### Elevation of Privilege
-
-Elevation of privilege is finding a method of performing tasks the attacker is not authorised to do.  Doing so enables other types of attacks.  The attacker is not spoofing but is changing their rights of access.  Examples include:
-
-- Buffer overrun attacks.
-- Account modification to increase privileges.
+All of these ideas can be seen in modern developer culture.  The ideas of having integrity, being fair in your conduct, being supportive, etc. are important to agile and lean software development ideals.  In other words, to be a modern software developer is not just in the tools and techniques you use, it is in the fundamental philosophy of the individuals and teams involved.
 
 ## Summary
 
-As stated, we have only really introduced the concepts of computer security, and your role is to continue your development in this area to ensure the systems you build are secure.  Specifically, this lecture has:
+Although you might have found this lecture dry since we did not discuss new technology, it is probably one of the most important concepts covered when it comes to being a professional in the IT industry.
 
-- Defined the roles in computer security, looking at users, black hats, and white hats.
-- Described the ethics of white hats, presenting the (ISC)<sup>2</sup> Code of Ethics.
-- Defined the terms in the McCumber Cube including CIA, asset state, and safeguards.
-- Described computer security attacks and related terminology, such as STRIDE.
+In this lecture we have:
 
-## Recommended Reading
+- Defined ethics in the context of IT professionals - looking at applied ethics as they relate to engineering, technology, and business.
+- Described the core principles of engineering ethics - focusing on the three key principles: *Obligation to Society*; *Reporting Misconduct*; and *General Conduct*.
+- Reviewed the ACM Code of Ethics - comparing it to engineering ethics and scoring ourselves against the criteria.
+- Given examples of Code of Conducts - the Student Code of Conduct and the Linux Code of Conduct in particular.
+- Reviewed the BCS Code of Conduct - illustrating the similarity to the ACM Code of Ethics, other Codes of Conduct, and more generally engineering ethics.
 
-*Security for Software Engineers* by James Helfrich provides further depth to the areas we have covered in this lecture.
+## Appendix - BCS Membership and Grades
 
-![Security for Software Engineers](img/security-book.jpg)
+[Joining the BCS](https://www.bcs.org/category/5653) is agreeing to the Code of Conduct and provides an avenue to becoming a Chartered IT Professional (CITP) and/or Chartered Engineer (CEng) as recognised by the [Engineering Council](https://www.engc.org.uk/).  The School of Computing courses are accredited to meet criteria for chartered status.
+
+The BCS has several membership grades and recognitions:
+
+- [Student or Apprentice](https://www.bcs.org/category/10970) - the most likely grade for you.
+- [Associate Member (AMBCS)](https://www.bcs.org/category/10969) - usually for people just starting in IT without a degree.
+- [Professional Member (MBCS)](https://www.bcs.org/category/9722) - normal membership level when graduating from a recognised degree.
+- [Fellow (FBCS)](https://www.bcs.org/category/10968) - is awarded to those recognised as making a contribution to IT.
+- [Professional Registration for IT Technicians (RITTech)](https://www.bcs.org/category/18031) - is aimed at IT technicians.
+- [Chartered IT Professional (CITP)](https://www.bcs.org/category/10972) - is a professional standard of competence and professionalism in IT.
+- [Chartered Engineer (CEng)](https://www.bcs.org/category/14957) - is a professional standard recognising an individuals ability to solve engineering problems using technology through innovation, creativity and change.
+- [Federation for Informatics Professionals (FEDIP) for Health and Social Care](https://www.bcs.org/category/19284) - is aimed at IT professionals working in health and social care.

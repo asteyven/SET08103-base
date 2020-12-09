@@ -1,4 +1,4 @@
-# Lab 05: Use Cases and Use Case Diagrams
+# Lab 3b: Use Cases and Use Case Diagrams
 
 In this lab we will extend our initial user stories into fuller use cases, trying to capture the detail of the work we require to complete the new HR System.  We will also look at **Use Case Diagrams** to visually define our use cases and their relationship.
 
