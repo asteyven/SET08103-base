@@ -1,4 +1,4 @@
-# Lab 11: Code Quality
+# Lab 10: Code Quality
 
 In this lab we will install a final plugin for IntelliJ that will help our overall code quality.  PMD does not officially an acronym, although a commonly used one is *Programming Mistake Detector.*  PMD is a *static analysis tool*.  It analyses the static (pre-compiled) properties of our code and makes suggestions based on the outcome of the analysis.
 

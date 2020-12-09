@@ -1,4 +1,4 @@
-# Lab 09: Deployment
+# Lab 08: Deployment
 
 This lab is very involved and will take time, patience, and practice to complete and understand.  We are going to deploy our built software.  We will look at two methods:
 

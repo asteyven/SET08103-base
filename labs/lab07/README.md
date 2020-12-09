@@ -1,4 +1,4 @@
-# Lab 08: Integration Testing
+# Lab 07: Integration Testing
 
 This lab will build further automated tests for our project, focusing on integration testing as supported via Travis CI.  Most of the work in this lab will be around writing Travis configuration files, although we will do some work in our Java code.
 

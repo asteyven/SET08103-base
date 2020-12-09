@@ -1,4 +1,4 @@
-# Lab 07: Unit Testing
+# Lab 06: Unit Testing
 
 In this lab we will add automated testing to our method.  Unit Testing is a technique for testing individual *units* of code.  A unit is a piece of functionality - normally an individual pathway through a method.  We can write code that will test this branch of the application, and thus automate our testing process.  This will give us confidence in our code as we continue to develop it.
 
