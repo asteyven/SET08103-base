@@ -1,4 +1,4 @@
-# Forming Scrum Teams
+# Unit 1b: Forming Scrum Teams
 
 This unit will focus on Scrum and how Scrum can be used in your group coursework project.
 

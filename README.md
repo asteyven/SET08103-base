@@ -20,7 +20,7 @@ In the first week we will be setting up teams to work jointly on the coursework.
 | 7 | [Unit 07 (a): The Second Way of DevOps - Feedback](units/unit07/unit07a.md) <br> [Unit 07 (b) Test-Driven Development (TDD)](units/unit07/unit07b.md) | [Lab 07: Integration Testing](labs/lab07) |                      |
 | 8 | [Unit 08 (a): Continuous Delivery](units/unit08/unit08a.md) <br> [Unit 08 (b): Continuous Integration](units/unit08/unit08b.md) | [Needs reduced Lab 08: Deployment](labs/lab08) |                      |
 | 9 | [Unit 09 (a): The Third Way of DevOps - Continuous Experimentation and Learning](units/unit09/unit09a.md) <br> [Unit 09 (b): Bug Tracking and Monitoring](units/unit09/unit09b.md) | [Lab 09: Bug Tracking](labs/lab09) |  |
-| 10      | [Unit 10 (a): Ethics and Professionalism](units/unit10/unit10a.md) <br> [Unit 10(b): Legal Issues](units/unit10/unit10b.md)<br>[Unit 10: Computer Security](units/unit10/unit10a.md)        | [Lab 10: Code Quality](labs/lab10)               | Coursework Code Review 2 |
+| 10      | [Unit 10 (a): Ethics and Professionalism](units/unit10/unit10a.md) <br> [Unit 10 (b): Legal Issues](units/unit10/unit10b.md)<br>[Unit 10 (c): Computer Security](units/unit10/unit10c.md)  | [Lab 10: Code Quality](labs/lab10)               | Coursework Code Review 2 |
 
 ## Copyright Notice
 
