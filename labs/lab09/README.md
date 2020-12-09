@@ -1,4 +1,4 @@
-# Lab 10: Bug Reporting and Tracking
+# Lab 09: Bug Reporting and Tracking
 
 In this lab we will setup a bug tracking template on GitHub.  This is actually such a common task there is already a tutorial:
 
