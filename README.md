@@ -1,12 +1,10 @@
 # SET08803 Software Engineering Methods
 
-The following link introduces many of the concepts needed to set up a suitable learning environment for everyone in the module
+Welcome to the GitHub page for SET08803 Software Engineering Methods. GitHub contains all of the material for the module with the exception of the end of Unit Tests which you will find on the Moodle page.
 
-[Introduction to the Module](units/unit00/Introduction.md) 
+Before commencing the module you should view the introduction to the module on Moodle
 
-In the first week we will be setting up teams to work jointly on the coursework. We will be using ideas from Scrum; a project management and group working philosophy widely adopted in the Software Engineering Community
-
-[Setting up your Scrum Teams](units/unit00/ScrumAndTeamForming.md) 
+You should attempt to complete the labs individually which will give you the skills to contribute towards your group coursework 
 
 
 | Unit                                                    | Title                                                        | Lab                                                | Assessment           |

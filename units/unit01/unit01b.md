@@ -40,7 +40,7 @@ When selecting tasks to work on, the team prioritises by what returns the most v
 
 Scrum defines an **Inspect and Adapt** cycle.  We are constantly *inspecting* how we work, and then *adapting* based on that observation.  We want to do work, try something, and check how we do.  We want to fail fast so we can fix our problems quickly - *spot a mistake and fix it straight away*.  Otherwise you you will pay for the mistake in the future when you have forgotten the details of the error or work done.  Failure is one of the best teachers.
 
-Scrum also deals with waste.  Waste is a concept from lean, and we will look at *Lean Software Development* in [Unit 2b](../unit02/unit2b).  We will talk more about waste then.
+Scrum also deals with waste.  Waste is a concept from lean, and we will look at *Lean Software Development* in [Unit 02b](../unit02/unit02b).  We will talk more about waste then.
 
 Finally, work is changed by focusing on the team.  The job of management in the organisation is to free the team to increase the *flow of work through the system.*  Management need to remove obstructions from the team to improve their effectiveness.  A standard management approach - adding manpower - has been [shown](https://en.wikipedia.org/wiki/The_Mythical_Man-Month) to increase delivery time on software projects, and likely projects in general.
 
@@ -76,7 +76,7 @@ To keep track of your tasks we write them on sticky-notes and place them on a wh
  (https://creativecommons.org/licenses/by-sa/2.5
 ) or CC0], from Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Kanban_board_example.jpg"><img width="1024" alt="Kanban board example" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Kanban_board_example.jpg/1024px-Kanban_board_example.jpg"></a>
 
-We will look at Kanban in [Lecture 8](../lecture08) to provide more detail.   To start with you will define four columns:
+We will look at Kanban in [Unit 4b](../unit04/unit04b) to provide more detail.   To start with you will define four columns:
 
 1. Backlog (or *Open Issues*).
 2. Sprint.
@@ -341,7 +341,7 @@ To summarise the Scrum Framework see below:
 ## Your Task
 
 1. Pick a **team**.  You need four people for your team.
-2. Define a **Code of Conduct**.  See [Lecture 21](../lecture21) for assistance.
+2. Define a **Code of Conduct**.  See [Unit 10a](../unit10/unit10a.md) for assistance.
 3. Pick a **Product Owner**.
 4. Pick a **Scrum Master**.
 5. Create and prioritize a **Product Backlog.**
@@ -363,7 +363,7 @@ To illustrate how Scrum ideals (and agile principles in general) can work, watch
 
 1. **Do we really need to meet once a day?**
 
-It would be good if you could, but in reality three times a week will probably be enough.  Also, use technology to get around the problem.  Skype or similar can allow you to communicate.  The point is to meet at the same time each day for no more than 10-15 minutes.
+It would be good if you could, but in reality three times a week will probably be enough.  You can use whatever technology you like such as Skype or similar to communicate.  The point is to meet at the same time each day for no more than 10-15 minutes.
 
 2. **We cannot find a time to all meet.  What do we do?**
 
@@ -373,28 +373,20 @@ You need to commit to your team and your learning.  You need to see it as a prio
 
 In two ways:
 
-- The assessment is designed with 3-week Sprints.  Each Sprint end will involve a review with a member of the teaching team that will be assessed.
-- Every lab your team will have a 10-minute standup with a member of the teaching team to check how everything is progressing.
+- The coursework is assessed at two points in the module but as a group you should break the work into smaller 2-3 week Sprints. 
+- Each week at least one member of your team (preferably all) should attend the Virtual Office Hour detailed on Moodle. During this time the group will have a 10-minute standup with a member of the teaching team to check how everything is progressing.
 
-4. **If we are having a standup does that mean I have to attend every lab?**
+4. **Does my team have to work on the lab material together?**
 
-Yes.  This is for your benefit.
+You should attempt the labs yourself but as part of a team you should support each other in  your learning and share knowledge with other team members.
 
-5. **Does my team have to all be in the same lab session?**
+5. **We have a problem with a team member.  What should we do?**
 
-Yes.  You should consider this when organising your team.
+Identify quickly and resolve by addressing with the team member.  If there is a still a problem bring it up with a member of the teaching team. If you have fallen out then ask yourselves if it can be solved.  Try and be professional and curtious as a team.
 
-6. **Does my team have to work on the lab material together?**
+6. **Can we sack a team member?**
 
-Yes.  You are a team and should see your learning in the module as part of the team effort.
-
-7. **We have a problem with a team member.  What should we do?**
-
-Identify quickly and resolve by addressing with the team member.  If there is a still a problem bring it up at the lab standup.  If you have fallen out then ask yourselves if it can be solved.  Try and be professional and curtious as a team.
-
-8. **Can we sack a team member?**
-
-We'd prefer not to, but if this is necessary bring it up at the lab standup.
+We'd prefer not to, but if this is necessary bring it up with a member of the teaching team at the Virtual Office Hour.
 
 ## Recommended Reading
 
