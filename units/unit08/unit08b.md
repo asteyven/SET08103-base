@@ -1,4 +1,4 @@
-# Unit 7b: Continuous Delivery
+# Unit 8b: Continuous Delivery
 
 In this lecture we will extend our discussion on Continuous Integration from [Lecture 15](../lecture15) to include Continuous Delivery.  We will examine the additions we have to make to our process, as well as examining the risks addresses by Continuous Delivery.
 

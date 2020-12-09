@@ -1,4 +1,4 @@
-# Unit 7a: Continuous Integration
+# Unit 8a: Continuous Integration
 
 In this lecture we will examine Continuous Integration (CI), how it allows us to automate our build processes, and how it can provide feedback.  The aim is to explore why CI is useful, and the process of undertaking CI.  Most of these ideas are built into Travis CI, which makes our life easy.  Here, we explore the best practice methods in more detail.
 

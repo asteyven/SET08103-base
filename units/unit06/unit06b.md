@@ -1,4 +1,4 @@
-# Unit 5b: UML Workflow
+# Unit 6b: UML Workflow
 
 This lecture follows on from [Lecture 11](../lecture11) and shows one technique to practically use UML in analysis and design.  Remember that UML is a diagramming language, and so allows us to think visually about the system.  This can be useful when you get stuck on a particular problem.  Although informal diagramming can work here, having a standard is useful.
 

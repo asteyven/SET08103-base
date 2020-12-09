@@ -1,4 +1,4 @@
-# Unit 1b: Lean Software Development
+# Unit 2b: Lean Software Development
 
 [Lean Software Development on Wikipedia](https://en.wikipedia.org/wiki/Lean_software_development).
 

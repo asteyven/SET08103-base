@@ -1,4 +1,4 @@
-# Unit 3b: Kanban
+# Unit 4b: Kanban
 
 In this lecture we will examine Kanban.  Kanban is more than just a board on the wall, although that is a good starting point.  We will examine the origins of Kanban in lean manufacturing, and then move onto how Kanban is used in software development.
 

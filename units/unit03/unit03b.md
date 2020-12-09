@@ -1,4 +1,4 @@
-# Unit 2b: The Three Ways - Underpinning Principles of DevOps
+# Unit 3b: The Three Ways - Underpinning Principles of DevOps
 
 In this lecture we will explore the key principles of DevOps and how these are mapped to the work in the rest of the module.  DevOps, and the culture surrounding it, has become a desirable trend for graduates.  In this module we skate over the principles with a software engineering lens.  The principles you will find are similar to ones already discussed in the module.
 

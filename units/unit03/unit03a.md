@@ -1,4 +1,4 @@
-# Unit 2a: Modern Software Architecture
+# Unit 3a: Modern Software Architecture
 
 In this lecture we will examine the history of software architecture and delivery, ending with current modern software approaches.  Understanding these concepts are important to working in a modern development environment, and considering the relationship now formed between *developers* and *operations* (DevOps).
 

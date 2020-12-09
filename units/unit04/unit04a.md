@@ -1,4 +1,4 @@
-# Unit 3a: The First Way of DevOps - Flow
+# Unit 4a: The First Way of DevOps - Flow
 
 In this lecture we will cover the technical practices of flow.  Flow is our ability to keep work moving from the left (development) to the right (customer) as quickly as possible.  There are a number of practices that we can adopt to increase flow in our environment; however, we will start by looking at the psychology of flow.
 

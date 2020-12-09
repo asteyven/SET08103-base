@@ -1,4 +1,4 @@
-# Unit 1a: Version Control and Git
+# Unit 2a: Version Control and Git
 
 ## Reminder - Our Learning Environment
 

@@ -1,4 +1,4 @@
-# Unit 5a: UML Diagrams
+# Unit 6a: UML Diagrams
 
 In this lecture we will examine the UML diagram types.  UML (the Unified Modelling Language) is a well-known diagramming framework for software development.  In this lecture we will cover the history and diagram types, and in [Lecture 12](../lecture12) we will examine how to use UML to analyse and design software.
 

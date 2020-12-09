@@ -1,4 +1,4 @@
-# Unit 6a: The Second Way of DevOps - Feedback
+# Unit 7a: The Second Way of DevOps - Feedback
 
 In this lecture we will cover the technical practices of feedback.  Feedback is our ability to gain information from our peers and systems to improve our work.  Feedback, and using feedback effectively, is important in all aspects of your life, and in development we must ensure we are doing the right work effectively.
 
