@@ -11,7 +11,7 @@ In the first week we will be setting up teams to work jointly on the coursework.
 
 | Unit                                                    | Title                                                        | Lab                                                | Assessment           |
 | ------------------------------------------------------------ | ---- | -------------------- | -------------------- |
-| 1 | [Unit 01 (a): Version Control and Git](units/unit01/unit01a.md) <br> [Unit 01 (b): Lean Software Development](units/unit01/unit01b.md) | [Lab 01: Setup](labs/lab01)                        | [Coursework Available](assessment) |
+| 1 | [Unit 01 (a): Setting up our Working Environment](units/unit01/unit01a.md) <br> [Unit 01 (b): Forming Scrum Teams](units/unit01/unit01b.md) | [Lab 01: Setup](labs/lab01)                        | [Coursework Available](assessment) |
 | 2 | [Unit 02 (a): Version Control and Git](units/unit02/unit02a.md) <br> [Unit 02 (b): Lean Software Development](units/unit02/unit02b.md) | [Lab 02: Continuous Integration Setup](labs/lab02) |  |
 | 3 | [Unit 03 (a): Modern Software Development](units/unit03/unit03a.md) <br> [Unit 03 (b): Three Ways of DevOps](units/unit03/unit03b.md) | [Lab 03: Requirements and issues](labs/lab03) <br> [Lab 03a: Use Cases](labs/lab03b) |                      |
 | 4 | [Unit 04 (a): The First Way of DevOps - Flow](units/unit04/unit04a.md) <br> [Unit 04 (b): Kanban](units/unit04/unit04b.md) | [Lab 04: Task Management and Kanban](labs/lab04) |                      |

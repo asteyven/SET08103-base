@@ -1,6 +1,4 @@
-# Introduction to the Module
-
-The Module .....
+# Setting up our Working Environment
 
 ## Creating a Cooperative Learning Community Environment for the Module
 
