@@ -1,6 +1,6 @@
 # Unit 5a: Requirements Gathering
 
-In this lecture we will examine requirements.  Requirements are considered one of the most difficult facets of software engineering.  We will examine what a requirement is, how we manage these in an agile approach, and some ideas around gathering and thinking about requirements.
+In this Unit we will examine requirements.  Requirements are considered one of the most difficult facets of software engineering.  We will examine what a requirement is, how we manage these in an agile approach, and some ideas around gathering and thinking about requirements.
 
 ## Behavioural Objectives
 
@@ -84,7 +84,7 @@ So why is the Iron Triangle and waterfall method still in use today?  Some point
 
 ## Agile and Requirements
 
-We covered the [Four Values of the Agile Manifesto](https://agilemanifesto.org/) in [Lecture 02](../lecture02).  The Agile Manifesto also defines [twelve principles](https://agilemanifesto.org/principles.html), two of which are of interest when discussing requirements:
+We covered the [Four Values of the Agile Manifesto](https://agilemanifesto.org/) in [Unit 01b](../unit01/unit01b.md).  The Agile Manifesto also defines [twelve principles](https://agilemanifesto.org/principles.html), two of which are of interest when discussing requirements:
 
 - **Manifesto principle 1** *Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.*
 - **Manifesto principle 2** *Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage*.
@@ -151,13 +151,13 @@ So stakeholders can be a diverse list of people.  They include users as a key gr
 
 ## Working with Requirements in Agile
 
-User stories ([Lecture 10](../lecture10)) are the main requirement work undertaken in agile.  Stories need identified, maintained, prioritised, scheduled, elaborated, implemented, tested, and accepted:
+User stories ([Unit 5b](../unit05/unit05b.md)) are the main requirement work undertaken in agile.  Stories need identified, maintained, prioritised, scheduled, elaborated, implemented, tested, and accepted:
 
 - Identified via discovery (see below).
 - Maintained by the Product Owner working with the team.
 - Prioritised by the Product Owner, on the product backlog
 - Scheduled by the team, by pulling them into a Sprint.
-- Elaborated by the team by asking questions (see [Lecture 10](../lecture10)).
+- Elaborated by the team by asking questions 
 - Implemented by the team.
 - Tested by the team (unit test, functional test, acceptance test).
 - Accepted by the Product Owner as complete, based on the Definition of Done.
@@ -241,6 +241,6 @@ We've covered a lot of concepts here, and little about actual direct methods of 
 
 ## Recommended Reading
 
-Most of the information is this lecture is taken from *Agile Software Requirements* from Dean Leffingwell.
+Most of the information is this Unit is taken from *Agile Software Requirements* from Dean Leffingwell.
 
 ![Agile Software Requirements](img/agile-req-book.jpg)

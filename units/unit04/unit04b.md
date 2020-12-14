@@ -1,6 +1,6 @@
 # Unit 4b: Kanban
 
-In this lecture we will examine Kanban.  Kanban is more than just a board on the wall, although that is a good starting point.  We will examine the origins of Kanban in lean manufacturing, and then move onto how Kanban is used in software development.
+In this Unit we will examine Kanban.  Kanban is more than just a board on the wall, although that is a good starting point.  We will examine the origins of Kanban in lean manufacturing, and then move onto how Kanban is used in software development.
 
 ## Behavioural Objectives
 
@@ -52,11 +52,11 @@ Kanban is also sometimes called a pull-based system.  The reason is that product
 
 ### Limiting Work-in-Progress (WiP)
 
-Work-in-Progress is a key concept in Kandban.  Let us consider some of the ideas we have covered already:
+Work-in-Progress is a key concept in Kanban.  Let us consider some of the ideas we have covered already:
 
-- *Scrum* ([Lecture 02](../lecture02)) requires team members to commit to the project and work.  You cannot commit if you are doing multiple things.
-- *Lean Software Development* ([Lecture 04](../lecture04)) emphasised reducing waste.  One such area of waste was task switching.
-- *DevOps* ([Lecture 06](../lecture06) and [Lecture 07](../lecture07)) emphasises the need to reduce work in progress to enable commitment to the task at hand.
+- *Scrum* ([Unit 01a Scrum](../unit01/unit01b.md)) requires team members to commit to the project and work.  You cannot commit if you are doing multiple things.
+- *Lean Software Development* ([Unit 02b Lean Software Development](../unit02/unit02b.md)) emphasised reducing waste.  One such area of waste was task switching.
+- *DevOps* ([Unit 03b Three Ways of DevOps](../unit03/unit03b.md) and [Unit 04a The first way of DevOps](../unit04/unit04a.md)) emphasises the need to reduce work in progress to enable commitment to the task at hand.
 
 Kanban is popular in software development as it allows us to limit WiP.  In manufacturing, we only produce inventory as items are required.  We stop doing work just to do work.
 
@@ -66,7 +66,7 @@ Finally, Kanban allows us to be responsive to market/customer demands.  No longe
 
 ## Kanban in Software Development
 
-The lean movement in software development has taken inspiration from the numerous lean manufacturing principles in general.  Kanban is perhaps the most well known as it provides a visual tool.  This is a key principle of DevOps ([Lecture 06](../lecture06)) where we want to **make work visible**.
+The lean movement in software development has taken inspiration from the numerous lean manufacturing principles in general.  Kanban is perhaps the most well known as it provides a visual tool.  This is a key principle of DevOps ([Unit 03b Three Ways of DevOps](../unit03/unit03b.md) ) where we want to **make work visible**.
 
 Kanban in software development appears to have evolved from Microsoft in the 2000s.  There have been several books on Kanban in software development, but the principles have been applied to other sectors such as human resources, marketing, and general service management.  The key concept that always appears is the Kanban board, which has been used in various forms.
 
@@ -81,7 +81,7 @@ This is the simplest form of Kanban board, and is used in many places.  We have 
 - a **Doing** column which contains cards currently being worked on.
 - a **Done** column which contains cards where the work is completed.
 
-These three columns are a simple **value stream**.  We introduced value streams in [Lecture 04 on Lean Software Development](../lecture04).  An example value stream is below:
+These three columns are a simple **value stream**.  We introduced value streams in [Unit 2b on Lean Software Development](../unit02/unit02b.md).  An example value stream is below:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:ValueStreamMapParts.png#/media/File:ValueStreamMapParts.png"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/ValueStreamMapParts.png" alt="ValueStreamMapParts.png" height="415" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:DanielPenfield&amp;action=edit&amp;redlink=1" class="new" title="User:DanielPenfield (page does not exist)">DanielPenfield</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=28553995">Link</a></p>
 Here, our columns would be *Process A*, *Process B*, *Process C*, and *Shipping*.  Remember the roots of Kanban from manufacturing.  The cards will be pulled through the system based on capacity and need.  The aim with a Kanban board is to simulate a value stream.  Below is a more detailed Kanban board.
@@ -156,7 +156,7 @@ Kanban has seen the rise of a number of tools.  Really, most of these tools just
 
 ## Summary
 
-In this lecture, we have:
+In this Unit, we have:
 
 - Described the origins of Kanban in lean manufacturing, examining Toyota's Six Rules and Just-in-Time manufacturing.
 - Defined the principles of Kanban, namely Kanban boards, pull-based systems, limiting Work-in-Progress, and Just-in-Time working.

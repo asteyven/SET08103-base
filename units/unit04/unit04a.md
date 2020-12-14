@@ -1,6 +1,6 @@
 # Unit 4a: The First Way of DevOps - Flow
 
-In this lecture we will cover the technical practices of flow.  Flow is our ability to keep work moving from the left (development) to the right (customer) as quickly as possible.  There are a number of practices that we can adopt to increase flow in our environment; however, we will start by looking at the psychology of flow.
+In this Unit we will cover the technical practices of flow.  Flow is our ability to keep work moving from the left (development) to the right (customer) as quickly as possible.  There are a number of practices that we can adopt to increase flow in our environment; however, we will start by looking at the psychology of flow.
 
 ## Behavioural Objectives
 
@@ -83,7 +83,7 @@ Furthermore, we create new VMs or containers and deploy them, destroying the old
 
 ### Step 4: Modify our Definition of Development "Done" to Include Running in Production-like Environments
 
-We introduced Definition of Done (DoD) in [Lecture 02 on Scrum](../lecture02).  DoD needs to go beyond just having correct code.  For each development increment, our code must be:
+We introduced Definition of Done (DoD) in [Unit 01 (b): Forming Scrum Teams](../unit01/unit01b.md).  DoD needs to go beyond just having correct code.  For each development increment, our code must be:
 
 - Integrated.
 - Tested.
@@ -119,13 +119,13 @@ Continuous integration practices require three capabilities:
 - culture to stop the entire production line when validation tests fail.
 - developers working in small batches on trunk rather than long-lived feature branches.
 
-We will examine [Continuous Integration in Lecture 15](../lecture15) and [Continuous Delivery in Lecture 16](../lecture16).
+We will examine [Continuous Integration in Unit 8b](../unit08/unit08b.md) and [Continuous Delivery in Unit 8a](../unit08/unit08a.md).
 
 ### Step 2: Build a Fast and Reliable Automated Validation Test Suite
 
 Three types of automated test:
 
-1. **Unit tests** which we cover in [Lecture 14](../lecture14).
+1. **Unit tests** which we cover in [Unit 7b](../unit07/unit07b.md).
 2. **Acceptance tests** to check software operates as designed - does it do what the customer wants?
 3. **Integration tests** to check application interacts with other applications and services correctly.
 
@@ -193,7 +193,7 @@ This is different than single builds, commits, and a few lines of code per day s
 
 ### Small Batch Development and What Happens When we Commit Code to Trunk (`develop`) Infrequently
 
-We discussed small batch sizes in [Lecture 06](../lecture06).  We used the following image:
+We discussed small batch sizes in [Unit 3b](../unit03/unit03b.md).  We used the following image:
 
 [![Small](https://cdn-images-1.medium.com/max/2000/1*YtshITZLqxYGzfYBHqTZNA.gif)](https://medium.com/@stefanluyten/single-piece-flow-5d2c2bec845b)  Taken from *Single Piece Flow* by Stefan Luyten: https://medium.com/@stefanluyten/single-piece-flow-5d2c2bec845b.
 
@@ -280,7 +280,7 @@ There are two methods to release an application then test and activate features 
 
 ## Architecture
 
-We covered [modern software architecture in Lecture 05](../lecture05).  Microservice architectures enable small batch sizes, thus supporting flow.
+We covered [modern software architecture in Unit 3a](../unit03/unit03a.md).  Microservice architectures enable small batch sizes, thus supporting flow.
 
 ## Summary
 
@@ -293,4 +293,4 @@ We covered [modern software architecture in Lecture 05](../lecture05).  Microser
 
 The goto book on DevOps if *The DevOps Handbook: How to Create World-class Agility, Reliability & Security in Technology Organisations* by Gene Kim, Jez Humble, Patrick Debois, and John Willis.
 
-![The DevOps Handbook](../lecture06/img/devops-book.jpg)
+![The DevOps Handbook](../unit03/img/devops-book.jpg)

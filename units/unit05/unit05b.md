@@ -1,6 +1,6 @@
 # Unit 5b: User Stories and Use Cases
 
-In this lecture we will cover two similar yet different methods of understanding user interaction with our systems: user stories and use cases.  The first half of the lecture will focus on user stories, what they are, and how to work with them.  The second half will focus on use cases and how these are specified.
+In this Unit we will cover two similar yet different methods of understanding user interaction with our systems: user stories and use cases.  The first half of the Unit will focus on user stories, what they are, and how to work with them.  The second half will focus on use cases and how these are specified.
 
 ## Behavioural Objectives
 
@@ -11,7 +11,7 @@ In this lecture we will cover two similar yet different methods of understanding
 
 ## User Stories
 
-We covered requirements in [Lecture 09](../lecture09).  A requirement represents something that our software will do to meet a business goal.  A **user story** is a definition of what our software should do for a user.  The common template is:
+We covered requirements in [Unit 5a](../unit05/unit05a.md).  A requirement represents something that our software will do to meet a business goal.  A **user story** is a definition of what our software should do for a user.  The common template is:
 
 > As a **< user role >**, I can **< activity >** so that **< business value >**.
 
@@ -94,7 +94,7 @@ Tasks may also be stand-alone (i.e., not explicitly part of a story).  These tas
 
 ### Epics
 
-Epics represent the high-level user needs (remember our discussion on needs in [Lecutre 09](../lecture09)).  Epics can be considered big stories, but are really more about themes, programmes, or initiatives of work.
+Epics represent the high-level user needs (remember our discussion on needs in [Unit 5a](../unit05/unit05a.md)).  Epics can be considered big stories, but are really more about themes, programmes, or initiatives of work.
 
 An epic has a collection of features, which are decomposed into user stories for delivery.  Epics are therefore more strategic, not specific.  The aim is to discuss features as part of an epic, with the detail flowing from this idea through user stories and finally to tasks.
 
@@ -144,7 +144,7 @@ Tasks are not a backlog item as they emerge during a Sprint.  They are created a
 
 ## Use Cases
 
-The second half of the lecture focuses on use cases.  Although the name is similar, and they provide similar information, use cases are different in their aims and uses from user stories.
+The second half of the Unit focuses on use cases.  Although the name is similar, and they provide similar information, use cases are different in their aims and uses from user stories.
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Use_case)(emphasis mine):
 
@@ -245,7 +245,7 @@ Metrics for use cases: A survey of current proposals - Scientific Figure on Rese
 
 ## Summary
 
-We have covered quite a bit on working with user requirements in this lecture.  Our goal was to see the different levels of analysis and management we can undertake in this regard.  That is not to say user stories and use cases cannot be used together.  It is recognising how we can come closer to meeting the requirements of the user.
+We have covered quite a bit on working with user requirements in this Unit.  Our goal was to see the different levels of analysis and management we can undertake in this regard.  That is not to say user stories and use cases cannot be used together.  It is recognising how we can come closer to meeting the requirements of the user.
 
 Specifically, we have:
 
