@@ -182,7 +182,7 @@ At the moment, IntelliJ does not see anything that needs to be pulled.  We can r
 
 Check the `origin/master` branch, and click **Pull**.  The `LICENSE` file should appear in your project - although it might take a minute.  You can go into the file-system to check if you are impatient.
 
-Let us now add the rest of our files ready to `commit` to GitHub.  Select **VCS** then **Git** and **Add**.  This will add all the qualifying files to our commit.  They are sitting in the *staging* area.  We look at version control in more detail in [Lecture 03](../../lectures/lecture03).
+Let us now add the rest of our files ready to `commit` to GitHub.  Select **VCS** then **Git** and **Add**.  This will add all the qualifying files to our commit.  They are sitting in the *staging* area.  We look at version control in more detail in [Unit 02a](../../units/unit02/unit02a.md).
 
 To create our commit, select **VCS** then **Commit** to open the **Commit Changes** window:
 
@@ -340,7 +340,7 @@ This message shows that your installation appears to be working correctly.
 
 ### Basic Docker Usage
 
-Docker and containers are covered in [Lecture 05](../../lectures/lecture05/).  Here we are looking at the basic commands to get us started.
+Docker and containers are covered in [Unit 03a](../../units/unit03/unit03a.md).  Here we are looking at the basic commands to get us started.
 
 Docker works by providing application containers.  Several container images already exist for our use: go to [Docker Hub](https://hub.docker.com/) and search to see the available options.  This means we can launch applications easily via Docker, including infrastructure services like web servers and databases.
 

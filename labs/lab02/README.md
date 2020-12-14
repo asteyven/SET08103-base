@@ -206,7 +206,7 @@ Go to your Travis CI dashboard for the repository and wait for the build to comp
 
 ## Setting up Gitflow Workflow
 
-Our next step is to set-up our workflow.  This is our approach to managing separate features and collaborators in our project.  [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) is one such workflow that works well with Git.  Gitflow is examine further in [Lecture 02](../../lectures/lecture02).  To work with Gitflow we manage several branches:
+Our next step is to set-up our workflow.  This is our approach to managing separate features and collaborators in our project.  [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) is one such workflow that works well with Git.  Gitflow is examine further in [Unit 2a](../../units/unit02/unit02a.md).  To work with Gitflow we manage several branches:
 
 - **master** which is the main Git branch.  This is created automatically when a Git repository is created.  Only main releases are tracked in this branch.
 - **develop** is the integration branch.  Features are merged into this branch as they are completed. It is a *feature integration* branch.

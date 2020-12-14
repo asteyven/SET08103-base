@@ -53,11 +53,11 @@ The application will allow an HR advisor to delete an employee record.  This is 
 
 ## Getting Started
 
-You need to set-up your application as [last week](../lab02).  Check that everything works after you've pulled down your code.
+You need to set-up your application as last week.  Check that everything works after you've pulled down your code.
 
 ## Defining User Stories
 
-Our job is to define the initial requirements for the system to be developed.  We will do this by specifying **User Stories** (see [Lecture 10](../../lectures/lecture10) for more details).  A user story has the following form:
+Our job is to define the initial requirements for the system to be developed.  We will do this by specifying **User Stories** (see [Unit 5b](../../units/unit05/unit05b.md) for more details).  A user story has the following form:
 
 > As a *role* I want *feature* so that *value*.
 

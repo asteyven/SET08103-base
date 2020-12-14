@@ -9,7 +9,7 @@ In this lab we will extend our initial user stories into fuller use cases, tryin
 
 ## Our Current User Stories
 
-In [Lab 03](../lab03) we defined our eight user stories from our vision statement:
+In Lab 03a we defined our eight user stories from our vision statement:
 
 1. As an *HR advisor* I want *to produce a report on the salary of all employees* so that *I can support financial reporting of the organisation.*
 2. As an *HR advisor* I want *to produce a report on the salary of employees in a department* so that *I can support financial reporting of the organisation.*
@@ -51,13 +51,13 @@ A fuller use case will allow us to address these two issues.  The list of action
 
 ## Defining Use Cases for Our System
 
-[Lecture 10](../../lectures/lecture10) goes into more detail about use cases.  Here, we are going to cover the application of these ideas.  We are going to use a version of [Cockburn's Use Case Template](https://cis.bentley.edu/lwaguespack/CS360_Site/Downloads_files/Use%20Case%20Template%20%28Cockburn%29.pdf).  You can see a sample of [Use Case 4](use-case-4.md) using this template style.
+[Unit 5b](../../units/unit05/unit05b.md) goes into more detail about use cases.  Here, we are going to cover the application of these ideas.  We are going to use a version of [Cockburn's Use Case Template](https://cis.bentley.edu/lwaguespack/CS360_Site/Downloads_files/Use%20Case%20Template%20%28Cockburn%29.pdf).  You can see a sample of [Use Case 4](use-case-4.md) using this template style.
 
 Cockburn's template contains the following sections of note:
 
 - **Goal in Context** - we will use our user story.
-- **Scope** - is discussed more in the lecture.  Scoping is an important consideration in any work you do.
-- **Level** - what level is the use case targeted at.  This is discussed further in the lecture.
+- **Scope** - is discussed more in the Unit notes.  Scoping is an important consideration in any work you do.
+- **Level** - what level is the use case targeted at.  This is discussed further in the Unit notes.
 - **Preconditions** - what do we **expect** is true before the use case is executed.
 - **Success Condition** - what will happen on completion of the goal.
 - **Failed Condition** - what will happen on failure of the goal.
@@ -76,7 +76,7 @@ Your exercise is to complete the other seven use cases for the HR system.  Write
 
 ## What is a Use Case Diagram?
 
-Use cases can also be visually represented using a **Use Case Diagram**.  Typically seen as part of the **Unified Modelling Language** (UML) (see [Lab 6](../lab06) and [Lecture 11](../../lectures/lecture11)), use case diagrams allow us to see how use cases interact simply.  However, they do lack the detail required to fully implement and understand features, and therefore should be seen as a support tool for software development.  In particular, they can communicate with stakeholders quickly about how the engineers see the system working.
+Use cases can also be visually represented using a **Use Case Diagram**.  Typically seen as part of the **Unified Modelling Language** (UML) (see [Lab 5](../lab05) and [Unit 06a](../../units/unit06/unit06a.md)), use case diagrams allow us to see how use cases interact simply.  However, they do lack the detail required to fully implement and understand features, and therefore should be seen as a support tool for software development.  In particular, they can communicate with stakeholders quickly about how the engineers see the system working.
 
 ### Use Case Diagram Symbols
 
@@ -294,4 +294,4 @@ ORDER BY employees.emp_no ASC
 
 ## Cleaning Up and Committing
 
-And now end your Sprint and clean up.  Follow the process as defined at the end of [Lab 4](../lab04).
+Remember to clean up and commit your code.

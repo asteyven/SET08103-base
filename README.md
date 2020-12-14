@@ -11,7 +11,7 @@ You should attempt to complete the labs individually which will give you the ski
 | ------------------------------------------------------------ | ---- | -------------------- | -------------------- |
 | 1 | [Unit 01 (a): Setting up our Working Environment](units/unit01/unit01a.md) <br> [Unit 01 (b): Forming Scrum Teams](units/unit01/unit01b.md) | [Lab 01: Setup](labs/lab01)                        | [Coursework Available](assessment) |
 | 2 | [Unit 02 (a): Version Control and Git](units/unit02/unit02a.md) <br> [Unit 02 (b): Lean Software Development](units/unit02/unit02b.md) | [Lab 02: Continuous Integration Setup](labs/lab02) |  |
-| 3 | [Unit 03 (a): Modern Software Development](units/unit03/unit03a.md) <br> [Unit 03 (b): Three Ways of DevOps](units/unit03/unit03b.md) | [Lab 03: Requirements and issues](labs/lab03) <br> [Lab 03a: Use Cases](labs/lab03b) |                      |
+| 3 | [Unit 03 (a): Modern Software Development](units/unit03/unit03a.md) <br> [Unit 03 (b): Three Ways of DevOps](units/unit03/unit03b.md) | [Lab 03a: Requirements and issues](labs/lab03a) <br> [Lab 03b: Use Cases](labs/lab03b) |                      |
 | 4 | [Unit 04 (a): The First Way of DevOps - Flow](units/unit04/unit04a.md) <br> [Unit 04 (b): Kanban](units/unit04/unit04b.md) | [Lab 04: Task Management and Kanban](labs/lab04) |                      |
 | 5 | [Unit 05 (a): Requirements Gathering](units/unit05/unit05a.md) <br> [Unit 05 (b): User Stories and Use Cases](units/unit05/unit05b.md) | [Lab 05: UML](labs/lab05)                          |                      |
 | 6 | [Unit 06 (a): UML Diagrams](units/unit06/unit06a.md) <br> [Unit 06 (b): UML Workflow](units/unit06/unit06b.md) | [Lab 06: Unit Testing](labs/lab06) | Coursework Code Review 1 |

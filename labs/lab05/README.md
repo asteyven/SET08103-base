@@ -74,7 +74,7 @@ There are several different relationship types between classes.  The point of ma
 - *aggregation* is a special form of association denoting a *has-a* relationship.  This is not considered a strong relationship in so far as the class does not own the associated object.
 - *composition* is as aggregation but now the class **owns** the object.  When an instance of the owning object is destroyed so are its components.
 
-[Lecture 11](../../lectures/lecture11) goes into more detail about relationship types.
+[Unit 6a](../../units/unit06/unit06a.md) goes into more detail about relationship types.
 
 ## Class Diagrams in IntelliJ
 
