@@ -111,7 +111,7 @@ For the population reports, the following information is requested:
 
 The coursework **must** be delivered by a group.  The aim of the module is to assess your ability to work as a team to deliver a product.  Therefore, the majority of your coursework grade will be based on your team's ability to work together using the methods defined in the module.
 
-The submission is assessed at two assessment points.  Your final submission is delivered via your GitHub repository which should also be submitted to Moodle.
+The submission is assessed at two assessment points.  Your submission is delivered via your GitHub repository which should also be submitted to Moodle.
 
 ## Individual Assessment
 
@@ -148,7 +148,7 @@ Any dismissed team member has a week to appeal the decision to the module team w
 
 ## Code Review Meetings
 
-Each group will undertake **two** graded code reviews as well as a final submission at the end of Week 13:
+Each group will undertake **two** graded code reviews:
 
 1. Week 6 Code Review 1 (50% of CW mark).
 2. Week 12 Code Review 2 (50% of CW mark).
