@@ -151,7 +151,7 @@ Any dismissed team member has a week to appeal the decision to the module team w
 Each group will undertake **two** graded code reviews as well as a final submission at the end of Week 13:
 
 1. Week 6 Code Review 1 (50% of CW mark).
-2. Week 10 Code Review 2 (50% of CW mark).
+2. Week 12 Code Review 2 (50% of CW mark).
 
 The code reviews will take place during the live academic sessions.  Each group will be given **10 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
 
