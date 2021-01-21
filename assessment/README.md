@@ -148,12 +148,12 @@ Any dismissed team member has a week to appeal the decision to the module team w
 
 ## Code Review Meetings
 
-Each group will undertake **four** graded code reviews as well as a final submission at the end of Week 13:
+Each group will undertake **two** graded code reviews as well as a final submission at the end of Week 13:
 
-1. Week 5 Code Review 1 (50% of CW mark).
+1. Week 6 Code Review 1 (50% of CW mark).
 2. Week 10 Code Review 2 (50% of CW mark).
 
-The code reviews will take place during the scheduled sessions.  Each group will be given **10 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
+The code reviews will take place during the live academic sessions.  Each group will be given **10 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
 
 - **Being late** for the meeting or **not being ready** when the meeting starts will result in the grade for that review being capped at 40%.
 - **Not attending** the meeting will mean the code review will be marked at 0%.
@@ -164,7 +164,7 @@ The code reviews will take place during the scheduled sessions.  Each group will
 
 ### Code Review 1
 
-#### REVIEW MEETING:  Week 5
+#### REVIEW MEETING:  Week 6
 
 The aim of this code review meeting is to check that the project workflow is set-up for the team, task management is set-up and that the initial requirements gathering has taken place via user stories and use cases. 
 
@@ -200,7 +200,7 @@ The following criteria will be assessed for overall quality:
 
 ### Code Review 2
 
-#### REVIEW MEETING: Lab of of Week 10 
+#### REVIEW MEETING: Week 12
 
 The aim of this code review is to check that testing and deployment has been correctly specified.  
 

@@ -58,7 +58,7 @@ In Scrum we use the following terminology:
 - Task Board (or Scrum Board, or Kanban Board).
 - User Stories.
 - Sprints.
-- Spring Planning.
+- Sprint Planning.
 - Story Points.
 - Planning Poker.
 - Daily Standup.
