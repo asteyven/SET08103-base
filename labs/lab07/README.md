@@ -191,7 +191,7 @@ We want to separate our tests into different files as we will have different typ
 
 ### Adding Travis Job Stages
 
-From the [Continuous Integration lecture](../../lectures/lecture15) we defined the following steps in a basic build script:
+From the [Continuous Integration lecture](../../units/unit08/unit08a.md) we defined the following steps in a basic build script:
 
 1. Clean.
 2. Compile source code.
