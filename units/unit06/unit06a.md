@@ -1,6 +1,6 @@
 # Unit 6a: UML Diagrams
 
-In this lecture we will examine the UML diagram types.  UML (the Unified Modelling Language) is a well-known diagramming framework for software development.  In this lecture we will cover the history and diagram types, and in [Lecture 12](../lecture12) we will examine how to use UML to analyse and design software.
+In this unit we will examine the UML diagram types.  UML (the Unified Modelling Language) is a well-known diagramming framework for software development.  In the first part of this unit we will cover the history and diagram types, and in the second part we will examine how to use UML to analyse and design software.
 
 ## Behavioural Objectives
 
@@ -191,9 +191,10 @@ Attributes and methods are the key pieces of information for an individual class
 - The **parameters** (names and types) for method calls.
 - The **type** of the attribute or method.
 
-All this information is contained within your code so it is easy to create a class diagram from an existing set of code.  We do this in [Lab 06](../../labs/lab06).  The other information contained in your code is the relationships between objects:
+All this information is contained within your code so it is easy to create a class diagram from an existing set of code.  We do this in [Lab 05](../../labs/lab05).  The other information contained in your code is the relationships between objects:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Uml_class_relation_arrows_en.svg.png#/media/File:Uml_class_relation_arrows_en.svg.png"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Uml_class_relation_arrows_en.svg.png" alt="Uml class relation arrows en.svg.png"></a><br>By Yanpas - <a class="external free" href="https://commons.wikimedia.org/wiki/File:Uml_classes_en.svg">https://commons.wikimedia.org/wiki/File:Uml_classes_en.svg</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=63418088">Link</a></p>
+
 - *association* is the most generic relationship type.
 - *inheritance* means that a class is a specialisation of another class.
 - *realization/implementation* is when a class implements an *interface*.
@@ -217,34 +218,40 @@ Relationships are perhaps the most difficult aspect of object-orientation for ne
 Object diagrams model objects at a specific point in the execution of the software.  These are object instances rather than classes.  Object diagrams are not commonly used; normally only for data structures.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Object_diagram.png#/media/File:Object_diagram.png"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Object_diagram.png" alt="Object diagram.png" height="439" width="640"></a><br>By Mac9 - <span class="int-own-work" lang="en">Own work</span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4728433">Link</a></p>
+
 ### Component Diagram
 
 Component diagrams allow us to visualise how different software components (e.g., executables, libraries) work together.  This can be useful if you want to see dependencies between such components, but of limited use otherwise.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Policy_Admin_Component_Diagram.PNG#/media/File:Policy_Admin_Component_Diagram.PNG"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Policy_Admin_Component_Diagram.PNG" alt="Policy Admin Component Diagram.PNG" height="429" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Kishorekumar_62&amp;action=edit&amp;redlink=1" class="new" title="User:Kishorekumar 62 (page does not exist)">Kishorekumar 62</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=5766927">Link</a></p>
+
 ### Composite Structure Diagram
 
 Composite structure diagrams are like component diagrams but take a class and class attribute point of view.  This is a very low level which has limited use.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Composite_Structure_Diagram.png#/media/File:Composite_Structure_Diagram.png"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Composite_Structure_Diagram.png" alt="Composite Structure Diagram.png"></a><br>By [:w:User:KenSWebb|User:KenSWebb] - English Wikipedia <a href="https://en.wikipedia.org/wiki/en:Image:CompositeStructureDiagram.png" class="extiw" title="w:en:Image:CompositeStructureDiagram.png">here</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=4465341">Link</a></p>
+
 ### Deployment Diagram
 
 Deployment diagrams also examine software components and their relationships, but also include hardware nodes where these components run.  This can be useful if you have a complex configuration to manage.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Deployment_Diagram.PNG#/media/File:Deployment_Diagram.PNG"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Deployment_Diagram.PNG" alt="Deployment Diagram.PNG" height="375" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Kishorekumar_62&amp;action=edit&amp;redlink=1" class="new" title="User:Kishorekumar 62 (page does not exist)">Kishorekumar 62</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=5774074">Link</a></p>
+
 ### Package Diagram
 
 Package diagrams illustrate how different packages interact.  This can be useful if you want to see which packages in your library/application rely on each other.  If this information isn't useful neither is the package diagram.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Package_Diagram.PNG#/media/File:Package_Diagram.PNG"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Package_Diagram.PNG" alt="Package Diagram.PNG" height="384" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Kishorekumar_62&amp;action=edit&amp;redlink=1" class="new" title="User:Kishorekumar 62 (page does not exist)">Kishorekumar 62</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=5803376">Link</a></p>
+
 ### Profile Diagram
 
 Profile diagrams are well outside the scope of this module.  These diagrams are about extending the existing UML notation.
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Stereotype-4.png#/media/File:Stereotype-4.png"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Stereotype-4.png" alt="Example for the definition and usage of a simplified profile for organisation modelling purposes."></a><br>By Gubaer - <span class="int-own-work" lang="en">Own work</span> (<span lang="en">Original text: selbst gezeichnet</span>), <a href="http://www.gnu.org/copyleft/fdl.html" title="GNU Free Documentation License">GFDL</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=23788088">Link</a></p>
+
 ## Summary
 
-This lecture has mainly been information based without much context.  The [next lecture](../lecture12) provides a useful look at UML.  Here we have:
+This unit has mainly been information based without much context.  The [second part](../unit06/unit06b.md) of this unit provides a useful look at UML.  Here we have:
 
 - [ ] *Defined UML and its history*, especially around why it is a unified modelling approach.
 - [ ] *Described the fourteen UML models*, dividing these into behavioural and structural types.

@@ -1,6 +1,6 @@
 # Unit 7a: The Second Way of DevOps - Feedback
 
-In this lecture we will cover the technical practices of feedback.  Feedback is our ability to gain information from our peers and systems to improve our work.  Feedback, and using feedback effectively, is important in all aspects of your life, and in development we must ensure we are doing the right work effectively.
+In this unit we will cover the technical practices of feedback.  Feedback is our ability to gain information from our peers and systems to improve our work.  Feedback, and using feedback effectively, is important in all aspects of your life, and in development we must ensure we are doing the right work effectively.
 
 ## Behavioural Objectives
 
@@ -288,7 +288,7 @@ If testing is only occurring at the end of the project, increasing the testing w
 
 ### Enable Pair Programming to Improve All Our Changes
 
-Pair programming is when two programmers work together at the same machine.  A common model is one programmer acting as the driver writing code, and the other as the navigator reviewing the work.  The navigator can come up with improvements while the driver can focus on completing the task.  Skills are also transferred between the two programmers.  Another model from **Test-Driven Development (TDD)** - see [Lecture 14](../lecture14) - is one programmer writes the test and the other writes the code to pass the test.
+Pair programming is when two programmers work together at the same machine.  A common model is one programmer acting as the driver writing code, and the other as the navigator reviewing the work.  The navigator can come up with improvements while the driver can focus on completing the task.  Skills are also transferred between the two programmers.  Another model from **Test-Driven Development (TDD)** - see [Unit 07b](../unit07/unit07b.md) - is one programmer writes the test and the other writes the code to pass the test.
 
 One advantage of this approach is knowledge increases throughout the organisation as people work together.
 
@@ -302,7 +302,7 @@ As processes can increase lead times, preventing us from delivering value and in
 
 ## Summary
 
-We have covered a lot in this lecture, but the core ideas we have examined are:
+We have covered a lot in this unit, but the core ideas we have examined are:
 
 - We defined telemetry in software development - an automated communications process by which measurements and other data are collected at remote points and are subsequently transmitted to receiving equipment for monitoring.
 - We described how to use telemetry in software development - examining what to measure, how to fill gaps, and the infrastructure to support it.

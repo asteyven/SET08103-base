@@ -33,7 +33,7 @@ Bugs and smells form part of technical debt. We must devote time paying off our 
 
 Remember our focus is developing processes and methods. For example, GitHub is more than version control. GitHub is a software configuration management system.
 
-Bug finding is a craft, driven via code reviews, testing, users, and luck. We examine bug reporting later in this lecture. Once a user or QA report a bug, we need to manage or track it.
+Bug finding is a craft, driven via code reviews, testing, users, and luck. We examine bug reporting later in this unit. Once a user or QA report a bug, we need to manage or track it.
 
 From Wikipedia:
 
@@ -41,7 +41,7 @@ From Wikipedia:
 
 This definition does not inform us - a bug tracking system is a program that tracks bugs.
 
-A bug tracking system is a database recording data on bugs. We define what bug data to store later in the lecture. Another crucial part of the system is managing a bug's lifecycle. We examine bug state later in the lecture.
+A bug tracking system is a database recording data on bugs. We define what bug data to store later in the unit. Another crucial part of the system is managing a bug's lifecycle. We examine bug state later in the unit.
 
 A bug tracking system should integrate into our project management workflow. We track bugs as issues, and therefore they show on our Kanban/Sprint board.
 
@@ -161,7 +161,7 @@ Saying you ran the code tells us little.  Be specific. No one else lives in your
 
 ### Be Verbose
 
-"Lab 3 doesn’t work." OK, why does lab 3 not work? "The program doesn’t run." OK, what part of the lab are you doing? "The part with Docker." And so on.
+"Lab 2 doesn’t work." OK, why does lab 2 not work? "The program doesn’t run." OK, what part of the lab are you doing? "The part with Docker." And so on.
 
 Be verbose. Offer as much information as you can in a bug report. It is easy for the developer to ignore irrelevant information. Solving a lack of information can only happen by asking more questions. No one else has the knowledge you have. Thus share as much information as you can.
 
@@ -428,7 +428,7 @@ Other metaphors normally include bar/column charts (for discrete data) and line 
 
 ## Summary
 
-In this lecture we have examined application monitoring at a very high level.  In particular, we have:
+In this unit we have examined application monitoring at a very high level.  In particular, we have:
 
 - Defined information visualisation as the graphical representation of data in a manner that helps people understand what the data means.
 - Described system monitoring, looking at what to monitor and the culture required.

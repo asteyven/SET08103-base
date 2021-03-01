@@ -1,6 +1,6 @@
 # Unit 10b: Legal Issues
 
-In this lecture we will examine the legal frameworks important to software engineering.  These are:
+In this unit we will examine the legal frameworks important to software engineering.  These are:
 
 - Computer Misuse.
 - Data Protection.
@@ -32,7 +32,7 @@ These three offences cover several crimes, for example:
 
 These offences can lead to imprisonment or 6 months to 10 years depending on the offence, and a potentially unlimited fine.  The challenge is proving culpability of the defendant.  Proving intent is difficult.  Furthermore, the wording of the act means certain industry practices (e.g., time-locking software) can be considered illegal.  However, the act has been used as a model in other countries.
 
-Our discussion on security in [Lecture 23](../lecture23) will analyse attack types.  As IT professionals part of your job is to protect against such attacks.  If you were found to be complicit in a breach of this act it has serious repercussions.  A BCS member would be struct off, their chartered status revoked, and any query to the BCS about the person would inform that the member had been struck off.  The ACM have similar requirements.  This is one of the key foundations of a professional body.  It is also one of the guarantees from a member and to a member.
+Our discussion on security in [Unit 10c](../unit10/unit10c.md) will analyse attack types.  As IT professionals part of your job is to protect against such attacks.  If you were found to be complicit in a breach of this act it has serious repercussions.  A BCS member would be struct off, their chartered status revoked, and any query to the BCS about the person would inform that the member had been struck off.  The ACM have similar requirements.  This is one of the key foundations of a professional body.  It is also one of the guarantees from a member and to a member.
 
 ## Data Protection
 
@@ -118,7 +118,7 @@ Furthermore, the Information Commissioner's Office can enact the following furth
 - Ordering the rectification, restriction or erasure of data; and
 - Suspending data transfers to third countries.
 
-As an IT professional, your responsibility is to support your organisations compliance under GDPR.  No organisation can manage the maximum fines available.  You have a duty to report problems (just as defined under professionalism in [Lecture 21](../lecture21)) and to ensure that no problems occur.
+As an IT professional, your responsibility is to support your organisations compliance under GDPR.  No organisation can manage the maximum fines available.  You have a duty to report problems (just as defined under professionalism in [Unit 10a](../unit10/unit10a.md)) and to ensure that no problems occur.
 
 ### Individual Rights Under GDPR
 
@@ -231,7 +231,7 @@ As a software engineer, it is your responsibility to ensure you are using softwa
 
 ## Summary
 
-In this lecture we have examined some of the legal ideas that impact software development.  In particular, we have:
+In this unit we have examined some of the legal ideas that impact software development.  In particular, we have:
 
 - Described the elements of computer misuse, specifically unauthorised access to computer material.
 - Described the principles of data protection, examining the General Data Protection Regulation.

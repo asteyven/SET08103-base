@@ -2,7 +2,7 @@
 
 ## Behavioural Objects
 
-At the end of this lecture you will be able to:
+At the end of this unit you will be able to:
 
 - [ ] **Define** *ethics in the context of IT professionals*.
 - [ ] **Describe** the *core principles of engineering ethics*.
@@ -267,9 +267,9 @@ All of these ideas can be seen in modern developer culture.  The ideas of having
 
 ## Summary
 
-Although you might have found this lecture dry since we did not discuss new technology, it is probably one of the most important concepts covered when it comes to being a professional in the IT industry.
+Although you might have found this unit dry since we did not discuss new technology, it is probably one of the most important concepts covered when it comes to being a professional in the IT industry.
 
-In this lecture we have:
+In this unit we have:
 
 - Defined ethics in the context of IT professionals - looking at applied ethics as they relate to engineering, technology, and business.
 - Described the core principles of engineering ethics - focusing on the three key principles: *Obligation to Society*; *Reporting Misconduct*; and *General Conduct*.
