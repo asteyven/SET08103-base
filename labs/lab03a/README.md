@@ -211,7 +211,7 @@ services:
     restart: always
 ```
 
-When running Docker from the command line, we use `docker compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our Travis CI file.
+When running Docker from the command line, we use `docker-compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our Travis CI file.
 
 ### Test MySQL Connection
 
