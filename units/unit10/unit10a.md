@@ -142,10 +142,10 @@ Many organisations have a Code of Conduct, and the ACM Code of Ethics contains p
 > - Using language, orally or in writing (including emails, texts and postings on social media, Moodle and other websites), which is generally considered as having the potential to be offensive to others. This includes any offensive language of a racist, sexist or sexual nature as well any offensive language regarding any individual’s religion, beliefs and/or right of freedom of speech.
 > - Bullying and harassment of any form (e.g. racism or gender based violence) including via social media, text messages, email and in person.
 > - Disrupting others’ learning and engagement, for example:
->  - Talking at inappropriate times in classrooms, study spaces and libraries
->  - Talking over others who are already speaking in class
->  - Excessively loud talking or shouting at inappropriate times and/or places
->  - Unreasonable refusal to work in peer groups when required.
+>   - Talking at inappropriate times in classrooms, study spaces and libraries
+>   - Talking over others who are already speaking in class
+>   - Excessively loud talking or shouting at inappropriate times and/or places
+>   - Unreasonable refusal to work in peer groups when required.
 > - Using your mobile devices in class for purposes unrelated to module content you are currently being taught.
 > - Being present on campus whilst under the influence of alcohol or drugs.
 > - Violent, aggressive and/or indecent behaviour which has the potential to cause mental or physical harm to any individual or damage to university resources.
