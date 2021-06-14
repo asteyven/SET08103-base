@@ -1,6 +1,6 @@
 # Unit 8b: Continuous Delivery
 
-In this lecture we will extend our discussion on Continuous Integration from [Lecture 15](../lecture15) to include Continuous Delivery.  We will examine the additions we have to make to our process, as well as examining the risks addresses by Continuous Delivery.
+In this unit we will extend our discussion on Continuous Integration from [Unit 08a](../unit08/unit08a.md) to include Continuous Delivery.  We will examine the additions we have to make to our process, as well as examining the risks addresses by Continuous Delivery.
 
 ## Behavioural Objectives
 
@@ -37,6 +37,7 @@ The deployment pipeline aims to:
 Below is an illustration showing how CD produces releases:
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Continuous_Delivery_process_diagram.svg#/media/File:Continuous_Delivery_process_diagram.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Continuous_Delivery_process_diagram.svg/1200px-Continuous_Delivery_process_diagram.svg.png" alt="Continuous Delivery process diagram.svg"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Gr%C3%A9goire_D%C3%A9trez&amp;action=edit&amp;redlink=1" class="new" title="User:Grégoire Détrez (page does not exist)">Grégoire Détrez</a>, original by Jez Humble - This file was derived from:&nbsp;<a href="//commons.wikimedia.org/wiki/File:Continuous_Delivery_process_diagram.png" title="File:Continuous Delivery process diagram.png">Continuous Delivery process diagram.png</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=43977816">Link</a></p>
+
 ### Aims of Continuous Delivery
 
 CD attempts to deliver software as quickly as possible.  When we think of a new idea, we want to deliver it fast.  CD does so by allowing us the ability to deliver software whenever we want.
@@ -293,7 +294,7 @@ This is useful information in industries with auditing such as finance and healt
 
 ## Summary
 
-In this lecture we have:
+In this unit we have:
 
 - Defined Continuous Delivery as an extension to Continuous Integration that incorporates release building.
 - Described how to implement Continuous Delivery examining items such as configuration management and business change.

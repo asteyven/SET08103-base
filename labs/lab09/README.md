@@ -2,12 +2,12 @@
 
 In this lab we will setup a bug tracking template on GitHub.  This is actually such a common task there is already a tutorial:
 
-https://help.github.com/en/articles/creating-issue-templates-for-your-repository
+https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository
 
 Furthermore, you should use this opportunity to evaluate the health of your repository:
 
-https://help.github.com/en/articles/creating-a-default-community-health-file-for-your-organization
+https://docs.github.com/en/github/building-a-strong-community/creating-a-default-community-health-file
 
 Finally, you should examine the use of labels to manage the state of a bug:
 
-https://help.github.com/en/articles/about-labels
+https://docs.github.com/en/github/managing-your-work-on-github/managing-labels

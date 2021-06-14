@@ -18,7 +18,7 @@ You should attempt to complete the labs individually which will give you the ski
 | 5 | [Unit 05 (a): Requirements Gathering](units/unit05/unit05a.md) <br> [Unit 05 (b): User Stories and Use Cases](units/unit05/unit05b.md) | [Lab 05: UML](labs/lab05)                          |                      |
 | 6 | [Unit 06 (a): UML Diagrams](units/unit06/unit06a.md) <br> [Unit 06 (b): UML Workflow](units/unit06/unit06b.md) | [Lab 06: Unit Testing](labs/lab06) | Coursework Code Review 1 |
 | 7 | [Unit 07 (a): The Second Way of DevOps - Feedback](units/unit07/unit07a.md) <br> [Unit 07 (b) Test-Driven Development (TDD)](units/unit07/unit07b.md) | [Lab 07: Integration Testing](labs/lab07) |                      |
-| 8 | [Unit 08 (a): Continuous Delivery](units/unit08/unit08a.md) <br> [Unit 08 (b): Continuous Integration](units/unit08/unit08b.md) | [Needs reduced Lab 08: Deployment](labs/lab08) |                      |
+| 8 | [Unit 08 (a): Continuous Integration](units/unit08/unit08a.md) <br> [Unit 08 (b): Continuous Delivery](units/unit08/unit08b.md) | [Needs reduced Lab 08: Deployment](labs/lab08) |                      |
 | 9 | [Unit 09 (a): The Third Way of DevOps - Continuous Experimentation and Learning](units/unit09/unit09a.md) <br> [Unit 09 (b): Bug Tracking and Monitoring](units/unit09/unit09b.md) | [Lab 09: Bug Tracking](labs/lab09) |  |
 | 10      | [Unit 10 (a): Ethics and Professionalism](units/unit10/unit10a.md) <br> [Unit 10 (b): Legal Issues](units/unit10/unit10b.md)<br>[Unit 10 (c): Computer Security](units/unit10/unit10c.md)  | [Lab 10: Code Quality](labs/lab10)               | Coursework Code Review 2 |
 

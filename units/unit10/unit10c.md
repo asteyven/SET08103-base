@@ -1,6 +1,6 @@
 # Unit 10c: Computer Security
 
-In this lecture we will focus on security concerns.  Computer security is an important topic in computing, and as professional software engineers you have a duty to ensure the safety of users in the systems you build.  Security is a large topic, and this is really just an introduction to the topic.
+In this unit we will focus on security concerns.  Computer security is an important topic in computing, and as professional software engineers you have a duty to ensure the safety of users in the systems you build.  Security is a large topic, and this is really just an introduction to the topic.
 
 ## Behavioural Objectives
 
@@ -19,7 +19,7 @@ A better definition comes from *Security for Software Engineers* by James Helfri
 
 > Computer security can be defined as providing confidentiality, integrity, and availability (C.I.A.) assurances to users or clients of information systems.
 
-We will define confidentiality, integrity, and availability later in the lecture.  Let us first define the actors in the computer security story.
+We will define confidentiality, integrity, and availability later in the unit.  Let us first define the actors in the computer security story.
 
 ## Roles
 
@@ -49,7 +49,7 @@ A form of first generation black hat is the grey hat.  These hackers find vulner
 
 White hats are the good guys in computer security.  The role of a white hat may be varied, but they share two principles:
 
-- Ethics: which we covered last week and will cover again in this lecture.
+- Ethics: which we covered last week and will cover again in this unit.
 - Defence: white hats defend users.
 
 Therefore, white hats uphold the law by providing a defence to users.  All IT professionals should act as white hats, but there are specific duties for software engineers.
@@ -202,7 +202,7 @@ Safeguards are split into three categories:
 - Human factors: the training provided by an organisation to avoid risks such as viruses and social engineering tactics.
 - Technology: the software and hardware solutions used to protect systems.
 
-We will not go into safeguards any further as we would require entire lectures to cover some of these ideas.
+We will not go into safeguards any further as we would require entire units to cover some of these ideas.
 
 ### Confidentiality, Integrity, and Availability
 
@@ -307,7 +307,7 @@ Elevation of privilege is finding a method of performing tasks the attacker is n
 
 ## Summary
 
-As stated, we have only really introduced the concepts of computer security, and your role is to continue your development in this area to ensure the systems you build are secure.  Specifically, this lecture has:
+As stated, we have only really introduced the concepts of computer security, and your role is to continue your development in this area to ensure the systems you build are secure.  Specifically, this unit has:
 
 - Defined the roles in computer security, looking at users, black hats, and white hats.
 - Described the ethics of white hats, presenting the (ISC)<sup>2</sup> Code of Ethics.
@@ -316,6 +316,6 @@ As stated, we have only really introduced the concepts of computer security, and
 
 ## Recommended Reading
 
-*Security for Software Engineers* by James Helfrich provides further depth to the areas we have covered in this lecture.
+*Security for Software Engineers* by James Helfrich provides further depth to the areas we have covered in this unit.
 
 ![Security for Software Engineers](img/security-book.jpg)

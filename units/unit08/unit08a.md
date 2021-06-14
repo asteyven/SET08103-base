@@ -1,6 +1,6 @@
 # Unit 8a: Continuous Integration
 
-In this lecture we will examine Continuous Integration (CI), how it allows us to automate our build processes, and how it can provide feedback.  The aim is to explore why CI is useful, and the process of undertaking CI.  Most of these ideas are built into Travis CI, which makes our life easy.  Here, we explore the best practice methods in more detail.
+In this unit we will examine Continuous Integration (CI), how it allows us to automate our build processes, and how it can provide feedback.  The aim is to explore why CI is useful, and the process of undertaking CI.  Most of these ideas are built into Travis CI, which makes our life easy.  Here, we explore the best practice methods in more detail.
 
 ## Behavioural Objectives
 
@@ -28,7 +28,7 @@ Integration is the process of combining the software components of a system toge
 
 ### What is an Integration Test?
 
-This is one of the key ideas of this lecture.  An integration test is one that is performed when the system is integrated.  From [Wikipedia](https://en.wikipedia.org/wiki/Integration_testing):
+This is one of the key ideas of this unit.  An integration test is one that is performed when the system is integrated.  From [Wikipedia](https://en.wikipedia.org/wiki/Integration_testing):
 
 > Integration testing (sometimes called integration and testing, abbreviated I&T) is the phase in software testing in which **individual software modules are combined and tested as a group**. It occurs **after unit testing** and before validation testing.
 
@@ -36,7 +36,7 @@ So integration tests are tests performed on combined software modules rather tha
 
 ### Why Continuous Integration?
 
-CI provides feedback, which is the [Second Way of DevOps](../lecture14):
+CI provides feedback, which is the [Second Way of DevOps](../unit07/unit07a.md):
 
 > Continuous Integration increases your opportunities for feedback.
 >
@@ -202,7 +202,7 @@ Once code is pushed to version control and fetched by the CI server, an integrat
 
 #### Release Build
 
-For deployable software we need to create a release build.  A release build can happen at the end of milestone, can include performance (nonfunctional) tests, and must include any acceptance tests.  The aim is to create installation media and prepare for full QA testing.  When we examine Continuous Delivery ([Lecture 16](../lecture16)) we will cover more detail of this practice.
+For deployable software we need to create a release build.  A release build can happen at the end of milestone, can include performance (nonfunctional) tests, and must include any acceptance tests.  The aim is to create installation media and prepare for full QA testing.  When we examine Continuous Delivery ([Unit 08b](../unit08/unit08b.md)) we will cover more detail of this practice.
 
 ## Risk in Software Development
 
@@ -261,7 +261,7 @@ To summarise, CI overcomes main software risks as follows:
 
 ## Summary
 
-In this lecture we have covered the fundamentals of CI.  Specifically, we:
+In this unit we have covered the fundamentals of CI.  Specifically, we:
 
 - *Defined Continuous Integration* as the process of performing integration building and testing on each change committed to version control.
 - *Explained why Continuous Integration is useful*, focusing on risk reduction and workflow.

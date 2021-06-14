@@ -2,7 +2,7 @@
 
 ## Behavioural Objects
 
-At the end of this lecture you will be able to:
+At the end of this unit you will be able to:
 
 - [ ] **Define** *ethics in the context of IT professionals*.
 - [ ] **Describe** the *core principles of engineering ethics*.
@@ -137,23 +137,21 @@ A [Code of Conduct](https://en.wikipedia.org/wiki/Code_of_conduct) is defined in
 
 Emphasis is mine.
 
-Many organisations have a Code of Conduct, and the ACM Code of Ethics contains points which fall into a Code of Conduct criteria.  Essentially, a Code of Conduct is a set of rules that define how an individual must act when associated with an organisation.  You should have defined one for your team already.  As a student with the University you have agreed to a [Code of Conduct](https://my.napier.ac.uk/Student-Administration/Conduct/Pages/Conduct.aspx) and in particular a [Classroom and Campus Code of Conduct](https://my.napier.ac.uk/Student-Administration/Student-Charter/Documents/CampusAndClassroomConduct-StudentCode.pdf).  Examples of unacceptable behaviour include:
+Many organisations have a Code of Conduct, and the ACM Code of Ethics contains points which fall into a Code of Conduct criteria.  Essentially, a Code of Conduct is a set of rules that define how an individual must act when associated with an organisation.  You should have defined one for your team already.  As a student with the University you have agreed to a [Code of Conduct](https://my.napier.ac.uk/your-studies/regulations-conduct-and-safety/student-conduct-and-discipline) and in particular a [Student Charter](https://my.napier.ac.uk/your-studies/regulations-conduct-and-safety/student-charter).  Examples of unacceptable behaviour include:
 
-> - Talking in a way that disrupts others’ learning and engagement, for example:
->   - talking at inappropriate times in classrooms, study spaces and libraries;
->   - talking over others who are already speaking in class;
->   - excessively loud talking or shouting at inappropriate times and/or places.
-> - Using language, orally or in writing (including emails, texts and postings on social media websites), which is generally considered as having the potential to be offensive to others. This includes swearing and any offensive language/comments/conversation of a racist, sexist or sexual nature as well any offensive language/comments/conversation regarding any individual(s)’ religion, beliefs and/or right of freedom of speech.
-> - Using mobile devices in class for purposes unrelated to material you are currently being taught.
-> - Disturbing other students during exams/class based assessments or affecting their performance;
-> - Refusing to work in peer groups without good cause;
-> - Bullying and harassment of any form including via social media, text messages, email etc.
+> - Using language, orally or in writing (including emails, texts and postings on social media, Moodle and other websites), which is generally considered as having the potential to be offensive to others. This includes any offensive language of a racist, sexist or sexual nature as well any offensive language regarding any individual’s religion, beliefs and/or right of freedom of speech.
+> - Bullying and harassment of any form (e.g. racism or gender based violence) including via social media, text messages, email and in person.
+> - Disrupting others’ learning and engagement, for example:
+>   - Talking at inappropriate times in classrooms, study spaces and libraries
+>   - Talking over others who are already speaking in class
+>   - Excessively loud talking or shouting at inappropriate times and/or places
+>   - Unreasonable refusal to work in peer groups when required.
+> - Using your mobile devices in class for purposes unrelated to module content you are currently being taught.
 > - Being present on campus whilst under the influence of alcohol or drugs.
-> - Violent, aggressive and/or indecent behaviour which has the potential to cause mental or physical harm to any individual(s) or damage to premises and/or property.
-> - Any behaviour likely to cause injury or impair the health and safety of yourself and/or others.
-> - Misuse or unauthorised use of University premises and/or misuse, unauthorised use and/or theft of items of University property or property of any member of the wider University Community including:-
->   - Misuse or alteration of fire-fighting or security equipment/appliances
->   - Misuse, alteration or unauthorised use of any electrical equipment, fittings and/or appliances including computer equipment.
+> - Violent, aggressive and/or indecent behaviour which has the potential to cause mental or physical harm to any individual or damage to university resources.
+> - Behaviour likely to cause injury or impair the health and safety of yourself and/or others.
+> - Misuse or unauthorised use of university resources (premises, equipment, etc).
+> - Misuse or unauthorised use and/or theft of items of university property or property of any member of the University community.
 
 - [ ] **Reflect on** and **grade** yourself against the *Student Code of Conduct*.  Use the following grading mechanism: 2) I uphold this principle in all cases; 1) I do not uphold this principle in all cases; 0) I do not agree with this principle.  Ask your team for feedback to see if they agree with your scoring.
 
@@ -267,9 +265,9 @@ All of these ideas can be seen in modern developer culture.  The ideas of having
 
 ## Summary
 
-Although you might have found this lecture dry since we did not discuss new technology, it is probably one of the most important concepts covered when it comes to being a professional in the IT industry.
+Although you might have found this unit dry since we did not discuss new technology, it is probably one of the most important concepts covered when it comes to being a professional in the IT industry.
 
-In this lecture we have:
+In this unit we have:
 
 - Defined ethics in the context of IT professionals - looking at applied ethics as they relate to engineering, technology, and business.
 - Described the core principles of engineering ethics - focusing on the three key principles: *Obligation to Society*; *Reporting Misconduct*; and *General Conduct*.

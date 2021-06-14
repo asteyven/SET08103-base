@@ -1,6 +1,6 @@
 # Unit 7b: Test-Driven Development (TDD)
 
-In this lecture we will examine the practice of Test-Driven Development (TDD).  TDD is a practice where testing is given the highest priority.  You will find that TDD can improve the overall quality of your code by ensuring that it is well tested from the outset.
+In this unit we will examine the practice of Test-Driven Development (TDD).  TDD is a practice where testing is given the highest priority.  You will find that TDD can improve the overall quality of your code by ensuring that it is well tested from the outset.
 
 ## Behavioural Objectives
 
@@ -151,10 +151,10 @@ Kent Beck was also an advocate of Extreme Programming, and therefor makes a spec
 
 - **Pairing**: tests can be written by one programmer and the code to pass it by another.
 - **Work fresh**: XP advises to work when you are fresh and stop when you are tired.  Having tests mean we can safely return to work by walking away.
-- **Continuous integration**: we will cover more explicitly in [Lecture 15](../lecture15).  Testing is at the heart of CI.
+- **Continuous integration**: we will cover more explicitly in [Unit 08a](../unit08/unit08a.md).  Testing is at the heart of CI.
 - **Simple design**: as code emerges from tests, design is simple to allow such evolution.
 - **Refactoring**: we have already covered.
-- **Continuous delivery**: we will cover more explicitly in [Lecture 16](../lecture16).  CD requires working software, which TDD provides.
+- **Continuous delivery**: we will cover more explicitly in [Unit 08b](../unit08/unit08b.md).  CD requires working software, which TDD provides.
 
 ## Other Advice from Kent Beck's *Test-Driven Development by Example*
 
@@ -201,7 +201,7 @@ Kent Beck is a strong supporter of a good work-life balance.  In particular, the
 
 ## Summary
 
-In this lecture we have covered the basics of TDD.  As a method, it requires practice.  In particular, you have to change your approach from writing code first to writing tests first.  Specifically, we have:
+In this unit we have covered the basics of TDD.  As a method, it requires practice.  In particular, you have to change your approach from writing code first to writing tests first.  Specifically, we have:
 
 - Defined Test-Driven Development (TDD) as a process where we write tests first.
 - Described the TDD lifecycle - red-green-refactor.

@@ -9,7 +9,7 @@ GitHub releases is the simplest method but only adds our built JAR to our GitHub
 
 ## Deploying to GitHub Releases
 
-A GitHub release is a form of deployment where we provide files to a user.  We will automate our releases (as [Continuous Delivery](../../lectures/lecture16) describes) and produce a JAR file as part of the process.
+A GitHub release is a form of deployment where we provide files to a user.  We will automate our releases (as [Continuous Delivery](../../units/unit08/unit08b.md) describes) and produce a JAR file as part of the process.
 
 ### Creating a Personal Access Token
 
@@ -155,7 +155,13 @@ If you go back to GitHub and look up your Releases you will see the new release 
 
 ![Release on GitHub](img/github-release.png)
 
-## Deploying to Google Cloud Engine
+> Publishing the build jar file as release on Github is the end of the required functionality for the lab.
+> 
+> You can make use of Google Cloud Engine to deploy the application to the cloud.
+> This step requires the development of an additional interface for the web.
+> 
+
+## Optional: Deploying to Google Cloud Engine
 
 This tutorial is adapted from [Google's documentation](https://cloud.google.com/solutions/continuous-delivery-with-travis-ci).  **First, you will need to create Google Cloud Account.  You should have received an email telling you how to sign-up for a free Google Cloud Account associated with your University email.**  Once you have registered continue on.
 
