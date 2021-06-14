@@ -1,5 +1,7 @@
 # SET08803 Software Engineering Methods
 
+**<span style="color:red">Please See Moodle for reassessment details.</span>**
+
 Welcome to the GitHub page for SET08803 Software Engineering Methods. GitHub contains all of the material for the module with the exception of the end of Unit Tests which you will find on the Moodle page.
 
 Before commencing the module you should view the introduction to the module on Moodle
