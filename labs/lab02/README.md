@@ -105,8 +105,7 @@ Adding CI to Your Repository
 We can now set-up GitHub Actions. On your GitHub repository select the actions tab at the top then select *set up workflow yourself*
 
 ![Graphical user interface, text, application, email Description
-automatically generated](./img/image7.png){width="6.5in"
-height="2.9854166666666666in"}
+automatically generated](./img/image7.png)
 
 This will create a file in your repository named 
 
