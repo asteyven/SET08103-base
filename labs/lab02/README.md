@@ -46,16 +46,14 @@ Everything is in our GitHub repository. We can pull this back in IntelliJ to sta
 If you are using your own machine IntelliJ will open the last project that was opened. If not then you will need to clone the project from your GitHub Repository
 
 ![Graphical user interface, application, Teams Description automatically
-generated](./img/image1.png){width="6.5in"
-height="4.904166666666667in"}
+generated](./img/image1.png)
 
 IntelliJ Start Window
 
 The button to click on is **Get from VCS**, then select **Git**:
 
 ![Graphical user interface, text, application Description automatically
-generated](./img/image2.png){width="6.5in"
-height="4.870833333333334in"}
+generated](./img/image2.png)
 
 IntelliJ Import from Git
 
@@ -68,26 +66,22 @@ Note that GitHub now prefers a token for authentication rather than a password.
 Go to your GitHub account. From the menu at the top right select settings
 
 ![Graphical user interface, application Description automatically
-generated](./img/image3.png){width="1.8486100174978128in"
-height="5.043356299212598in"}
+generated](./img/image3.png)
 
 On the left hand side select Developer Settings
 
 ![Graphical user interface, application Description automatically
-generated](./img/image4.png){width="6.5in"
-height="6.454166666666667in"}
+generated](./img/image4.png)
 
 On the next screen select Personal access tokens then Generate New Token
 
 ![Graphical user interface, text, application Description automatically
-generated](./img/image5.png){width="6.5in"
-height="1.0888888888888888in"}
+generated](./img/image5.png)
 
 Tick the workflow option which will allow us access using our CI environment and at the bottom of the page select generate token
 
 ![Graphical user interface, text, application, email Description
-automatically generated](./img/image6.png){width="6.5in"
-height="3.9694444444444446in"}
+automatically generated](./img/image6.png)
 
 The Token that is generated is used instead of your password. Make sure you take a note of this as once you navigate away from the page you will no longer be able to retrieve it.
 
