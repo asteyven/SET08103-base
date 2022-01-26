@@ -156,7 +156,7 @@ Now we can go to GitHub see if our build was successful.
 
 You can click on the **action** to show more details of the build.
 
-![2022-01-23 19_52_58-Window](img\2022-01-23 19_52_58-Window.png)
+![2022-01-23 19_52_58-Window](img/2022-01-23 19_52_58-Window.png)
 
 The stages shown above duplicate the stages in our workflow file that we defined above main.yml
 
@@ -281,7 +281,7 @@ With `mongo:latest` selected, click the **plus sign** to **Create Container**.  
 
 Add the run options from the Modify Options Link
 
-![IntelliJ Create Container](img/2022-01-23 21_29_37-Create Docker Configuration.png)
+![IntelliJ Create Container](img/createMongo.png)
 
 MongoDB is a server application which listens on port 27017.  We could just open that port, but just in case MongoDB is already running locally we will switch ports.  We looked at this in the last lab.  In the **Run Options** text box add **-p 27000:27017** as shown in the image.  Then click **Run**.  IntelliJ will start the container and it will be waiting for you to use.
 
