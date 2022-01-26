@@ -504,13 +504,13 @@ This will have created a new network called `se-methods`.  We can use this netwo
 
 First we need to stop our current MongoDB server.  In IntelliJ you should be able to see this in the Services panel under **Containers**.  To stop it, select the container and **click** the **red stop button** on the left:
 
-![IntelliJ Docker Container List](img/2022-01-23 21_39_23-Window.png)
+![IntelliJ Docker Container List](img/containers.png)
 
 Once stopped, **right-click** on the container, and select **Delete Container** and then **Yes** in the prompt.
 
 We need to create a new MongoDB server that uses our network infrastructure, and we also want to define the name of the server.  We do this by creating a new container from `mongo:latest` in IntelliJ using the following parameters:
 
-![MongoDB Container Settings](img/2022-01-23 21_42_53-Create Docker Configuration.png)
+![MongoDB Container Settings](img/dockerconfig.png)
 
 Click **Run** and the container will start.  Next we need to update our main application so it can talk to this MongoDB server.  The only line that needs updating is the `MongoClient` creation one:
 
@@ -541,7 +541,7 @@ To test our new image, select **Create Container** with it selected and use the 
 
 Click **Run** and our container will start our application which will connect to the MongoDB server and exit.  If successful you will see output on the container logs
 
-![Container Logs](img/2022-01-23 21_52_36-lab02 – Dockerfile.png)
+![Container Logs](img/containerlogs.png)
 
 
 Time for an update to GitHub. 
