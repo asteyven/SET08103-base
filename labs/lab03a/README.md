@@ -1,4 +1,4 @@
-# Lab 03: Requirements and Issues
+# Lab 03a: Requirements and Issues
 
 In this lab we will use GitHub issues to start tracking our work.  This is stage one of starting a Kanban system to monitor our work.  We will start by defining our **Vision** for the application, using this to define **features**, and from these **User Stories**.
 
