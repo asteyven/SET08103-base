@@ -1,4 +1,4 @@
-# Lab 3a: Requirements and Issues
+# Lab 03: Requirements and Issues
 
 In this lab we will use GitHub issues to start tracking our work.  This is stage one of starting a Kanban system to monitor our work.  We will start by defining our **Vision** for the application, using this to define **features**, and from these **User Stories**.
 
@@ -53,11 +53,11 @@ The application will allow an HR advisor to delete an employee record.  This is 
 
 ## Getting Started
 
-You need to set-up your application as last week.  Check that everything works after you've pulled down your code.
+You need to set-up your application as [last week](../lab02).  Check that everything works after you've pulled down your code.
 
 ## Defining User Stories
 
-Our job is to define the initial requirements for the system to be developed.  We will do this by specifying **User Stories** (see [Unit 5b](../../units/unit05/unit05b.md) for more details).  A user story has the following form:
+Our job is to define the initial requirements for the system to be developed.  We will do this by specifying **User Stories** (see [Lecture 10](../../lectures/lecture10) for more details).  A user story has the following form:
 
 > As a *role* I want *feature* so that *value*.
 
@@ -154,8 +154,8 @@ FROM mysql
 # Set the working directory
 WORKDIR /tmp
 # Copy all the files to the working directory of the container
-COPY test_db/*.sql /tmp/
-COPY test_db/*.dump /tmp/
+COPY test_db/*.sql /tmp
+COPY test_db/*.dump /tmp
 # Copy the main SQL file to docker-entrypoint-initdb.d.
 # Scripts and SQL files in this folder are executed on container startup.
 # This is specific to MySQL.
@@ -211,18 +211,18 @@ services:
     restart: always
 ```
 
-When running Docker from the command line, we use `docker-compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our Travis CI file.
+When running Docker from the command line, we use `docker-compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our GitHub Actions file.
 
 ### Test MySQL Connection
 
-First, we need to update the `pom.xml` file to add MySQL support.  Open the file in IntelliJ and add the following to the dependancies:
+First, we need to update the `pom.xml` file to add MySQL support.  Open the file in IntelliJ and replace the mongo dependency that you added last week with the following:
 
 ```xml
 <dependencies>
     <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.44</version>
+        <version>8.0.18</version>
     </dependency>
 </dependencies>
 ```
@@ -241,7 +241,7 @@ public class App
         try
         {
             // Load Database driver
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         }
         catch (ClassNotFoundException e)
         {
@@ -302,23 +302,37 @@ Now we can test the application and MySQL database together by undertaking the f
 4. Wait for the application to start-up.
 5. Check that "Successfully Connected" is displayed.
 
-### Update Travis File
+### Update GitHub Actions
 
-Now we can update our Travis file to use the Docker compose file.  This is below:
+Now we can update our Actions file to use the Docker compose file.  This is below:
 
 ```yml
-sudo: required
+name: A workflow for my Hello World App
+on: push
 
-language: java
+jobs:
+  build:
+    name: Hello world action
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Build with Maven
+        run: mvn package
+      - name: Run docker compose
+        run: docker-compose up --abort-on-container-exit
 
-services:
-  - docker
 
-after_success:
-  - docker-compose up --abort-on-container-exit
 ```
 
-The `--abort-on-container-exit` parameter tells Docker to stop all services once one container has finished.  This will gracefully exit the MySQL container when the main application exits in Travis CI.
+The `--abort-on-container-exit` parameter tells Docker to stop all services once one container has finished.  This will gracefully exit the MySQL container when the main application exits in GitHub Actions.
 
 ### Push Changes
 
@@ -331,11 +345,13 @@ And that is it.
 
 ### Check CI Build
 
-Finally log into Travis and check that the build is successful.  Hopefully you will get something as follows:
+Finally look at the logs on GitHub Actions and check that the build is successful.  Hopefully you will get something as follows:
 
-![Successful Travis Build](img/travis-success.png)
+![Successful Actions Build](img/actions-success.png)
 
-And we have successfully connected to our existing database.  That is task one of our user story completed.  Let us now move onto the next task - extracting an employee's information.
+Expand the Section Named Run docker  compose and scroll to the end and you should see a successful connection. (below on line 201)
+
+![Successful Actions Build](img/actions-success2.png)
 
 ## Extract Employee Information
 
@@ -367,7 +383,7 @@ At the moment we have two pieces of behaviour: connecting to the database and di
         try
         {
             // Load Database driver
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         }
         catch (ClassNotFoundException e)
         {
@@ -665,7 +681,7 @@ Our current process has not changed from last week, except we are now using GitH
 2. Pull the latest `develop` branch.
 3. Start a new feature branch for the issue.
 4. Once feature is finished, create JAR file.
-5. Update and test Docker configuration with Travis.
+5. Update and test Docker configuration with GitHub Actions.
 6. Update feature branch with `develop` to ensure feature is up-to-date.
 7. Check feature branch still works.
 8. Merge feature branch into `develop`.
