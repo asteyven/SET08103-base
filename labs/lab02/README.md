@@ -537,7 +537,7 @@ We have changed what we are copying to the JAR file that has been created.  We a
 
 To test our new image, select **Create Container** with it selected and use the following properties:
 
-![Application Docker Settings](img/2022-01-23 21_45_57-Create Docker Configuration.png)
+![Application Docker Settings](img/dockerconfig.png)
 
 Click **Run** and our container will start our application which will connect to the MongoDB server and exit.  If successful you will see output on the container logs
 
