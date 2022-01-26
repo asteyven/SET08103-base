@@ -156,7 +156,7 @@ Now we can go to GitHub see if our build was successful.
 
 You can click on the **action** to show more details of the build.
 
-![2022-01-23 19_52_58-Window](img/2022-01-23 19_52_58-Window.png)
+![2022-01-23 19_52_58-Window](img/action1.png)
 
 The stages shown above duplicate the stages in our workflow file that we defined above main.yml
 
@@ -180,7 +180,7 @@ Now go through our Git update steps:
 
 Now if you go to your GitHub page you should see the following:
 
-![2022-01-23 20_04_29-Window](img/2022-01-23 20_04_29-Window.png) 
+![2022-01-23 20_04_29-Window](img/commit1.png) 
 
 
 And now we have our project automatically building on pushes to GitHub, and the current build status
