@@ -95,7 +95,7 @@ Complete tasks.  The fastest method to complete two tasks is one-at-a-time.  Whe
 
 #### Waiting
 
-If you are waiting for something to happen before performing a task that is a waste.  Only work on tasks that are ready.  In the [Scrum lecture](../lecture02) we defined **Definition of Ready**.  Work only on tasks that are ready.
+If you are waiting for something to happen before performing a task that is a waste.  Only work on tasks that are ready.  In the [Scrum lecture](../unit01/unit01b.md) we defined **Definition of Ready**.  Work only on tasks that are ready.
 
 #### Motion
 
