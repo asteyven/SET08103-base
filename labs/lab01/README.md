@@ -25,40 +25,26 @@ After this lab you will be able to:
 
 IntelliJ IDEA is the Integrated Development Environment that we will be using on the module. You can download IntelliJ IDEA from https://www.jetbrains.com/idea/ The community edition of IntelliJ IDEA is sufficient for this module but you can if you wish get access to the ultimate edition by signing up for a student licence at [https://www.jetbrains.com/shop/eform/students](https://www.jetbrains.com/shop/eform/students)
 
-You will require Java and IntelliJ installed on the machine you plan to work on.  Once ready, start-up IntelliJ.  You should be presented with the following screen:
+You will require Java and IntelliJ installed on the machine you plan to work on.  Once ready, start-up IntelliJ.  You should be presented with the following screen: Please note that this software changes regularly and if the screenshots look slightly different it's because I can't keep up. It should be similar and if you encounter any problems please let me know.
+
+
 
 ![IntelliJ Start Screen](img/intellij-start.png)
 
-We need to create a new project, so click on **Create New Project** to open the following window:
 
-![IntelliJ New Project](img/intellij-new-project.png)
 
-*Replicate the same settings as shown in the image.*  You need to do the following:
+*Replicate the same settings as shown in the image (you can change the location).*  You need to do the following:
 
-1. Select **10** (or newer) as Project SDK.  If IntelliJ has not detected the JDK you will need to find it.  For Windows see [here](https://stackoverflow.com/questions/16765726/how-to-set-intellij-idea-project-sdk).  If you are on Linux I assume you know what you are doing.  If you are on Mac OS X then the Windows help should be enough plus knowing where applications are installed.
-2. Select **Maven** as the project type on the left.
+1. Select at most 17 as the JDK for the project. The Open JDK Docker image which we will be using use version 17 and you will get errors if you choose a higher version. 
+2. Select **Maven** as the build system
 
-Once done click on **Next**.  This will open the following window:
 
-![IntelliJ New Maven Project](img/intellij-new-maven.png)
-
-Enter the following details:
-
-- **Name** seMethods
-- **Location** ~\IdeaProjects\seMethods
-- **GroupID** *com.napier.sem*
-- **ArtifactID** *seMethods*
-- **Version** 0.1.0.1
-
-The version stands for 0.1-alpha-1.  It means this is the first version.
-
-Leave **Project name** as *seMethods*.  You can store the project wherever you choose although the default location is normally best.
 
 Click **Finish** for your new project to be created.  This should open up the following window:
 
 ![IntelliJ Main Window](img/intellij-main-window.png)
 
-If you do not have this window then ask try the instructions again and if you still have a problem ask for help.
+If you do not have this window then ask try the instructions again and if you still have a problem ask for help. Please note that in the above screenshot version 17 should be the maximum for maven compiler source and target (version 8 - 17 should work fine)
 
 ## Git with IntelliJ
 
@@ -152,7 +138,7 @@ New projects are started by default on a branch called *main* but IntelliJ uses 
 
 Now we can create a new repository. In GitHub, you will see a **+** near the top of the page, which you can select **New repository** from:
 
-![GitHub New Repository](C:/Users/KevL/Dropbox/Teaching/2021-2022-02-SET08103%20SET08403%20Software%20Engineering%20Methods/SET08103/labs/lab01/img/github-new-repo.png)
+![GitHub New Repository](img/github-new-repo.png)
 
 This will open a new window.  You need to enter the name for the repository (`sem`), make sure the repository is **Public** and then select the **Apache 2.0** license type.  **Ensure that no README is added or `.gitignore`**.  You have one already.  This details are illustrated below:
 
