@@ -1,442 +1,179 @@
-# Unit 9b: Bug Tracking and Software Monitoring
-
-This Section is split into two related subsections. Bug Tracking and Software Monitoring.
-
-# Bug Tracking 
-
-The first subsection defines bug tracking, the act of finding, reporting, and monitoring software defects.  We take a generic look at the topic, as bug fixing and debugging is language specific.  Our aim is to examine how bug tracking fits into our workflow and method.
+# Unit 9a: The Third Way of DevOps - Continuous Learning and Experimentation
 
 ## Behavioural Objectives
 
-- [ ] **Define** *software bugs, smells, and technical debt.*
-- [ ] **Describe** *a bug tracking system.*
-- [ ] **Describe** *bug tracking lifecycle.*
-- [ ] **Evaluate** *good bug reporting practice.*
+- [ ] **Describe** *how to learn as part of daily work.*
+- [ ] **Describe** *how learning can be communicated throughout the organisation.*
+- [ ] **Explain** *why time is required to enable organisational learning.*
 
-## Bugs, Smells, and Technical Debt
+## Enable and Inject Learning into Daily Work
 
-First, let us define the term bug. From Wikipedia:
+We cannot predict the outcomes of our changes in a complex system, such as the software we build.  Therefore, we have to ensure learning is always occurring.
 
-> A software bug is an error, flaw, failure or fault in a computer program or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
+Key to enabling safe work in our complex system is self-diagnostics and self-improvement.  We must get better at diagnosing problems and we must get better at improving our approach to work.  Or, we must get better at detecting problems, solving these problems, and ensuring the effects of the solutions are available to all in the organisation.
 
-A bug is something amiss with our program. We have to correct bugs, but, first, we need to determine what is amiss.
+An often cited example is the April 2011 outage of Amazon Web Service's US-EAST zone.  This took down multiple services, including Reddit and Quora.  Netflix didn't go down and appeared unaffected.  This is partially due to their architectural approach (micro-services), but also their culture.  Netflix used a tool called Chaos Monkey which simulated failures.  The engineering teams were constantly improving their failure response and had thus built-in resilience other services had not.
 
-A similar term is a code smell. From Wikipedia:
+### Establish a Just Learning Culture
 
-> In programming, a code smell is a characteristic in the code that shows a deeper problem.
+When failures occur, the response has to be seen as just.  This is considered a prerequisite for a learning culture.  If responses are unjust, investigations are impeded and fear replaces mindfulness in the engineers.  Slowly, organisations become more bureaucratic rather than careful, and an air of secrecy, evasion, and self-protection emerges.
 
-Poor implementation contributes to code smell which leads to separate issues. A smell arises from indifferent or rushed programmers not complying to quality demands.
+When people feel safe in reporting mistakes they are willing to be held accountable.  They become enthused in helping avoid the same error in future.  If people are punished, they do not feel safe reporting a problem.  And it is likely to occur again.
 
-Bugs and smells form part of technical debt. We must devote time paying off our technical debt. If technical debt builds interest, it can bring significant, longer-term complications.
+To support a just, learning-based culture we will look at two techniques:
 
-## Bug Tracking systems
+- Blameless post-mortems.
+- Controlled introduction of failures.
 
-Remember our focus is developing processes and methods. For example, GitHub is more than version control. GitHub is a software configuration management system.
+### Schedule Blameless Post-Mortem Meetings after Accidents Occur
 
-Bug finding is a craft, driven via code reviews, testing, users, and luck. We examine bug reporting later in this unit. Once a user or QA report a bug, we need to manage or track it.
+A post-mortem should be scheduled as-soon-as-possible after an incident.  Thereby we capture information while it is still fresh in people's mind.
 
-From Wikipedia:
+A blameless post-mortem does the following (from The DevOps Handbook):
 
-> A bug tracking system or defect tracking system is a software application that keeps track of reported software bugs in software development projects.
+- Construct a timeline and gather details from multiple perspectives on failures, ensuring we don’t punish people for making mistakes.
+- Empower all engineers to improve safety by allowing them to give detailed accounts of their contributions to failures.
+- Enable and encourage people who do make mistakes to be the experts who educate the rest of the organization on how not to make them in the future.
+- Accept that there is always a discretionary space where humans can decide to take action or not and that the judgment of those decisions lies in hindsight.
+- Propose countermeasures to prevent a similar accident from happening in the future and ensure these countermeasures are recorded with a target date and an owner for follow-up.
 
-This definition does not inform us - a bug tracking system is a program that tracks bugs.
+The following stakeholders should be present:
 
-A bug tracking system is a database recording data on bugs. We define what bug data to store later in the unit. Another crucial part of the system is managing a bug's lifecycle. We examine bug state later in the unit.
+- The people involved in decisions that may have contributed to the problem.
+- The people who identified the problem.
+- The people who responded to the problem.
+- The people who diagnosed the problem.
+- The people who were affected by the problem.
+- And anyone else who is interested in attending the meeting.
 
-A bug tracking system should integrate into our project management workflow. We track bugs as issues, and therefore they show on our Kanban/Sprint board.
+### Publish Out Post-mortems as Widely as Possible
 
-Bug tracking systems are issue tracking systems. From Wikipedia:
+We need to reduce the stigma of failure: *Always fear regret more than failure*.
 
-> An issue tracking system (also ITS, trouble ticket system, support ticket, request management or incident ticket system) is a computer software package that manages and maintains lists of issues.
+One technique is to hold failure parties.  These celebrate a rigorous, high-quality, scientific approach that fails to deliver the desired outcome.
 
-Again, Wikipedia is unclear. A bug tracking system functions with bugs and an issue tracking system functions with issues. Issues are general. For example, feature requests can be issues. A bug is a defect we need to resolve.
+### Decrease Incident Tolerances to Find Ever-weaker Failure Signals
 
-Developers used spreadsheets for bug tracking, but caused:
+People can become complacent over time.  As we become more efficient at solving problems, we have to decrease the problem signal we are responding to.  To do this, we must amplify weak failure signals.  Our telemetry can help us here.
 
-- Lack of communication: hard to discuss the bug.
-- Lack of visibility: bug discussion is via emails not seen by the full team.
-- Lack of real-time updates: no notifications on bug progress or new bugs.
-- Lack of fluid properties: challenging to manage bug priority.
-- Lack of a central repository: no one location to store description, screenshots, progress and feedback.
-- Lack of insights: difficult to see patterns and trends.
-- Lack of integration with other work: bug tracking exists separate to the rest of our work, which goes against the single repository of truth paradigm.
+Consider the 2003 Columbia space shuttle disaster.  The space shuttle exploded as it reentered Earth's atmosphere.  A piece of insulating foam broke off an external fuel tank during takeoff.  Prior to reentry, mid-level NASA engineers had reported the problem, but they were ignored.  The foam break had been observed on video during a post-launch review and the engineers had notified management.  But the engineers were told this was nothing new and foam breaks had happened before and never resulted in an accident.  It was considered a maintenance problem.  All seven crewmembers were killed.
 
-A spreadsheet of bugs is limiting. Bugzilla is a full bug tracking system. It provides a database, lifecycle management and notifications. These features are useful, but we lack integration with our repository.
+An organisation can work in one of two ways:
 
-A better solution is GitHub issues. Alternatively, we can adopt a tool that uses GitHub issues. Zube is such a tool, albeit designed for Kanban/Sprint planning.
+- Standardised, where routine and processes govern everything.  Budgets and timelines are strictly managed.
+- Experimental, where new information is evaluated every day.  The culture resembles an R&D lab.
 
-Jira is more sophisticated, integrating with GitHub issues and providing both Kanban and bug tracking features.
+Ideally, a company should work in an experimental model.  This will allow any information to be judged fairly.  Trust is a key aspect of this culture.
 
-## Bug Tracking Workflow
+### Redefine Failure and Encourage Calculated Risk-taking
 
-Let us now consider a bug tracking workflow. There are four stages of bug tracking:
+Again, always fear regret more than failure.  We must reinforce a culture that everyone feels comfortable to experiment in and will surface learning from failure.
 
-- Capturing: where QA or users discover bugs.
-- Prioritising: where the team sort the bugs into a work order.
-- Tracking: where the team fix bugs and update their status.
-- Releasing: where customers receive bug fixes.
+### Inject Production Failures to Enable Resilience and Learning
 
-The basic lifecycle of a bug is:
+Just as Netflix used Chaos Monkey, we must inject failures so we can test our response and resilience.  This forms part of our testing strategy.
 
-![Bug Tracking Workflow](img/bug-workflow.png)
+### Institute Game Days to Rehearse Failures
 
-A bug's lifecycle stages are:
+Resilience engineering is defined as an exercise designed to increase resilience through large-scale fault injection across critical systems.
 
-- open/reopen: when someone reports the bug, or QA marks the bug as not fixed.
-- in progress: when development work on fixing the bug.
-- resolved: when development submits the fix and is awaiting a QA review.
-- closed: when QA make sure the bug fix passes inspection.
+A Game Day is when teams simulate and rehearse accidents to practice resilience.  A serious event is scheduled (e.g., destruction of an entire data centre).  Teams are given time to prepare such as fixing points of failure and creating monitoring processes.
 
-Another bug lifecycle is:
+## Convert Local Discoveries into Global Improvements
 
-![Another Bug Tracking Workflow](img/bug-tracker-workflow.png)
+### Use Chat Rooms and Chat Bots to Automate and Capture Organisational Knowledge
 
-A bug is either accepted or rejected. If accepted, development and QA fix and test the solution.
+Chat rooms are quite common in modern development teams (e.g., Slack).  These chat rooms can have automation built in.  Rather than running a script from the command line, someone can send a message to a chat bot which will trigger the process.  This has some benefits (from The DevOps Handbook):
 
-A more detailed bug state is:
+- Engineers on their first day of work could see what daily work looked like and how it was performed.
+- People were more apt to ask for help when they saw others helping each other.
+- Rapid organizational learning was enabled and accumulated.
 
-![Bug State](img/bug-state.png)
+In chat rooms, communication is public and recorded.  This enables organisational learning.  Email is private and thus cannot enable organisational learning easily.
 
-These states are labels for a bug. The state is more informative to QA and other stakeholders. For example, the defect is a design choice or one that the team won't fix.
+### Automate Standardised Processes in Software for Reuse
 
-On GitHub, bugs are issues. We can set a template for reporting. We can use labels to mark the state of a defect. Combining these features with GitHub's project board or Zube's Kanban/Sprint board provides a complete bug management system.
+Specifications and standards are often written in dense Word documents stored somewhere outside the development work.  This goes against our single repository of truth principle.  Therefore, engineers do not know where these documents are, or if they even exist.  This leads to quality problems in the products we build.
 
-So, bug tracking via our backlog is possible. Ticket systems do this. A good practice is tracking bugs via our backlog and board to support a good workflow:
+Putting these documents into our central code repository, and then building a tool to search them, is the solution.  Thus, engineers will have the information at their fingertips from the space in which they work.
 
-- We can check for duplicate bugs in the backlog.
-- We create a new defect as a card in the backlog.
-- We can prioritise and assign bugs.
-- When we fix the bug, it moves to the done column.
+### Create a Single, Shared Source Code Repository for Our Organisation
 
-## Bug Tracking Best Practices
+We discussed this at the start of the module, and have been living this idea throughout.  All our code, artefacts, configuration, and knowledge exists in one place: our GitHub repository.  We can go further and add tutorials, plugins, etc. in here.  The point is to be able to have a single place where we can rebuild everything.
 
-The best practices of bug tracking are:
+### Spread Knowledge by Using Automated Tests as Documentation and Communities of Practice
 
-- Be thorough. The more information presented on the bug, its cause, and its fix, the better for the team.
-- Make sure a bug is valid.
-- Make sure we have complete information on the bug; e.g., title, description, screenshots, etc. 
-- Make sure people only report bugs once.
-- Make sure people give details to reproduce a bug.
-- Think through the bug.
-- Always look for new bugs: no program is bug-free.
+We covered testing previously.  Our tests should provide documentation so that others can understand what we have built.  A good test tells us something about how the code works.
 
-A key aspect of bug tracking is bug communication. Any good bug report should have:
+### Design for Operations Through Codified Non-functional Requirements
 
-- Steps required to reproduce the bug.
-- What was the expected result?
-- What was the actual result?
+DevOps is about development and operations working together.  As developers, we should support the non-functional requirements that assist the operations team by having (from The DevOps Handbook):
 
-These key elements help the development team to find and fix the bug.  Withholding part of this information means the team lacks the knowledge of the defect and thus cannot find or fix it.
+- Sufficient production telemetry in our applications and environments.
+- The ability to accurately track dependencies.
+- Services that are resilient and degrade gracefully.
+- Forward and backward compatibility between versions.
+- The ability to archive data to manage the size of the production data set.
+- The ability to easily search and understand log messages across services.
+- The ability to trace requests from users through multiple services.
+- Simple, centralized runtime configuration using feature flags and so forth.
 
-## Bug Communication
+### Build Reusable Operations User Stories into Development
 
-To communicate a bug, we must provide a good description. A good description includes:
+Operations work should also exist in the backlog.  We should automate as much work as possible, and documenting this activity to better plan.  In the backlog, recurring operations work should have (from The DevOps Handbook):
 
-- A description of what happens. What is the observed defect?
-- A description of when it happens. What are the causes of the defect?
-- If the defect always occurs. Is the bug intermittent?
-- A description of how the bug occurs at present. Maybe the circumstances under which the bug occurs have changed.
-- What are the steps required to reproduce the bug?
+- What work is required?
+- Who is needed to perform it?
+- What the steps to complete it are?
+- etc.
 
-Bug reporting is an integral ingredient of our software maintenance task. There are two types of bug reporting:
+### Ensure Technology Choices Help Achieve Organisational Goals
 
-- QA and other members of the team undertake internal bug reporting.
-- Users’ of the software undertake external bug reporting.
+Any technology used should be reviewed regularly and systematically to discover which ones are causing a disproportionate amount of failure and unplanned work.  We need to identify the technologies that (from The DevOps Handbook):
 
-Our bug tracking process must support both types of reporting. We give templates to capture information.
+- Impede or slow down the flow of work.
+- Disproportionately create high levels of unplanned work.
+- Disproportionately create large numbers of support requests.
+- Are most inconsistent with our desired architectural outcomes (e.g . throughput, stability, security, reliability, business continuity).
 
-## Bug Reporting
+By removing these problems we provide more time, resources, and focus on the technology that best helps achieve the goals of the organisation.
 
-Good bug reporting practice is essential. To illustrate poor communication, I will use examples from teaching. These examples are universal.  If you’ve written in this fashion before, don’t worry.  Others have sent emails like this before.  From now, improve your delivery of issues.
+## Reserve Time to Create Organizational Learning and Improvement
 
-### Be Specific
+An organisation should set time for learning.  A good technique is to use a "blitz" where improvement is the goal.  This is in addition to time reserved to pay off technical debt.
 
-"I ran the code, and it’s not working." If you communicate this, you haven’t told the teaching team much. First, what do you mean you ran the code? What does running the code mean? In this module, it could mean:
+### Institutionalise Rituals to Pay Down Technical Debt
 
-- You selected run within IntelliJ. 
-- You ran the Docker container for the application. 
-- You pushed your container to Google Cloud.
+A blitz:
 
-Saying you ran the code tells us little.  Be specific. No one else lives in your head. Without the specific information you have, we cannot help you fix the bug.
+- Focuses on problems people care about.
+- Is self-organised.
+- Does no feature work.
 
-### Be Verbose
+The goal is experimentation, innovation, and learning but to do so to improve daily work and solve workarounds.  Playing with new technology for the sake of it is not beneficial.
 
-"Lab 2 doesn’t work." OK, why does lab 2 not work? "The program doesn’t run." OK, what part of the lab are you doing? "The part with Docker." And so on.
+Blitzes and hack weeks allow people to bring innovation to the work undertaken.  This builds pride and purpose, and we gain improvements from the time saved in the work undertaken.
 
-Be verbose. Offer as much information as you can in a bug report. It is easy for the developer to ignore irrelevant information. Solving a lack of information can only happen by asking more questions. No one else has the knowledge you have. Thus share as much information as you can.
+### Enable Everyone to Teach and Learn
 
-### Watch Your Pronouns
+We must dedicate time for people to teach and learn.  Code reviews are one such example.  Don't just criticise, but mentor, coach and assist other team members.  Teaching others will actually improve your understanding and retention of knowledge.  It is a well-known fact.
 
-"It doesn’t work." What is "it"? Be careful with pronouns and related words (e.g., it, he, she, they, this, etc.).
+### Share Your Experiences from DevOps Conferences
 
-### Inform What Else You've Done
+Or any conference.  Give a presentation.  Run a workshop.  Write a tutorial.  All of these help in growing organisational learning.
 
-"I cannot connect to the database container." OK, after digging around we are unsure why. "Oh, I installed MySQL on my machine. Is that a problem?" Yes. We find quicker solutions with improved information.  State what configurations you have used, or any extra steps you’ve tried to solve the problem. This information is vital to reduce time wasted trying to resolve the issue.
+### Create Internal Consulting and Coaches to Spread Practices
 
-### Don't Use Anecdotal Evidence or Perform Confirmation Bias
-
-"Lab 7 isn’t working, and everyone I’ve spoken to says they have the same problem." Give the developer credit.  They either know the problem or will find it with you. Stating you know someone else with a problem doesn’t help:
-
-- The other person may have a different problem.
-- The other person may have a different configuration.
-- You’ve performed confirmation bias. You don’t know who has a working system. You are trying to justify your problem. If a legitimate problem, you need not to justify it.
-
-### Proof Read
-
-Finally, read what you wrote. Always review and edit any text you send to others. If you rush and want it done and sent, you might not make sense, you might miss information, or you might offend. Time saved rushing disappears because development requests more information to understand the issue. Furthermore, people can become confused or upset. If submitting coursework, you will lose marks. So take your time and review what you have done.
+Have people who are seen as experts and mentors.  Others can go to them for advice.  This will help spread ideas throughout the organisation as the coach trains others.
 
 ## Summary
 
-Bug tracking and management is a big subject, but there are few formalised texts on the process.  Most companies have their own methods.  However, some standard tools are out there.  Specifically, we have:
-
-- Defined software bugs (defects), smells (poor implementation), and technical debt in how they relate.
-- Described a bug tracking system as essentially a database which holds facts on a defect and allows bug lifecycle management.
-- Described a bug tracking lifecycle, from open to fixing to closed.
-- Evaluated good bug reporting practice, particularly focusing on good communication.
-
-
-
-# Monitoring Software
-
-The second subsection introduces ideas on monitoring our applications.  It is really an introduction to the subject area and includes recommended reading if you want to practically build large scale systems.
-
-## Behavioural Objectives
-
-- [ ] **Define** *information visualisation.*
-- [ ] **Describe** *system monitoring.*
-- [ ] **Define** the *requirements for a system monitoring framework.*
-- [ ] **Define** *application monitoring approaches.*
-
-## Information Visualisation
-
-From [Wikipedia](https://en.wikipedia.org/wiki/Information_visualization):
-
-> Information visualization or information visualisation is the study of (interactive) visual representations of abstract data to reinforce human cognition.
-
-Visualisation is about the graphical representation of data in a manner that helps people understand what the data means.  It is a very large field of research, including organisations such as Google, Adobe, and IBM.  We will not go into the methods and principles of information visualisation here, but it is worth noting that our discussion on monitoring software has roots in this area.
-
-Below is an example visualisation:
-
-<p><a href="https://commons.wikimedia.org/wiki/File:Internet_map_1024.jpg#/media/File:Internet_map_1024.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/1200px-Internet_map_1024.jpg" alt="Internet map 1024.jpg"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=Barrett_Lyon&amp;action=edit&amp;redlink=1" class="new" title="Barrett Lyon (page does not exist)"> The Opte Project</a> - Originally from the <a href="https://en.wikipedia.org/wiki/Main_Page" class="extiw" title="en:Main Page">English Wikipedia</a>; description page is/was <a href="https://en.wikipedia.org/wiki/en:Image:Internet_map_1024.jpg" class="extiw" title="w:en:Image:Internet map 1024.jpg">here</a>., <a href="https://creativecommons.org/licenses/by/2.5" title="Creative Commons Attribution 2.5">CC BY 2.5</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1538544">Link</a></p>
-This is a (partial) map of the Internet in 2005.  The lines represent two machines being connected, and the colour the length of delay between the machines connected.  The aim is to spot patterns and then investigate further.  This allows **exploration** of data.
-
-### Software Visualisation
-
-*Software Visualisation* is a field of information visualisation research focused on the visual representation of software data.  As we have highlighted, there is a lot of data that can be generated about our code and its runtime environment.  Below is an image that represents the Ndepend Tool's unit test code coverage.
-
-![Code Coverage Treemap](img/code-coverage.png)
-
-Source: https://www.ndepend.com/docs/treemap-visualization-of-code-metrics
-
-The visualisation uses the following techniques:
-
-- the **size** of a square represents the *total lines of code (LoC)* for that method, class, namespace.
-- the **colour** of a square represents the *percentage coverage* of unit test: green being good, red being bad.
-
-Straight away we can spot where we might want to write more tests to improve the quality of our code.  The visualisation has presented information and we can see the patterns of interest.
-
-Another visual representation you may be familiar with is from your Git branches.  Below is an example:
-
-![Git Branches](img/git-branches.png)
-
-Source: https://www.tablix.org/~avian/blog/archives/2014/06/vesna_drivers_git_visualization/.
-
-The main use of this view is during development, allowing us to trace history or support our merging work.  Again, we look for patterns to understand our information.
-
-Finally, visualisation has been used to illustrate behaviour.  Below is an example of a quicksort algorithm working:
-
-<p><a href="https://commons.wikimedia.org/wiki/File:Quicksort.gif#/media/File:Quicksort.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Quicksort.gif" alt="Quicksort.gif"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Simpsons_contributor&amp;action=edit&amp;redlink=1" class="new" title="User:Simpsons contributor (page does not exist)">Simpsons contributor</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=14918391">Link</a></p>
-This visualisation can be used to help explain how something works, to see how it works, or to check it does work.
-
-### Business Dashboard
-
-Our aim when building monitoring tools for software is to create dashboards.
-
-<p><a href="https://commons.wikimedia.org/wiki/File:3_Dashboards.JPG#/media/File:3_Dashboards.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/3_Dashboards.JPG" alt="3 Dashboards.JPG"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Kate07lyn&amp;action=edit&amp;redlink=1" class="new" title="User:Kate07lyn (page does not exist)">Kate07lyn</a> - Jinfonet Software, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=13309105">Link</a></p>
-From [Wikipedia](https://en.wikipedia.org/wiki/Dashboard_(business)):
-
-> Dashboards often provide at-a-glance views of key performance indicators (KPIs) relevant to a particular objective or business process. In the other, "dashboard" has another name for "progress report" or "report."
-
-Dashboards provide easy visuals for us to see important information about the organisation.  We want to see quickly how well we are meeting our targets.  This may include financial information, geographic information, or other performance indicators:
-
-<p><a href="https://commons.wikimedia.org/wiki/File:Infruid%27s_Self-Service_BI_Tool_Dashboard.jpg#/media/File:Infruid%27s_Self-Service_BI_Tool_Dashboard.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Infruid%27s_Self-Service_BI_Tool_Dashboard.jpg" alt="Infruid's Self-Service BI Tool Dashboard.jpg" height="345" width="640"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Growthlakes&amp;action=edit&amp;redlink=1" class="new" title="User:Growthlakes (page does not exist)">Growthlakes</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=60026450">Link</a></p>
-## Monitoring Systems
-
-System monitoring is about knowing the state of the technology environment.  We use monitoring to:
-
-- Detect faults.
-- Diagnose faults.
-- Resolve faults.
-
-Monitoring also provides data to support the business, such as:
-
-- user experience data.
-- where to make product and technology investments.
-
-An example monitoring dashboard is below:
-
-<p><a href="https://commons.wikimedia.org/wiki/File:ScalableGridEngineGanglia2.png#/media/File:ScalableGridEngineGanglia2.png"><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/ScalableGridEngineGanglia2.png" alt="Screenshot" height="392" width="640"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Raysonho" title="User:Raysonho">Raysonho @ Open Grid Scheduler / Grid Engine</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=27359495">Link</a></p>
-Technically, monitoring is the tools and processes to measure and manage IT systems.  However, monitoring goes further than this because we translate the metrics into business value.  This comes from measuring the user experience.  The better the user experience, the more people will use your system.  We also gain data on how people use the system, thus supporting investment and decision making.  It also supports the operations team in delivery quality of service.  Therefore, any monitoring system has two customers:
-
-- the business.
-- the IT (operations) team.
-
-Monitoring is important.  It is often considered an add-on, much like security.  **Do not see monitoring as an add-on.**  It is a core function to your work as a software engineer.  You need to know how your software is working.  **You are an engineer - not a cowboy.**  So monitoring should be in your user stories, and in all your software components.
-
-**Not adding monitoring creates operational risk.**  This results in (taken from *The Art of Monitoring*):
-
-- An inability to identify or diagnose faults.
-- An inability to measure the operational performance of your application.
-- An inability to measure the business performance and success of an application or a component, like tracking sales figures or the value of transactions.
-
-Also, we need to recognise that over-instrumentation is best.  You are more likely to complain about not having enough data rather than too much.
-
-## Monitoring Culture
-
-Applying monitoring in an organisation is again a cultural issue.  *The Art of Monitoring* has defined a three-level organisational maturity model of monitoring.
-
-### Manual Monitoring or None
-
-Monitoring is a manual process that requires a person to initiate.  It may also be the case that no monitoring is done at all.  Generally, monitoring is done via a checklist, simple script, or other non-automated processes.
-
-The aim in manual monitoring is to manage assets and avoid downtime, and thus provides little value on user experience and quality of service.  It will not allow the development and operations teams to justify investments and new projects as there is no data to support it.
-
-### Reactive Monitoring
-
-Reactive monitoring automates most of the processes with some left as manual.  Tooling will have been deployed to perform the monitoring process.  However, the same aims exist - measuring availability and managing assets.  More sophisticated metrics may exist that support customer experience.
-
-The term reactive is used as this form of monitoring is expanded in response to incidents.  The operations team are generally running the system and thus metrics are focused on their needs.
-
-### Proactive Monitoring
-
-Proactive monitoring supports infrastructure and the business.  It is done automatically and generated as part of configuration management.  Metrics focus on application performance and business outcomes rather than just disk and CPU usage.  Quality of service and user experience are key.  Also, the data allows the development and operations team to justify investment.
-
-The operations team will manage monitoring, but everyone sees it as a responsibility.  The development team will build it into new products, and the definition of done will include monitoring.
-
-## A Monitoring Framework
-
-An example of a monitoring framework is below:
-
-![Monitoring Framework](img/monitoring-framework.png)
-
-Source: *The Art of Monitoring.*
-
-In general, we should monitor systems using push-based methods rather than pull-based.  That is, our systems should **emit** data rather than be requested for it.  The data should be emitted to a central collector for management.
-
-An emitter reports that it is available by emitting data.  An emitter is also stateless - it just sends the data to the collector when it is generated.  If a metric is available, an event reporting, or log is spooling then the service is available.  If it stops, then the service is not available.  We then visualise these metrics, events and logs to allow the team to interpret the complex information gathered.
-
-This change to emitting moves the focus from service availability in our monitoring system.  If IT assets are judged as capital and operational expenses then they can be cut.  Availability only provides this view.  Additional monitoring illustrates the value in investing in IT infrastructure and other projects.
-
-Operations teams used to see hosts (servers) as pets.  They fixed and nursed their pets back to life multiple times, fiddling with settings, and investing time in their health.  Our work in Docker and now in cloud infrastructure points to a different view.  Hosts are a herd.  We automatically configure, rebuild, kill, restart and add hosts.  It is easy.  We do not see the single machine any more, but a host environment that we can spin up and shutdown as needed.  This removes a wealth of checks in our system - we just rebuild a host or component if it fails.  It also changes the view of IT assets.
-
-Fault detection systems have traditionally only provided true/false information.  Also, the systems were developed using static ideas:
-
-- You implement the same checks you've used in the past or from the documentation.
-- You implement a check in response to an incident..
-
-*The Art of Monitoring* highlights three approaches to monitoring applications:
-
-- Emitting metrics by instrumenting code.
-- Generating structured or semantic log events.
-- Building health checks and endpoints.
-
-We will not go into any of these in detail, but *The Art of Monitoring* walks through how to build such a system from the ground up.  If you want to build your own monitoring system you should use this book.
-
-### Metrics and Events
-
-*The Art of Monitoring* specifies the following types of data that can be gathered:
-
-- Resource information, like consumption of CPU or memory 
-- Performance information, like latency and application throughput 
-- Business and user-experience metrics, like volumes or the amounts of transactions or numbers of failed logins 
-- Log data from hosts, services, and applications
-
-Generally, these can be divided into the following three categories:
-
-- **Events**: changes and occurrences in our environment.
-- **Logs**: a subset of events most useful for fault diagnosis and investigation.
-- **Metrics**: most useful to help us understand what's going on in our environment.
-
-Metrics are measures of software and hardware properties.  A metric involves keeping track of a state by making an observation which is a value and a timestamp, with possibly some other properties of interest.  *We are undertaking a scientific approach here.*  We gather the appropriate data to allow us to make hypothesis and judgements on system performance.
-
-Metrics change our view from fault-detection to state, availability and performance of our system.  They provide a dynamic, real-time understanding of the application and allow us to make good decisions about its use and expansion.  Metrics may also provide data to catch faults before they occur.
-
-### Notifications
-
-A monitoring system must provide notifications.  These can be emails (such as Travis does), text messages, or pop-ups.  *The Art of Monitoring* defines the basics of a notification system as:
-
-- Who to tell about a problem.
-- How to tell them.
-- How often to tell them.
-- When to stop telling them, do something else, or escalate to someone else.
-
-A good notification framework should:
-
-- Make notifications actionable, clear, and articulate.
-- Add context to notifications.
-- Align notifications with the business needs of the service being monitored.
-
-### Approaches to Monitoring
-
-There are two two approaches to monitoring:
-
-- **Blackbox** where you query a service to check properties such as availability.
-- **Whitebox** where you emit data from your application.
-
-Blackbox monitoring should be used on services and applications outside your system.  You have little to no control over such systems, and so must gather whatever data you can to ensure the health of your system.
-
-Whitebox monitoring is the approach taken by your own system.  You emit data to the collector, providing as much instrumentation as feasible.  As a software engineer, you are more concerned with whitebox monitoring as you are writing the applications involved.
-
-## Application Monitoring
-
-![Application Monitoring](img/application-monitor.gif)
-
-Source: https://www.splunk.com/en_us/it-operations/application-analytics-and-monitoring.html.
-
-When building application monitoring the first areas to work on are entry and exit points from our system (from *The Art of Monitoring*):
-
-- Measure and log requests and responses.
-- Measure and log all calls to external services and APIs.
-- Measure and log job scheduling, execution, and other periodic events.
-- Measure significant business and functional events.
-- Measure methods and functions that read and write from databases and caches.
-
-An endpoint is where we interface with the system (e.g., a URL listening point).  We can test availability, gather performance metrics, etc.  This can be returned in JSON data format that we can then store in our central collector.
-
-There are two types of metrics for applications:
-
-- **Application metrics**: the state and performance of application code.
-- **Business metrics**: the value of your application (e.g., sales made).
-
-Application metrics focus on user experience (e.g., response time), throughput (e.g., request volume), and transaction time.  Business metrics often use application metrics.  For example, payment latency increases the cost of processing payments, which is a business cost.
-
-Commonly, a library to support monitoring is used.  An API call allows us to store our values in our central gathering point.  This provides a unified monitoring interface.  If we cannot insert code directly (e.g., external systems, blackbox systems, legacy systems), we put the monitoring as close to the measuring point as we can.
-
-### Metric Types and Visual Approaches
-
-Finally, we can consider the types of metrics we can gather and how to visualise them.  In simple terms, we have the following metric types:
-
-- **Gauges** show a number that will change over time (e.g., CPU usage).  We want to see the metric at a given point in time.
-- **Counters** increase over time, such as uptime and sales.  Useful for mapping rates of change.
-- **Timers** are used to determine how long something took, for example a request.
-- **Summaries** combine metrics into a more useful statistic.  For example, means, medians, percentages, etc.
-
-A gauge can be a simple number or a visual metaphor such as a real gauge:
-
-<p><a href="https://commons.wikimedia.org/wiki/File:Psidial.jpg#/media/File:Psidial.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Psidial.jpg" alt="Psidial.jpg" height="480" width="480"></a><br>By <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/54613528@N00">leapingllamas</a> - <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/54613528@N00/11897019">Flickr</a>, <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=794301">Link</a></p>
-Other metaphors normally include bar/column charts (for discrete data) and line charts (for continuous data).
-
-## Summary
-
-In this unit we have examined application monitoring at a very high level.  In particular, we have:
-
-- Defined information visualisation as the graphical representation of data in a manner that helps people understand what the data means.
-- Described system monitoring, looking at what to monitor and the culture required.
-- Defined the requirements for a system monitoring framework, including emitters and notifications.
--Defined application monitoring approaches, looking at what to monitor and how to present this.
+- Described how to learn as part of daily work, such as post-mortems and increasing failure signals.
+- Described how learning can be communicated throughout the organisation, such chat rooms and items on the backlog.
+- Explained why time is required to enable organisational learning, such as enabling teaching and internal consulting work.
 
 ## Recommended Reading
 
-*The Art of Monitoring* by James Turnbull covers both the principles of monitoring and how to build a monitoring system.  If you want to build a monitoring feedback this is a good starting point.
+We have effectively summarised The DevOps Handbook Part V – chapters 19 to 21.
 
-![The Art of Monitoring](img/monitoring-book.jpg)
+![The DevOps Handbook](img/devops-book.jpg)

@@ -1,29 +1,31 @@
-# SET08803 Software Engineering Methods
+# Base Repo for SET08[148]03 Software Engineering Methods
 
-**<span style="color:red">Please See Moodle for reassessment details.</span>**
+## <span style="color:red">This repo contains all source material for this module, but is NOT intended directly for teaching. It does not contain the relevant assessment info for the current delivery method. Teaching repos are forked from this repo for the content and contain the applicable changes and relevant assessment information. Please check Moodle for the correct link.</span>
 
-Welcome to the GitHub page for SET08803 Software Engineering Methods. GitHub contains all of the material for the module with the exception of the end of Unit Tests which you will find on the Moodle page.
+**<span style="color:red">Please See Moodle for (re-)assessment details.</span>**
+
+Welcome to the GitHub page for Software Engineering Methods. This module is delivered to 3 different cohorts, on-campus (SET08103), Graduate Apprenticeship (SET08403) and Global Online (SET08803). GitHub contains all of the material for the module. Please always check Moodle for assessment related information. For Global Online (SET08803), the end of Unit Tests are on the Moodle page.
 
 Before commencing the module you should view the introduction to the module on Moodle
 
 You should attempt to complete the labs individually which will give you the skills to contribute towards your group coursework 
 
 
-| Unit                                                    | Title                                                        | Lab                                                | Assessment           |
-| ------------------------------------------------------------ | ---- | -------------------- | -------------------- |
-| 1 | [Unit 01 (a): Setting up our Working Environment](units/unit01/unit01a.md) <br> [Unit 01 (b): Forming Scrum Teams](units/unit01/unit01b.md) | [Lab 01: Setup](labs/lab01)                        | [Coursework Available](assessment) |
-| 2 | [Unit 02 (a): Version Control and Git](units/unit02/unit02a.md) <br> [Unit 02 (b): Lean Software Development](units/unit02/unit02b.md) | [Lab 02: Continuous Integration Setup](labs/lab02) |  |
-| 3 | [Unit 03 (a): Modern Software Development](units/unit03/unit03a.md) <br> [Unit 03 (b): Three Ways of DevOps](units/unit03/unit03b.md) | [Lab 03a: Requirements and issues](labs/lab03a) <br> [Lab 03b: Use Cases](labs/lab03b) |                      |
-| 4 | [Unit 04 (a): The First Way of DevOps - Flow](units/unit04/unit04a.md) <br> [Unit 04 (b): Kanban](units/unit04/unit04b.md) | [Lab 04: Task Management and Kanban](labs/lab04) |                      |
-| 5 | [Unit 05 (a): Requirements Gathering](units/unit05/unit05a.md) <br> [Unit 05 (b): User Stories and Use Cases](units/unit05/unit05b.md) | [Lab 05: UML](labs/lab05)                          |                      |
-| 6 | [Unit 06 (a): UML Diagrams](units/unit06/unit06a.md) <br> [Unit 06 (b): UML Workflow](units/unit06/unit06b.md) | [Lab 06: Unit Testing](labs/lab06) | Coursework Code Review 1 |
-| 7 | [Unit 07 (a): The Second Way of DevOps - Feedback](units/unit07/unit07a.md) <br> [Unit 07 (b) Test-Driven Development (TDD)](units/unit07/unit07b.md) | [Lab 07: Integration Testing](labs/lab07) |                      |
-| 8 | [Unit 08 (a): Continuous Integration](units/unit08/unit08a.md) <br> [Unit 08 (b): Continuous Delivery](units/unit08/unit08b.md) | [Needs reduced Lab 08: Deployment](labs/lab08) |                      |
-| 9 | [Unit 09 (a): The Third Way of DevOps - Continuous Experimentation and Learning](units/unit09/unit09a.md) <br> [Unit 09 (b): Bug Tracking and Monitoring](units/unit09/unit09b.md) | [Lab 09: Bug Tracking](labs/lab09) |  |
-| 10      | [Unit 10 (a): Ethics and Professionalism](units/unit10/unit10a.md) <br> [Unit 10 (b): Legal Issues](units/unit10/unit10b.md)<br>[Unit 10 (c): Computer Security](units/unit10/unit10c.md)  | [Lab 10: Code Quality](labs/lab10)               | Coursework Code Review 2 |
+| Unit                                                    | Title                                                                                                                                                                                     | Lab                                                                                   | Assessment        |
+| ------------------------------------------------------------ |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-------------------|
+| 1 | [Unit 01 (a): Setting up our Working Environment](units/unit01/unit01a.md) <br> [Unit 01 (b): Forming Scrum Teams](units/unit01/unit01b.md)                                               | [Lab 01: Setup](labs/lab01)                                                           | This is NOT the teaching repo. See Moodle for the correct link with assessment dates. |
+| 2 | [Unit 02 (a): Version Control and Git](units/unit02/unit02a.md) <br> [Unit 02 (b): Lean Software Development](units/unit02/unit02b.md)                                                    | [Lab 02: Continuous Integration Setup](labs/lab02)                                    |                   |
+| 3 | [Unit 03 (a): Modern Software Development](units/unit03/unit03a.md) <br> [Unit 03 (b): Three Ways of DevOps](units/unit03/unit03b.md)                                                     | [Lab 03 (a): Requirements and issues](labs/lab03a) <br> [Lab 03 (b): Use Cases](labs/lab03b) |                   |
+| 4 | [Unit 04 (a): The First Way of DevOps - Flow](units/unit04/unit04a.md) <br> [Unit 04 (b): Kanban](units/unit04/unit04b.md)                                                                | [Lab 04: Task Management and Kanban](labs/lab04)                                      |                   |
+| 5 | [Unit 05 (a): Requirements Gathering](units/unit05/unit05a.md) <br> [Unit 05 (b): User Stories and Use Cases](units/unit05/unit05b.md)                                                    | [Lab 05: UML](labs/lab05)                                                             |                   |
+| 6 | [Unit 06 (a): UML Diagrams](units/unit06/unit06a.md) <br> [Unit 06 (b): UML Workflow](units/unit06/unit06b.md)                                                                            | [Lab 06: Unit Testing](labs/lab06)                                                    |                   |
+| 7 | [Unit 07 (a): The Second Way of DevOps - Feedback](units/unit07/unit07a) <br> [Unit 07 (b) Test-Driven Development (TDD)](units/unit07/unit07b.md)                                        | [Lab 07: Integration Testing](labs/lab07)                                             |                   |
+| 8 | [Unit 08 (a): Continuous Integration](units/unit08/unit08a.md) <br> [Unit 08 (b): Continuous Delivery](units/unit08/unit08b.md)                                                           | [Needs reduced Lab 08: Deployment](labs/lab08)                                        |                   |
+| 9 | [Unit 09 (a): Bug Tracking and Monitoring](units/unit09/unit09a) <br> [Unit 09 (b): The Third Way of DevOps - Continuous Experimentation and Learning](units/unit09/unit09b)                                                                                                                 | [Lab 09 (a): Bug Tracking](labs/lab09a) <br> [Lab 09 (b): Code Quality](labs/lab09b)  |                   |
+| 10      | [Unit 10 (a): Ethics and Professionalism](units/unit10/unit10a.md) <br> [Unit 10 (b): Legal Issues](units/unit10/unit10b.md)<br>[Unit 10 (c): Computer Security](units/unit10/unit10c.md) |                                                                                       |                   |
 
 ## Copyright Notice
 
-All material provided is developed by Kevin Chalmers and modified by Kevin Sim and is &copy; 2019 Edinburgh Napier University unless otherwise stated.  Use and copying of this material is permitted under the Apache 2.0 license with suitable attribution given to the author.
+All material provided is developed by Kevin Chalmers and modified by Kevin Sim and Andreas Steyven and is &copy; 2024 Edinburgh Napier University unless otherwise stated.  Use and copying of this material is permitted under the Apache 2.0 license with suitable attribution given to the author.
 
 The author accepts no liability in the use of this material.
