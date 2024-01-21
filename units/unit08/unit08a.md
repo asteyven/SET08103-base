@@ -36,7 +36,7 @@ So integration tests are tests performed on combined software modules rather tha
 
 ### Why Continuous Integration?
 
-CI provides feedback, which is the [Second Way of DevOps](../unit07/unit07a.md):
+CI provides feedback, which is the [Second Way of DevOps](../unit07/unit07a):
 
 > Continuous Integration increases your opportunities for feedback.
 >
