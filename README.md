@@ -1,11 +1,8 @@
-# Base Repo for SET08[148]03 Software Engineering Methods
-
-## <span style="color:red">This repo contains all source material for this module, but is NOT intended directly for teaching. It does not contain the relevant assessment info for the current delivery method. Teaching repos are forked from this repo for the content and contain the applicable changes and relevant assessment information. Please check Moodle for the correct link.</span>
+# SET08103/SET08403 Software Engineering Methods
 
 **<span style="color:red">Please See Moodle for (re-)assessment details.</span>**
 
-Welcome to the GitHub page for Software Engineering Methods. This module is delivered to 3 different cohorts, on-campus (SET08103), Graduate Apprenticeship (SET08403) and Global Online (SET08803). GitHub contains all of the material for the module. Please always check Moodle for assessment related information. For Global Online (SET08803), the end of Unit Tests are on the Moodle page.
-
+Welcome to the GitHub page for Software Engineering Methods. GitHub contains all of the material for the module. Please always check Moodle for assessment related information.
 Before commencing the module you should view the introduction to the module on Moodle
 
 You should attempt to complete the labs individually which will give you the skills to contribute towards your group coursework 
