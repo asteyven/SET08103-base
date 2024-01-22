@@ -1,6 +1,6 @@
 # Lab 10: Final Delivery
 
-This lab defines what you need to do for final submission.  **You must follow these steps to receive a coursework grade for the module.**  We require a copy of your submission for moderation, and therefore you will have to submit your work as defined below.  You will also receive your final 20% grade for final delivery based on the completeness and quality of your submission.
+This lab defines what you need to do for final submission.  **You must follow these steps to receive a coursework grade for the module.**  We require a copy of your submission for moderation, and therefore you will have to submit your work as defined below.  You will also receive your final 10% grade for final delivery based on the completeness and quality of your submission.
 
 ## Step 1: Ensure You Have Submitted Your GitHub Repository Clone URL to Moodle
 
