@@ -121,13 +121,13 @@ Individual contributions to the team will be assessed by your peers and the modu
 
 We wish to determine the individual contribution to the team project.  To do this, the team have to submit a single spreadsheet to Moodle defining the agreed contribution of each team member to the individual delivery points.  This should be submitted in percentages with the total sum of individual contributions adding up to 100% at each point of assessment.  For example:
 
-| Matriculation Number | Code Review 1 | Code Review 2 | Code Review 3 | Code Review 4 | Final Deliverable |
-| ---- | ------------- | ------------- | ------------- | ------------- | ----------------- |
-| 4000xxxx | 25          | 50          | 0.0           | 0.25          | 0.2               |
-| 4000xxxx | 25          | 50          | 0.5           | 0.25          | 0.4               |
-| 4000xxxx | 25          | 0         | 0.5           | 0.25          | 0.2               |
-| 4000xxxx | 25          | 0           | 0.0           | 0.25          | 0.2               |
-| **Total** | **100**   | **100** | **100**      | **100**   | **100** 				|
+| Matriculation Number | Code Review 1 | Code Review 2 | Code Review 3 | Final Deliverable |
+|----------------------|---------------|---------------|---------------|-------------------|
+| 4000xxxx             | 25            | 50            | 0.0           | 0.25              |
+| 4000xxxx             | 25            | 50            | 0.5           | 0.25              |
+| 4000xxxx             | 25            | 0             | 0.5           | 0.25              |
+| 4000xxxx             | 25            | 0             | 0.0           | 0.25              |
+| **Total**            | **100**       | **100**       | **100**       | **100**           |
 The team need to agree these scores.  **If the team cannot agree, or a team member believes the spreadsheet submitted does not represent the actual contributions, then contact a member of the teaching team.**  In these circumstances, the metrics and other information provided on GitHub will be used.
 
 The data supplied in this spreadsheet will be used to weight each team members final mark for each assessment point.
@@ -150,11 +150,12 @@ Any dismissed team member has a week to appeal the decision to the module team w
 
 Each group will undertake **four** graded code reviews as well as a final submission at the end of Week 13:
 
-Note that Teaching starts in Week 2. Week Commencing 25th January
+Note that Teaching starts in Week 2. Week Commencing 22nd January
 
-1. Week 5 Code Review 1 (33% of CW mark).
-2. Week 9 Code Review 2 (33% of CW mark).
-3. Week 12 Code Review 3 and Final deliverable (34% of CW mark).
+1. Week 5 Code Review 1 (30% of CW mark).
+2. Week 9 Code Review 2 (30% of CW mark).
+3. Week 12 Code Review 3 (30% of CW mark). 
+4. Beginning of Week 13 Final deliverable (10% of CW mark).
 
 The code reviews will take place during your usual Lab sessions.  Each group will be given **15 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
 
@@ -249,7 +250,7 @@ The following criteria will be assessed for overall quality:
 - Quality and coverage of unit tests.
 - Project requirements met.
 
-#### SUBMISSION DEADLINE: Friday at 15:00 of Week 12 (10% of CW mark)
+#### SUBMISSION DEADLINE: Monday at 15:00 of Week 13 (10% of CW mark)
 
 The final deliverable will be compared automatically to your GitHub repository.  The final submission will be assessed based on the following criteria:
 
