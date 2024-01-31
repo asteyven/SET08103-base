@@ -169,7 +169,7 @@ You might have seen build status badges on GitHub before like this one:
 You can add the badge for your build status to your `README.md` file as well.  To do this, add the following text to your `Readme.md` file
 
 ```
-![workflow](https://github.com/<UserName>/<RepositoryName>/actions/workflows/main.yml/badge.svg)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/<username>/<repository>/<action file name>.yml?branch=<master branch>)
 ```
 
 Now go through our Git update steps:
@@ -187,7 +187,7 @@ And now we have our project automatically building on pushes to GitHub, and the 
 
 ### Other Badges
 
-You can add various badges to your project.  [Sheilds.io](https://shields.io/) is one such site that provides badges.  We are going to add two to our `README.md`: one for our license and one for our release.  The license badge takes the URL:
+You can add various badges to your project.  [Shields.io](https://shields.io/) is one such site that provides badges.  We are going to add two to our `README.md`: one for our license and one for our release.  The license badge takes the URL:
 
 `[![LICENSE](https://img.shields.io/github/license/<github-username>/sem.svg?style=flat-square)](https://github.com/<github-username>/sem/blob/master/LICENSE)`
 
@@ -239,7 +239,7 @@ Update the `README.md` as below (keep the other badges):
 
 ```markdown
 # Software Engineering Methods
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/<username>/<repository>/<action name taken from main.yml>/<branch>?style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/<username>/<repository>/<action file name>.yml?branch=<branch>)
 ```
 
 And add this to GitHub:
@@ -252,6 +252,15 @@ And if you go to the dashboard for the repository on GitHub you will see that no
 
 ![Develop Branch Status on GitHub](img/github-develop-status.png)
 
+The formatting of the above screenshot is achieved with the following markdown:
+
+```markdown
+# Software Engineering Methods
+* Master Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/<username>/<repository>/<action file name>.yml?branch=<master branch>)
+* Develop Branch Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/<username>/<repository>/<action file name>.yml?branch=<develop branch>)
+* License [![LICENSE](https://img.shields.io/github/license/<username>/<repository>.svg?style=flat-square)](https://github.com/<username>/<repository>/blob/master/LICENSE)
+* Release [![Releases](https://img.shields.io/github/release/<username>/<repository>/all.svg?style=flat-square)](https://github.com/<username>/<repository>/releases)
+```
 ## Updating our Example Application
 
 To end this lab we will add a new feature to our application - database support via [MongoDB](https://docs.mongodb.com/).  We will perform the following steps:
