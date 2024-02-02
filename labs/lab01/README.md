@@ -23,9 +23,20 @@ After this lab you will be able to:
 
 ## IntelliJ Setup
 
-IntelliJ IDEA is the Integrated Development Environment that we will be using on the module. You can download IntelliJ IDEA from https://www.jetbrains.com/idea/ The community edition of IntelliJ IDEA is sufficient for this module but you can if you wish get access to the ultimate edition by signing up for a student licence at [https://www.jetbrains.com/shop/eform/students](https://www.jetbrains.com/shop/eform/students)
+IntelliJ IDEA is the Integrated Development Environment that we will be using on the module. You can download IntelliJ IDEA from https://www.jetbrains.com/idea/ 
+The community edition of IntelliJ IDEA is sufficient for this module but you can if you wish get access to the ultimate edition by signing up for a student licence at [https://www.jetbrains.com/shop/eform/students](https://www.jetbrains.com/shop/eform/students)
 
-You will require Java and IntelliJ installed on the machine you plan to work on.  Once ready, start-up IntelliJ.  You should be presented with the following screen: Please note that this software changes regularly and if the screenshots look slightly different it's because I can't keep up. It should be similar and if you encounter any problems please let me know.
+JetBrains have recently introduced a new interface concept for all of their products. 
+It is optimised for 2-in-1 devices with a touch screen, with larger buttons and a reduced option menu to save space.
+You can switch to the old interface by selecting **File** and then **Settings**.
+Navigate to _Appearance & Behaviour_, _New UI_.
+Unselect **Enable new UI**, click **OK** and finally **Restart** for the change to take effect.
+![New UI](img/new_ui.png)
+
+
+You will require Java and IntelliJ installed on the machine you plan to work on.  Once ready, start-up IntelliJ.
+You should be presented with the following screen: Please note that this software changes regularly and if the screenshots look slightly different it's because I can't keep up. 
+It should be similar and if you encounter any problems please let me know.
 
 
 
@@ -35,14 +46,14 @@ You will require Java and IntelliJ installed on the machine you plan to work on.
 
 *Replicate the same settings as shown in the image (you can change the location).*  You need to do the following:
 
-1. Select at most 17 as the JDK for the project. The Open JDK Docker image which we will be using use version 17 and you will get errors if you choose a higher version. 
+1. Select at most 17 as the JDK for the project. You can install any JDK through the drop down menu in intelliJ, it doesn't need to be Open JDK. But you need to ensure it is version 17 to avoid getting errors later labs if you choose a higher version. 
 2. Select **Maven** as the build system
 
 
 
 Click **Finish** for your new project to be created.  This should open up the following window:
 
-Change the Java compliance to at most 11 (below shows Java 10 on lines 11 & 12)
+Change the Java compliance to at most __11__ _(below shows Java 10 on lines 11 & 12)_
 
 ![IntelliJ Main Window](img/intellij-main-window.png)
 
@@ -64,11 +75,18 @@ To setup Git version control in IntelliJ undertake the following steps:
 
 A little notification should appear at the bottom of the window confirming that Git has been initialised for the project.
 
-Our next step is to add a `.gitignore` file.  This file tells Git which type of files to ignore.  This is important in software development as compilers and build systems add numerous temporary files and output files that we do not need to track.
+Our next step is to add a `.gitignore` file.
+IntelliJ might have already created one for you as part of the new project.
+This file tells Git which type of files to ignore.
+This is important in software development as compilers and build systems add numerous temporary files and output files that we do not need to track.
 
-To add a `.gitignore` file just add a new file to the project.  To do so, either use the main menu (**File** then **New** then **File**) or **right-click** on the project and select **New** then **File**.  Call the file `.gitignore` and save.  Yes, include the dot in front of the name.  Ensure the name is correct.  Git will only recognise the file with that exact name in the main folder of the repository.
+If you have a `.gitignore` file in the root/main of your project, simply replace its content as described below. 
+If you don't have one, just add a new file to the project.
+To do so, either use the main menu (**File** then **New** then **File**) or **right-click** on the project and select **New** then **File**.
+Call the file `.gitignore` and save.  Yes, include the dot in front of the name.  Ensure the name is correct.  Git will only recognise the file with that exact name in the main folder of the repository.
 
-Once the file is created, you need to add the Java specific files to be ignored by Git.  This can be found [here](https://github.com/github/gitignore/blob/master/Java.gitignore) or below:
+Once the file is created, you need to add the Java specific files to be ignored by Git.
+This can be found [here](https://github.com/github/gitignore/blob/master/Java.gitignore) or below:
 
 ```shell
 # Compiled class file
@@ -94,6 +112,7 @@ Once the file is created, you need to add the Java specific files to be ignored 
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+replay_pid*
 ```
 
 You will also need the Maven specific values from [here](https://github.com/github/gitignore/blob/master/Maven.gitignore) or below:
@@ -108,6 +127,7 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 ```
 
@@ -172,7 +192,7 @@ We are now ready to pull the GitHub version of the repository to the local machi
 
 Check the `origin/master` branch, and click **Pull**.  The `LICENSE` file should appear in your project - although it might take a minute.  You can go into the file-system to check if you are impatient.
 
-Let us now add the rest of our files ready to `commit` to GitHub.  Select **Git** then **Add**.  This will add all the qualifying files to our commit.  They are sitting in the *staging* area.  We look at version control in more detail in [Lecture 03](../../lectures/lecture03).
+Let us now add the rest of our files ready to `commit` to GitHub.  Select **Git** then **Add**.  This will add all the qualifying files to our commit.  They are sitting in the *staging* area.  We look at version control in more detail in [Unit 02 (1)](../../units/unit02b).
 
 To create our commit, select **Git**then **Commit** to open the **Commit Changes** window:
 
