@@ -166,11 +166,25 @@ You might have seen build status badges on GitHub before like this one:
 
 ![Build Status](img/build_passing.png)
 
-You can add the badge for your build status to your `README.md` file as well.  To do this, add the following text to your `Readme.md` file
+You can add the badge for your build status to your `README.md` file as well.  To do this, add the following text to your `Readme.md` file:
 
 ```
-![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/<username>/<repository>/<action file name>.yml?branch=<master branch>)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/<repository owner>/<repository>/<action file name>.yml?branch=<branch name>)
 ```
+
+You will need to replace the parameter `<repository owner>`, `<repository>`, `<action file name>` and `<branch name>` with the correct values. 
+
+ - replace `<repository owner>` with the GitHub username of the repository you are working on.
+For these lab exercises this will be your own GitHub username, for the coursework, it will be the GitHub username of the group member owning your group's repository.
+ - replace `<respository>` with the repository's name.
+ - replace `<action file name>` with the name of the GitHub actions file that contains the build job you want to get the batch for.
+ - replace `<branch name>` with the name of the branch you want to build batch for.
+
+The batch for the `master` branch for the repository `sem` on my account `asteyven` will be as follows. 
+```
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/asteyven/sem/main.yml?branch=master)
+```
+
 
 Now go through our Git update steps:
 
