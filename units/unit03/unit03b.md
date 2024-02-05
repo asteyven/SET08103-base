@@ -250,12 +250,12 @@ The rest of the module is influenced by the three ways:
   - Unit 6b: UML Workflow.
 - The Second Way: Feedback.
   - Unit 7a: The Second Way of DevOps: Feedback.
-  - Unit 7b: Unit Testing and Test Driven Development.
+  - Unit 7b: Unit Testing and Test-Driven Development.
   - Unit 8a: Continuous Integration.
   - Unit 8b: Continuous Delivery.  
-  - Unit 9b: Bug Tracking and Software Monitoring.
+  - Unit 9a: Bug Tracking and Software Monitoring.
 - The Third Way: Continual Learning and Experimentation.
-  - Unit 9a: The Third Way of DevOps: Continual Learning and Experimentation.
+  - Unit 9b: The Third Way of DevOps: Continual Learning and Experimentation.
 
 We then finish the module with more professional concerns:
 
