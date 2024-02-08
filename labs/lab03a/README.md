@@ -57,7 +57,7 @@ You need to set-up your application as [last week](../lab02).  Check that everyt
 
 ## Defining User Stories
 
-Our job is to define the initial requirements for the system to be developed.  We will do this by specifying **User Stories** (see [Lecture 10](../../lectures/lecture10) for more details).  A user story has the following form:
+Our job is to define the initial requirements for the system to be developed.  We will do this by specifying **User Stories** (see [Unit 05 a](../../units/unit05/unit05b.md) for more details).  A user story has the following form:
 
 > As a *role* I want *feature* so that *value*.
 
@@ -464,15 +464,22 @@ Even this small change is a commit point through our history.  Create a new comm
 
 ### Getting an Employee
 
-We are now ready to add a new method to extract the employee information.  To make life easier, we will create an `Employee` class.  To do this, perform the following steps:
+We are now ready to add a new method to extract the employee information.
+To make life easier, we will do this in three steps:
 
-1. **Right-click** on the **com.sem.napier** package in the **Project** explorer in IntelliJ.
-2. Select **New**, **Java Class** to open the **Create New Class** window.
-3. Call the class **Employee** and click **OK**.
+1. create an `Employee` class to hold the information
+2. query the information from the database
+3. create a method to display the information on the console
 
-We are now ready to add the `Employee` class.
 
 #### Employee Class
+
+To create the `Emloyee` class do this, perform the following steps:
+
+- **Right-click** on the **com.sem.napier** package in the **Project** explorer in IntelliJ.
+- Select **New**, **Java Class** to open the **Create New Class** window.
+- Call the class **Employee** and click **OK**.
+
 
 The `Employee` class is just data.  The full code listing is given below, and should be straightforward to understand.
 
@@ -582,7 +589,8 @@ The code for `getEmployee` is below.  Read the description above to understand t
     }
 ```
 
-Now run the application and hopefully you will get no errors.
+Now run the application and hopefully you will get no errors. 
+You will also not see any output as we haven't implemented the display menthod yet. This will come in the next step.
 
 #### Push Update
 
@@ -590,7 +598,8 @@ Once again, it is time to commit your updates.  Do so now.
 
 ## Display Employee Information
 
-We cannot really test our get employee functionality until we display the output.  At the moment, we will just display to the console.  The `displayEmployee` method for our `App` is below:
+We cannot really test our get employee functionality until we display the output.
+At the moment, we will just display to the console.  The `displayEmployee` method for our `App` is below:
 
 ```java
     public void displayEmployee(Employee emp)
@@ -646,7 +655,8 @@ Manager: null
 OK, if this didn't work, try the following first:
 
 - Make sure you have performed the following steps via Maven: **Compile** and **Package**.
-- Stop all the running containers, delete them, and delete the current `sem_db` and `sem_app` Docker images.  Then rebuild everything and restart.
+- Stop all the running containers, delete them, and delete the current `sem_db` and `sem_app` Docker images.  Then rebuild everything and restart. 
+Please note that the prefix for the `app` and `db` container will correspond to your project's name, in my case `sem`.
 - Make sure the SQL connection string is correct and the logs from the running database and application.
 
 If this doesn't solve the problem them ask for help.
