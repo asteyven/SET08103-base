@@ -229,7 +229,7 @@ The following criteria will be assessed for overall quality:
 
 The aim of this code review is to check that testing has been correctly specified and that the project is deploying correctly.  At this stage, all of the work of the project should be completed.
 
-#### Checklist Submission 3 (22% of CW mark)
+#### Checklist Submission 3 (20% of CW mark)
 
 The following must be in place:
 
@@ -238,7 +238,7 @@ The following must be in place:
 -  Deployment working.
 -  Bug reporting system set-up.
 
-#### Graded Criteria Submission 3 (8% of CW mark)
+#### Graded Criteria Submission 3 (10% of CW mark)
 
 The following criteria will be assessed for overall quality:
 
