@@ -170,7 +170,7 @@ The code reviews will take place during your usual Lab sessions.  Each group wil
 
 #### REVIEW MEETING: Lab of Week 5
 
-The aim of this code review meeting is to check that the project workflow is set-up for the team.  You may choose to meet some of the feature requirements during this review point, but it is not as necessary.
+The aim of this code review meeting is to check that the project workflow is set up for the team.  You may choose to meet some of the feature requirements during this review point, but it is not as necessary.
 
 #### Checklist Submission 1 (23% of CW mark)
 
@@ -201,7 +201,7 @@ The following criteria will be assessed for overall quality:
 
 #### REVIEW MEETING: Lab of Week 9
 
-The aim of this code review is to check that task management is set-up and that the initial requirements gathering has taken place via user stories and use cases.  You should have completed at least 50% of the work for the project at this point based on your own estimates.
+The aim of this code review is to check that task management is set up and that the initial requirements gathering has taken place via user stories and use cases.  You should have completed at least 50% of the work for the project at this point based on your own estimates.
 
 #### Checklist Submission 2 (20% of CW mark)
 
@@ -210,6 +210,8 @@ The following must be in place:
 -  Project integrated with Zube.io.
 -  Kanban/Project Board being used.
 -  Sprint Boards being used.
+-  Suitable unit tests defined.
+-  Tests running on GitHub Actions.
 
 #### Graded Criteria Submission 2 (10% of CW mark)
 
@@ -218,14 +220,12 @@ The following criteria will be assessed for overall quality:
 - Metrics from GitHub.  Also used to assess individual contribution.
 - Code quality including comments.
 - Correct usage of branches.
-- Continuous integration working.
-- Suitable unit tests defined.
-- Tests running on GitHub Actions.
+- Quality and coverage of unit tests.
 - Project requirements met.
 
 ### Code Review 3
 
-#### REVIEW MEETING: Lab of of Week 12 
+#### REVIEW MEETING: Lab of Week 12 
 
 The aim of this code review is to check that testing has been correctly specified and that the project is deploying correctly.  At this stage, all of the work of the project should be completed.
 
