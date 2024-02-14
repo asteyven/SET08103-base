@@ -163,7 +163,7 @@ The complete Maven file is shown below for reference.
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.18</version>
+            <version>8.0.28</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

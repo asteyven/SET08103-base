@@ -222,7 +222,7 @@ First, we need to update the `pom.xml` file to add MySQL support.  Open the file
     <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
-        <version>8.0.18</version>
+        <version>8.0.28</version>
     </dependency>
 </dependencies>
 ```
