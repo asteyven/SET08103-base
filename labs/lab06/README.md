@@ -453,11 +453,7 @@ This test will also pass.
 
 To end our examination of unit testing we will look at **Code Coverage**.  Coverage allows us to examine how much of our code is tested.
 
-To enable code coverage, select **Run then Edit Configurations**.  Open the **Code Coverage** tab and ensure it looks the same as this:
-
-![IntelliJ Code Coverage](img/intellij-code-coverage.png)
-
-**Click OK** to close the window.  Then **select Run and Run with Coverage.**  This will open the **Code Coverage View** on the right:
+To enable code coverage, make sure your test configuration is selected, then **select Run and Run with Coverage.**  This will open the **Code Coverage View** on the right:
 
 ![IntelliJ Package Coverage](img/intellij-package-coverage.png)
 
