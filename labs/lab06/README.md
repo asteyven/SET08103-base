@@ -125,6 +125,7 @@ We are now ready to write our first unit test.  In Java, it is traditional and c
 1. **Add a new folder - `test` - to the `src` folder of the project**.
 2. **Add a new folder - `java` - to the `test` folder**.
 3. **Add a new file - `MyTest.java` - to the new `java` folder**.
+> Note that the only purpose of this file is to write our first test examples in. It will be deleted later, there is no need to add this to Git.
 4. **Add the following code to `MyTest.java`**:
 
 ```java
