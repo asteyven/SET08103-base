@@ -378,8 +378,8 @@ Let us test what happens when `employees` is empty:
 @Test
 void printSalariesTestEmpty()
 {
-    ArrayList<Employee> employess = new ArrayList<Employee>();
-    app.printSalaries(employess);
+    ArrayList<Employee> employees = new ArrayList<Employee>();
+    app.printSalaries(employees);
 }
 ```
 
@@ -393,9 +393,9 @@ Our next test will try and print a list with a `null` value in it:
 @Test
 void printSalariesTestContainsNull()
 {
-    ArrayList<Employee> employess = new ArrayList<Employee>();
-    employess.add(null);
-    app.printSalaries(employess);
+    ArrayList<Employee> employees = new ArrayList<Employee>();
+    employees.add(null);
+    app.printSalaries(employees);
 }
 ```
 
