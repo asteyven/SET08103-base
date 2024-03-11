@@ -178,12 +178,12 @@ First, we need to tell IntelliJ where our tests are.  This is done via the **Pro
 
 Now we need to add a **Run/Debug Configuration**.  **Select Run then Edit Configurations** to open the new view:
 
-![IntelliJ Run Configurations Dialogue](img/intellij-run-configurations.png)
+![IntelliJ Run Configurations Dialogue](img/intellij-run-config-window.png)
 
 Modify the dialogue to match.  That is:
 
 - Use the JUnit template on the left.
-- Select `seMethods` as the classpath of module.
+- Select `seMethods` as the classpath of module. (in **Modify options**)
 - Use `MyTest` as the Class.
 
 **Click OK** and IntelliJ is now ready to run the tests.
