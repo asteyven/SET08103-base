@@ -310,7 +310,7 @@ on:
   push:
     branches:
       - master
-      - lab08
+      - develop
 jobs:
   UnitTests:
     name: Unit Tests
