@@ -186,7 +186,7 @@ You should now be able to run the App locally without having to package and buil
 
 Just start the App directly  using the arrow next to the main method.
 
-![Start Locally](img/startlocal.png)
+![Start Locally](img/startlocal-matching.png)
 
 The new version of App should work locally either running directly or by starting from docker-compose and on GitHub Actions without any modification.
 
