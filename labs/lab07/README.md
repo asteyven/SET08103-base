@@ -14,22 +14,14 @@ We have some tidying up in our existing project to make our life easier.  We wil
 
 ### Updating Maven `pom.xml` File
 
-Update the dependencies section of your `pom.xml` to use version 8.0.28 of the mysql driver:
+If your mysql driver uses an older version, update the dependencies section of your `pom.xml` to use version 8.0.28 of the mysql driver:
 
 ```xml
-    <dependencies>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.1.0</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.28</version>
+</dependency>
 ```
 
 ### Updating `App.java`
