@@ -422,7 +422,7 @@ on:
   push:
     branches:
       - master
-      - lab08
+      - develop
 jobs:
   UnitTests:
     name: Unit Tests
@@ -462,12 +462,13 @@ jobs:
           docker rm employees
           docker image rm database                    
       - name: CodeCov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v4.0.1
         with:
-          # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos 
+          token: ${{ secrets.CODECOV_TOKEN }} # now required for public repos too
           directory: ./target/site/jacoco
           flags: Integration Tests # optional
           verbose: true # optional (default = false)
+          slug: <GitHub username>/<repository name>
   build:
     name: Build and Start Using docker-compose
     runs-on: ubuntu-20.04
@@ -488,20 +489,64 @@ jobs:
 
 ```
 
+Please note that the following part of this code has to be updated with your own details:
+
+```yml
+slug: <github-username>/<repo-name>
+```
+
+For example:
+
+```yml
+slug: kevin-sim/sem_employees
+```
+
 The jacoco maven plugin creates html reports in the `./target/site/jacoco` folder. The new action shown below uploads this folder to `https://codecov.io`
 
 ```yml
-    - name: CodeCov
-        uses: codecov/codecov-action@v2
-        with:
-          # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos 
-          directory: ./target/site/jacoco
-          flags: Integration Tests # optional
-          verbose: true # optional (default = false)
+- name: CodeCov
+  uses: codecov/codecov-action@v4.0.1
+  with:
+    token: ${{ secrets.CODECOV_TOKEN }}
+    directory: ./target/site/jacoco
+    flags: Integration Tests # optional
+    verbose: true # optional (default = false)
+    slug: Lawful24/sem-demo-labs
 ```
 
+### Adding Your First GitHub Secret
 
-Now **commit and push** these changes.  GitHub Actions should undertake the build process, and once one stage is complete you can view it at `https://codecov.io/gh/<github-username>/<repo>`.  For example, `https://codecov.io/gh/kevin-sim/sem_employees`.
+Just like GitHub, CodeCov also uses personal access tokens, but for each repository instead of each user. Before we can get the code coverage report of our repository, we need to add this token to our repository on GitHub.
+
+GitHub Secrets is a handy tool if you want certain parts of your project to be accessible by the users or services of your choosing. It allows you to assign hidden values to your repository that only the admins of the repository can access and don't get downloaded when someone clones your repository.
+
+For this project, we will only need to add one secret to our repository to verify ourselves when CodeCov tries to access our project during the GitHub action job defined above.
+
+First, go to `https://codecov.io/gh/<github-username>/<repo-name>`. This is the CodeCov page of your repository. Make sure to replace the placeholder text with your details, for example, `https://codecov.io/gh/kevin-sim/sem_employees`.
+
+You will come across the default page since we have yet to share our code coverage report with CodeCov.
+
+![GitHub Secrets Step 1](img/codecov_token_1.png)
+
+Copy the whole line starting with `CODECOV_TOKEN=...` and go to the Settings page of your GitHub repository.
+
+Find "**Secrets and variables**" and go to "**Actions**".
+
+![GitHub Secrets Step 2](img/codecov_token_2.png)
+
+Here, we have two options to register a new secret. We need a new "**Repository Secret**".
+
+![GitHub Secrets Step 3](img/codecov_token_3.png)
+
+Enter "`CODECOV_TOKEN`" to the top bar and copy the value of the token into the text area below. Then click on "**Add secret**".
+
+![GitHub Secrets Step 4](img/codecov_token_4.png)
+
+Now you should have an entry on the previous page in "**Repository Secrets**".
+
+![GitHub Secrets Step 5](img/codecov_token_5.png)
+
+Now **commit and push** the changes you have made to your `main.yml` file.  GitHub Actions should undertake the build process, and once one stage is complete you can view it at `https://codecov.io/gh/<github-username>/<repo-name>`.  For example, `https://codecov.io/gh/kevin-sim/sem_employees`.
 
 ![Code Coverage Report](img/codecov-overview.png)
 
