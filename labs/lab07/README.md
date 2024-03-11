@@ -78,9 +78,9 @@ Modify the main method to use command line parameters, if supplied, or to defaul
         // Create new Application and connect to database
         App a = new App();
 
-        if(args.length < 1){
+        if (args.length < 1) {
             a.connect("localhost:33060", 30000);
-        }else{
+        } else {
             a.connect(args[0], Integer.parseInt(args[1]));
         }
 
