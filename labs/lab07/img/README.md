@@ -47,15 +47,11 @@ Below is our updated `connect` method.  The updated lines are:
         }
 
         int retries = 10;
-        boolean shouldWait = false;
         for (int i = 0; i < retries; ++i) {
             System.out.println("Connecting to database...");
             try {
-                if (shouldWait) {
-                    // Wait a bit for db to start
-                    Thread.sleep(delay);
-                }
-                
+                // Wait a bit for db to start
+                Thread.sleep(delay);
                 // Connect to database              
                 con = DriverManager.getConnection("jdbc:mysql://" + location 
                         + "/employees?allowPublicKeyRetrieval=true&useSSL=false", 
@@ -65,9 +61,6 @@ Below is our updated `connect` method.  The updated lines are:
             } catch (SQLException sqle) {
                 System.out.println("Failed to connect to database attempt " + i);
                 System.out.println(sqle.getMessage());
-
-                // Let's wait before attempting to reconnect
-                shouldWait = true;
             } catch (InterruptedException ie) {
                 System.out.println("Thread interrupted? Should not happen.");
             }
@@ -86,7 +79,7 @@ Modify the main method to use command line parameters, if supplied, or to defaul
         App a = new App();
 
         if (args.length < 1) {
-            a.connect("localhost:33060", 10000);
+            a.connect("localhost:33060", 30000);
         } else {
             a.connect(args[0], Integer.parseInt(args[1]));
         }
@@ -147,8 +140,10 @@ Now we need to update the `Dockerfile` for the application to use the new JAR fi
 FROM openjdk:latest
 COPY ./target/seMethods.jar /tmp
 WORKDIR /tmp
-ENTRYPOINT ["java", "-jar", "seMethods.jar", "db:3306", "10000"]
+ENTRYPOINT ["java", "-jar", "seMethods.jar", "db:3306", "30000"]
 ```
+
+
 
 ## Enabling Local Debugging
 
@@ -205,7 +200,7 @@ We want to separate our tests into different files as we will have different typ
 
 ### Adding GitHub Actions Job Stages
 
-From the [Continuous Integration lecture](../../units/unit08/unit08a.md) we defined the following steps in a basic build script:
+From the [Continuous Integration lecture](../../lectures/lecture15) we defined the following steps in a basic build script:
 
 1. Clean.
 2. Compile source code.
