@@ -14,7 +14,7 @@ In IntelliJ, **select File then Settings** to open the **Settings Window**.  **S
 
 PMD integrates directly into IntelliJ and provides easy access to its features.  It can also be added as part of your Maven configuration but requires further setup.  We will use PMD directly from IntelliJ.  Only one check will be demonstrated and you should explore the others yourself to improve quality.
 
-In IntelliJ, **select Tools then Run PMD, Pre Defined and finally bestpractices.**  PMD will run and the output appear at the bottom of the window:
+In IntelliJ, **select Tools then Run PMD, Pre Defined and finally category.java/bestpractices.**  PMD will run and the output appear at the bottom of the window:
 
 ![PMD Output](img/pmd-output.png)
 
