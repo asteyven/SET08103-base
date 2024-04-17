@@ -125,6 +125,7 @@ We are now ready to write our first unit test.  In Java, it is traditional and c
 1. **Add a new folder - `test` - to the `src` folder of the project**.
 2. **Add a new folder - `java` - to the `test` folder**.
 3. **Add a new file - `MyTest.java` - to the new `java` folder**.
+> Note that the only purpose of this file is to write our first test examples in. It will be deleted later, there is no need to add this to Git.
 4. **Add the following code to `MyTest.java`**:
 
 ```java
@@ -178,12 +179,12 @@ First, we need to tell IntelliJ where our tests are.  This is done via the **Pro
 
 Now we need to add a **Run/Debug Configuration**.  **Select Run then Edit Configurations** to open the new view:
 
-![IntelliJ Run Configurations Dialogue](img/intellij-run-configurations.png)
+![IntelliJ Run Configurations Dialogue](img/intellij-run-config-window.png)
 
 Modify the dialogue to match.  That is:
 
 - Use the JUnit template on the left.
-- Select `seMethods` as the classpath of module.
+- Select `seMethods` as the classpath of module. (in **Modify options**)
 - Use `MyTest` as the Class.
 
 **Click OK** and IntelliJ is now ready to run the tests.
@@ -377,8 +378,8 @@ Let us test what happens when `employees` is empty:
 @Test
 void printSalariesTestEmpty()
 {
-    ArrayList<Employee> employess = new ArrayList<Employee>();
-    app.printSalaries(employess);
+    ArrayList<Employee> employees = new ArrayList<Employee>();
+    app.printSalaries(employees);
 }
 ```
 
@@ -392,9 +393,9 @@ Our next test will try and print a list with a `null` value in it:
 @Test
 void printSalariesTestContainsNull()
 {
-    ArrayList<Employee> employess = new ArrayList<Employee>();
-    employess.add(null);
-    app.printSalaries(employess);
+    ArrayList<Employee> employees = new ArrayList<Employee>();
+    employees.add(null);
+    app.printSalaries(employees);
 }
 ```
 
@@ -452,11 +453,7 @@ This test will also pass.
 
 To end our examination of unit testing we will look at **Code Coverage**.  Coverage allows us to examine how much of our code is tested.
 
-To enable code coverage, select **Run then Edit Configurations**.  Open the **Code Coverage** tab and ensure it looks the same as this:
-
-![IntelliJ Code Coverage](img/intellij-code-coverage.png)
-
-**Click OK** to close the window.  Then **select Run and Run with Coverage.**  This will open the **Code Coverage View** on the right:
+To enable code coverage, make sure your test configuration is selected, then **select Run and Run with Coverage.**  This will open the **Code Coverage View** on the right:
 
 ![IntelliJ Package Coverage](img/intellij-package-coverage.png)
 
@@ -549,4 +546,3 @@ Now clean-up as normal, ensuring you commit everything to GitHub, checking the o
 
 ### Package and docker-compose
 ![Unit Test](img/packageSuccess.png)
-
