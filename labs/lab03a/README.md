@@ -150,7 +150,7 @@ Next we need a Dockerfile to run a MySQL database instance with the given files.
 
 ```dockerfile
 # Use the latest MySQL image
-FROM mysql
+FROM mysql:8.3
 # Set the working directory
 WORKDIR /tmp
 # Copy all the files to the working directory of the container
