@@ -149,8 +149,8 @@ Git will pull the repository.  You should now have the `db/test_db` folder.
 Next we need a Dockerfile to run a MySQL database instance with the given files.  The following `Dockerfile` should be stored in the `db` folder:
 
 ```dockerfile
-# Use the MySQL Server image
-FROM mysql-server
+# Use the latest MySQL image
+FROM mysql:latest
 # Set the working directory
 WORKDIR /tmp
 # Copy all the files to the working directory of the container
