@@ -4,7 +4,7 @@
 
 | | |
 | --- | --- |
-| Module number | SET08103-SET08403 |
+| Module number | SET08103 |
 | Module title | Software Engineering Methods |
 | Module leader | Andreas Steyven |
 | Tutor with responsibility for this Assessment. Student's first point of contact. | As above. |
@@ -150,12 +150,12 @@ Any dismissed team member has a week to appeal the decision to the module team w
 
 Each group will undertake **four** graded code reviews as well as a final submission at the end of Week 13:
 
-Note that Teaching starts in Week 2. Week Commencing 22nd January
+Note that Teaching starts in Week 2. Week Commencing 16th of February
 
-1. Week 5 Code Review 1 (30% of CW mark).
-2. Week 9 Code Review 2 (30% of CW mark).
-3. Week 12 Code Review 3 (30% of CW mark). 
-4. Beginning of Week 13 Final deliverable (10% of CW mark).
+1. Week 4 Code Review 1 (25% of CW mark).
+2. Week 8 Code Review 2 (25% of CW mark).
+3. Week 12 Code Review 3 (25% of CW mark). 
+4. Week 13 Code Review 4 (25% of CW mark).
 
 The code reviews will take place during your usual Lab sessions.  Each group will be given **15 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
 

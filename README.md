@@ -1,4 +1,4 @@
-# SET08103/SET08403 Software Engineering Methods
+# SET08103 Software Engineering Methods
 
 **<span style="color:red">Please See Moodle for (re-)assessment details.</span>**
 
