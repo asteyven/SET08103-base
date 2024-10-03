@@ -247,7 +247,7 @@ The `develop` branch only exists on the local system.  To add it to GitHub we ha
 
 GitHub will have automatically added this branch to its build.  As `develop` is a key branch of our project we will add this build status to the `README.md` file.  
 
-This time I will use Shields.io to create a build badge. Go to [https://shields.io/category/build](https://shields.io/category/build) and select GitHub Workflow Status (branch). Fill in the UserName, RepositoryName, Workflow name (taken from the main.yml file)  and branch name
+This time I will use Shields.io to create a build badge. Go to [https://shields.io/badges](https://shields.io/badges). In the menu on the left, select Build and then GitHub Actions Workflow Status. Fill in the UserName, RepositoryName, Workflow name (taken from the main.yml file) and branch name (the branch name field shows up after clicking Show optional parameters).
 
 Update the `README.md` as below (keep the other badges):
 
