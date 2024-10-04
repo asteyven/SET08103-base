@@ -149,8 +149,8 @@ Git will pull the repository.  You should now have the `db/test_db` folder.
 Next we need a Dockerfile to run a MySQL database instance with the given files.  The following `Dockerfile` should be stored in the `db` folder:
 
 ```dockerfile
-# Use the latest MySQL image
-FROM mysql
+# Use the MySQL image version 8.3 (allows native password plugin)
+FROM mysql:8.3
 # Set the working directory
 WORKDIR /tmp
 # Copy all the files to the working directory of the container
@@ -211,7 +211,7 @@ services:
     restart: always
 ```
 
-When running Docker from the command line, we use `docker-compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our GitHub Actions file.
+When running Docker from the command line, we use `docker compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our GitHub Actions file.
 
 ### Test MySQL Connection
 
@@ -327,7 +327,7 @@ jobs:
       - name: Build with Maven
         run: mvn package
       - name: Run docker compose
-        run: docker-compose up --abort-on-container-exit
+        run: docker compose up --abort-on-container-exit
 
 
 ```

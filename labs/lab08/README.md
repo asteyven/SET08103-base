@@ -31,7 +31,7 @@ build:
       - name: Package and Run docker compose
         run: |
           mvn package -DskipTests
-          docker-compose up --abort-on-container-exit
+          docker compose up --abort-on-container-exit
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -127,7 +127,7 @@ jobs:
       - name: Package and Run docker compose
         run: |
           mvn package -DskipTests
-          docker-compose up --abort-on-container-exit
+          docker compose up --abort-on-container-exit
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -665,7 +665,7 @@ This configuration tells Nginx the following:
 - Nginx will listen on port 80 (the standard HTTP port).
 - Any request coming into `/app/` (e.g., http://www.napier.ac.uk/app) will be forwarded to the address `http://app:8080`.  
 
-For convenience, we can tell docker-compose to build this container with the rest of our components. Add the following code to the `docker-compose.yml` file:
+For convenience, we can tell docker compose to build this container with the rest of our components. Add the following code to the `docker-compose.yml` file:
 
 ```yml
   web:
