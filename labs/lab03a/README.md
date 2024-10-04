@@ -211,7 +211,7 @@ services:
     restart: always
 ```
 
-When running Docker from the command line, we use `docker-compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our GitHub Actions file.
+When running Docker from the command line, we use `docker compose up` to build and run a composed service.  IntelliJ understands Docker compose files, so we don't have to worry.  We will modify our GitHub Actions file.
 
 ### Test MySQL Connection
 
@@ -327,7 +327,7 @@ jobs:
       - name: Build with Maven
         run: mvn package
       - name: Run docker compose
-        run: docker-compose up --abort-on-container-exit
+        run: docker compose up --abort-on-container-exit
 
 
 ```
