@@ -193,12 +193,12 @@ Just start the App directly  using the arrow next to the main method.
 
 ![Start Locally](img/startlocal-matching.png)
 
-The new version of App should work locally either running directly or by starting from docker-compose and on GitHub Actions without any modification.
+The new version of App should work locally either running directly or by starting from docker compose and on GitHub Actions without any modification.
 
 Test that all three scenarios are working
 
 - Locally as described above by running the App directly
-- Locally in docker using docker-compose to start the App (remember to delete target directory, old containers and images, repackage with maven, recreate and start App image using docker-compose )
+- Locally in docker using docker compose to start the App (remember to delete target directory, old containers and images, repackage with maven, recreate and start App image using docker compose )
 - Remotely on GitHub Actions
 
 We want to separate our tests into different files as we will have different types of tests.  Unit tests and integration tests are different, and we want to manage them as such.
@@ -238,7 +238,7 @@ jobs:
         run: mvn -Dtest=com.napier.sem.AppTest test
 
   build:
-    name: Build and Start Using docker-compose
+    name: Build and Start Using docker compose
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -253,7 +253,7 @@ jobs:
       - name: Package and Run docker compose
         run: |
           mvn package -DskipTests
-          docker-compose up --abort-on-container-exit
+          docker compose up --abort-on-container-exit
 
 ```
 
@@ -356,7 +356,7 @@ jobs:
           docker image rm database                    
 
   build:
-    name: Build and Start Using docker-compose
+    name: Build and Start Using docker compose
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -371,7 +371,7 @@ jobs:
       - name: Package and Run docker compose
         run: |
           mvn package -DskipTests
-          docker-compose up --abort-on-container-exit
+          docker compose up --abort-on-container-exit
 
 ```
 
@@ -475,7 +475,7 @@ jobs:
           verbose: true # optional (default = false)
           slug: <GitHub username>/<repository name>
   build:
-    name: Build and Start Using docker-compose
+    name: Build and Start Using docker compose
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -490,7 +490,7 @@ jobs:
       - name: Package and Run docker compose
         run: |
           mvn package -DskipTests
-          docker-compose up --abort-on-container-exit
+          docker compose up --abort-on-container-exit
 
 ```
 
