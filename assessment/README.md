@@ -121,13 +121,13 @@ Individual contributions to the team will be assessed by your peers and the modu
 
 We wish to determine the individual contribution to the team project.  To do this, the team have to submit a single spreadsheet to Moodle defining the agreed contribution of each team member to the individual delivery points.  This should be submitted in percentages with the total sum of individual contributions adding up to 100% at each point of assessment.  For example:
 
-| Matriculation Number | Code Review 1 | Code Review 2 | Code Review 3 | Final Deliverable |
-|----------------------|---------------|---------------|---------------|-------------------|
-| 4000xxxx             | 25            | 50            | 0.0           | 0.25              |
-| 4000xxxx             | 25            | 50            | 0.5           | 0.25              |
-| 4000xxxx             | 25            | 0             | 0.5           | 0.25              |
-| 4000xxxx             | 25            | 0             | 0.0           | 0.25              |
-| **Total**            | **100**       | **100**       | **100**       | **100**           |
+| Matriculation Number | Code Review 1 | Code Review 2 | Code Review 3 | Code Review 4 |
+|----------------------|---------------|---------------|-------------|-------|
+| 4000xxxx             | 25            | 50            | 0           | 25    |
+| 4000xxxx             | 25            | 50            | 50          | 25    |
+| 4000xxxx             | 25            | 0             | 50          | 25    |
+| 4000xxxx             | 25            | 0             | 0           | 25    |
+| **Total**            | **100**       | **100**       | **100**     | **100** |
 The team need to agree these scores.  **If the team cannot agree, or a team member believes the spreadsheet submitted does not represent the actual contributions, then contact a member of the teaching team.**  In these circumstances, the metrics and other information provided on GitHub will be used.
 
 The data supplied in this spreadsheet will be used to weight each team members final mark for each assessment point.
@@ -148,16 +148,16 @@ Any dismissed team member has a week to appeal the decision to the module team w
 
 ## Code Review Meetings
 
-Each group will undertake **four** graded code reviews as well as a final submission at the end of Week 13:
+Each group will undertake **four** graded code reviews:
 
 Note that Teaching starts in Week 2. Week Commencing 16th of February
 
-1. Week 4 Code Review 1 (25% of CW mark).
-2. Week 8 Code Review 2 (25% of CW mark).
-3. Week 12 Code Review 3 (25% of CW mark). 
-4. Week 13 Code Review 4 (25% of CW mark).
+1. Week 5 (commencing 07/10/2024) Code Review 1 (10% of CW mark).
+2. Week 8 (commencing 28/10/2024) Code Review 2 (30% of CW mark).
+3. Week 10 (commencing 11/11/2024) Code Review 3 (30% of CW mark). 
+4. Week 13 (commencing 02/12/2024) Code Review 4 (30% of CW mark).
 
-The code reviews will take place during your usual Lab sessions.  Each group will be given **15 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
+The code reviews will take place during your usual Lab sessions.  Each group will be given **10 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
 
 - **Being late** for the meeting or **not being ready** when the meeting starts will result in the grade for that review being capped at 40%.
 - **Not attending** the meeting will mean the code review will be marked at 0%.
@@ -168,11 +168,9 @@ The code reviews will take place during your usual Lab sessions.  Each group wil
 
 ### Code Review 1
 
-#### REVIEW MEETING: Lab of Week 5
-
 The aim of this code review meeting is to check that the project workflow is set up for the team.  You may choose to meet some of the feature requirements during this review point, but it is not as necessary.
 
-#### Checklist Submission 1 (23% of CW mark)
+#### Checklist Submission 1 (8% of CW mark)
 
 The following must be in place:
 
@@ -184,61 +182,54 @@ The following must be in place:
 -  Correct branches for GitFlow workflow created - includes `master`, `develop`, and `release` branches.
 -  First release created on GitHub.
 -  Code of Conduct defined.
--  Issues being used on GitHub.
--  Tasks defined as user stories.
--  Full use cases defined.
--  Use case diagram created.
 
-#### Graded Criteria Submission 1 (7% of CW mark)
+#### Graded Criteria Submission 1 (2% of CW mark)
 
 The following criteria will be assessed for overall quality:
 
 - Metrics from GitHub.  Also used to assess individual contribution.
-- Use cases well defined.
 - Code quality including comments.
 
 ### Code Review 2
 
-#### REVIEW MEETING: Lab of Week 9
+The aim of this code review is to check that task management is set-up and that the initial requirements gathering has taken place via user stories and use cases.  You should have completed at least 25% of the work for the project at this point based on your own estimates.
 
-The aim of this code review is to check that task management is set up and that the initial requirements gathering has taken place via user stories and use cases.  You should have completed at least 50% of the work for the project at this point based on your own estimates.
-
-#### Checklist Submission 2 (20% of CW mark)
+#### Checklist Submission 2 (18% of CW mark)
 
 The following must be in place:
 
+-  Issues being used on GitHub.
+-  Tasks defined as user stories.
 -  Project integrated with Zube.io.
 -  Kanban/Project Board being used.
 -  Sprint Boards being used.
+-  Full use cases defined.
+-  Use case diagram created.
 -  Suitable unit tests defined.
--  Tests running on GitHub Actions.
 
-#### Graded Criteria Submission 2 (10% of CW mark)
+#### Graded Criteria Submission 2 (12% of CW mark)
 
 The following criteria will be assessed for overall quality:
 
 - Metrics from GitHub.  Also used to assess individual contribution.
 - Code quality including comments.
 - Correct usage of branches.
-- Quality and coverage of unit tests.
+- Continuous integration working.
+- Use cases well defined.
 - Project requirements met.
 
 ### Code Review 3
 
-#### REVIEW MEETING: Lab of Week 12 
+The aim of this code review is to check that testing has been correctly specified.  At this stage, at least 50% of the work of the project should be completed.
 
-The aim of this code review is to check that testing has been correctly specified and that the project is deploying correctly.  At this stage, all of the work of the project should be completed.
-
-#### Checklist Submission 3 (20% of CW mark)
+#### Checklist Submission 3 (16% of CW mark)
 
 The following must be in place:
 
 -  Suitable integration tests defined.
 -  Tests running on GitHub Actions.
--  Deployment working.
--  Bug reporting system set-up.
 
-#### Graded Criteria Submission 3 (10% of CW mark)
+#### Graded Criteria Submission 3 (14% of CW mark)
 
 The following criteria will be assessed for overall quality:
 
@@ -250,9 +241,20 @@ The following criteria will be assessed for overall quality:
 - Quality and coverage of unit tests.
 - Project requirements met.
 
-#### SUBMISSION DEADLINE: Monday at 15:00 of Week 13 (10% of CW mark)
+### Code Review 4
 
-The final deliverable will be compared automatically to your GitHub repository.  The final submission will be assessed based on the following criteria:
+The aim of this code review is to check that the project is deploying correctly.  At this stage, at least 75% of the work of the project should be completed.
+
+#### Checklist Submission 4 (14% of CW mark)
+
+The following must be in place:
+
+-  Deployment working.
+-  Bug reporting system set-up.
+
+#### Graded Criteria Submission 4 (16% of CW mark)
+
+The following criteria will be assessed for overall quality:
 
 - Metrics from GitHub.  Also used to assess individual contribution.
 - Code quality including comments.
