@@ -206,6 +206,7 @@ The following must be in place:
 -  Full use cases defined.
 -  Use case diagram created.
 -  Suitable unit tests defined.
+-  Tests running on GitHub Actions.
 
 #### Graded Criteria Submission 2 (12% of CW mark)
 
@@ -215,7 +216,7 @@ The following criteria will be assessed for overall quality:
 - Code quality including comments.
 - Correct usage of branches (following workflow and only change, add and remove files in `feature` branches).
 - Continuous integration working.
-- Use cases well defined.
+- Use cases well-defined.
 - Project requirements met.
 
 ### Code Review 3
@@ -238,7 +239,7 @@ The following criteria will be assessed for overall quality:
 - Correct usage of branches.
 - Continuous integration working.
 - Kanban/Project Board being used.
-- Quality and coverage of unit tests.
+- Quality and coverage of unit-tests.
 - Project requirements met.
 
 ### Code Review 4
