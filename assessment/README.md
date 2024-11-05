@@ -153,7 +153,7 @@ Each group will undertake **four** graded code reviews:
 Note that Teaching starts in Week 2. Week Commencing 16th of February
 
 1. Week 5 (commencing 07/10/2024) Code Review 1 (10% of CW mark).
-2. Week 8 (commencing 28/10/2024) Code Review 2 (30% of CW mark).
+2. Week 8 (commencing 04/11/2024) Code Review 2 (30% of CW mark).
 3. Week 10 (commencing 11/11/2024) Code Review 3 (30% of CW mark). 
 4. Week 13 (commencing 02/12/2024) Code Review 4 (30% of CW mark).
 
