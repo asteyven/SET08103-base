@@ -111,13 +111,13 @@ For the population reports, the following information is requested:
 
 The coursework **must** be delivered by a group.  The aim of the module is to assess your ability to work as a team to deliver a product.  Therefore, the majority of your coursework grade will be based on your team's ability to work together using the methods defined in the module.
 
-The submission is monitored during lab stand-up meetings, and formally via the 4 assessment points.  Your submissions are delivered via your GitHub repository. The master branch of your GitHub repository should also be submitted to Moodle at each assessment point along with a spreadsheet in Excel format (csv, xls or xlsx) detailing Individual team members' contributions.
+The submission is monitored during lab stand-up meetings, and formally via the 5 assessment points.  Your submissions are delivered via your GitHub repository. The master branch of your GitHub repository should also be submitted to Moodle at each assessment point along with a spreadsheet in Excel format (csv, xls or xlsx) detailing Individual team members' contributions.
 
 ## Individual Assessment
 
 Individual contributions to the team will be assessed by your peers and the module teaching team based on attendance at the various meetings and individual contributions towards each code review, and via the metrics gathered from tools such as GitHub.  **Individual contributions will lead to a scaling of the overall coursework grade if the module team have evidence that illustrates a lack of contribution to the team deliverable.**
 
-#### Groups must maintain a spreadsheet detailing individual team members contribution at each of the 4 assessment points
+#### Groups must maintain a spreadsheet detailing individual team members contribution at each of the 5 assessment points
 
 We wish to determine the individual contribution to the team project.  To do this, the team have to submit a single spreadsheet to Moodle defining the agreed contribution of each team member to the individual delivery points.  This should be submitted in percentages with the total sum of individual contributions adding up to 100% at each point of assessment.  For example:
 
@@ -136,7 +136,7 @@ For example, if the group received 18 out of 20 for code review one then all 4 m
 
 ## Disciplinary Procedures
 
-The coursework **must** be delivered as part of a team. **If anyone is dismissed from their team this means they cannot deliver the coursework and will fail.**  Dismissal from a team involved the following process:
+The coursework **must** be delivered as part of a team.  **If anyone is dismissed from their team this means they cannot deliver the coursework and will fail.**  Dismissal from a team involved the following process:
 
 - An individual is evidenced as breaching the code of conduct as set-out by the student team.
 - Evidence is presented at the next available meeting with a member of the module delivery team.
@@ -153,8 +153,8 @@ Each group will undertake **four** graded code reviews:
 Note that Teaching starts in Week 2. Week Commencing 16th of February
 
 1. Week 5 (commencing 07/10/2024) Code Review 1 (10% of CW mark).
-2. Week 9 (commencing 04/11/2024) Code Review 2 (30% of CW mark).
-3. Week 11 (commencing 18/11/2024) Code Review 3 (30% of CW mark). 
+2. Week 8 (commencing 28/10/2024) Code Review 2 (30% of CW mark).
+3. Week 10 (commencing 11/11/2024) Code Review 3 (30% of CW mark). 
 4. Week 13 (commencing 02/12/2024) Code Review 4 (30% of CW mark).
 
 The code reviews will take place during your usual Lab sessions.  Each group will be given **10 minutes maximum** for the code review.  Your group will be **allocated a time for the code review**.  The details of the individual review points are below.  These meetings **must be attended** at the **stated time**.  Guidelines for grading the group:
@@ -192,7 +192,7 @@ The following criteria will be assessed for overall quality:
 
 ### Code Review 2
 
-The aim of this code review is to check that task management is set-up and that the initial requirements gathering has taken place via user stories and use cases.  You should have completed at least 33% of the work for the project at this point based on your own estimates.
+The aim of this code review is to check that task management is set-up and that the initial requirements gathering has taken place via user stories and use cases.  You should have completed at least 25% of the work for the project at this point based on your own estimates.
 
 #### Checklist Submission 2 (18% of CW mark)
 
@@ -206,7 +206,6 @@ The following must be in place:
 -  Full use cases defined.
 -  Use case diagram created.
 -  Suitable unit tests defined.
--  Tests running on GitHub Actions.
 
 #### Graded Criteria Submission 2 (12% of CW mark)
 
@@ -214,37 +213,37 @@ The following criteria will be assessed for overall quality:
 
 - Metrics from GitHub.  Also used to assess individual contribution.
 - Code quality including comments.
-- Correct usage of branches (following workflow and only change, add and remove files in `feature` branches).
+- Correct usage of branches.
 - Continuous integration working.
-- Use cases well-defined.
+- Use cases well defined.
 - Project requirements met.
 
 ### Code Review 3
 
-The aim of this code review is to check that testing has been correctly specified.  At this stage, at least 66% of the work of the project should be completed.
+The aim of this code review is to check that testing has been correctly specified.  At this stage, at least 50% of the work of the project should be completed.
 
-#### Checklist Submission 3 (14% of CW mark)
+#### Checklist Submission 3 (16% of CW mark)
 
 The following must be in place:
 
 -  Suitable integration tests defined.
 -  Tests running on GitHub Actions.
 
-#### Graded Criteria Submission 3 (16% of CW mark)
+#### Graded Criteria Submission 3 (14% of CW mark)
 
 The following criteria will be assessed for overall quality:
 
 - Metrics from GitHub.  Also used to assess individual contribution.
 - Code quality including comments.
-- Correct usage of branches (following workflow and only change, add and remove files in `feature` branches).
+- Correct usage of branches.
 - Continuous integration working.
 - Kanban/Project Board being used.
-- Quality and coverage of unit-tests.
+- Quality and coverage of unit tests.
 - Project requirements met.
 
 ### Code Review 4
 
-The aim of this code review is to check that the project is deploying correctly.  At this stage, 100% of the work of the project should be completed.
+The aim of this code review is to check that the project is deploying correctly.  At this stage, at least 75% of the work of the project should be completed.
 
 #### Checklist Submission 4 (14% of CW mark)
 
@@ -259,7 +258,7 @@ The following criteria will be assessed for overall quality:
 
 - Metrics from GitHub.  Also used to assess individual contribution.
 - Code quality including comments.
-- Correct usage of branches (following workflow and only change, add and remove files in `feature` or `bugfix` branches).
+- Correct usage of branches.
 - Continuous integration working.
 - Kanban/Project Board being used.
 - Quality and coverage of unit tests.
