@@ -47,13 +47,13 @@ We will only assess your `master` branch.  Make sure that branch contains the ve
 
 ## Step 5: Submit your final Individual Contribution Spreadsheet 
 
-| Matriculation Number | Code Review 1 | Code Review 2 | Code Review 3 | Code Review 4 |
-| ---- | ------------- | ------------- |---------------|---------------|
-| 4000xxxx | 25          | 50          | 0             | 20            |
-| 4000xxxx | 25          | 50          | 50            | 20            |
-| 4000xxxx | 25          | 0         | 50            | 25            |
-| 4000xxxx | 25          | 0           | 0           | 35            |
-| **Total** | **100**   | **100** | **100**       | **100**       |
+| Matriculation Number | Code Review 1 | Code Review 2 | Code Review 3 | Code Review 4 | Final Deliverable |
+| ---- | ------------- | ------------- | ------------- | ------------- | ----------------- |
+| 4000xxxx | 25          | 50          | 0.0           | 0.25          | 0.2               |
+| 4000xxxx | 25          | 50          | 0.5           | 0.25          | 0.4               |
+| 4000xxxx | 25          | 0         | 0.5           | 0.25          | 0.2               |
+| 4000xxxx | 25          | 0           | 0.0           | 0.25          | 0.2               |
+| **Total** | **100**   | **100** | **100**      | **100**   | **100** 
 
 The team need to agree these scores.  **If the team cannot agree, or a team member believes the spreadsheet submitted does not represent the actual contributions, then email the teaching team.**  In these circumstances, the metrics and other information provided on GitHub will be used.
 
